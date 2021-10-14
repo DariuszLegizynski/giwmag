@@ -1,16 +1,27 @@
 <template>
-	<section>
-		<img src="" alt="awesome logo of the more awesome company Wi-MAG" />
-	</section>
-	<section>
-		<button>OFERTA</button>
-		<button>O FIRMIE</button>
-		<button>KONTAKT</button>
-	</section>
+	<article class="header">
+		<section>
+			<img src="" alt="awesome logo of the more awesome company Wi-MAG" />
+		</section>
+		<section class="header__buttons">
+			<button>OFERTA</button>
+			<button>O FIRMIE</button>
+			<button>KONTAKT</button>
+		</section>
+	</article>
 </template>
 
 <script>
 export default {}
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.header {
+	margin-bottom: 1rem;
+	display: flex;
+
+	&__buttons {
+		display: flex;
+	}
+}
+</style>

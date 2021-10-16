@@ -29,5 +29,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/scss/_general.scss';
+@import '@/styles/scss/_general.scss';
 </style>

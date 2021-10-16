@@ -28,7 +28,7 @@
 				</div>
 				<div>
 					<label>Wiadomość</label>
-					<textarea />
+					<textarea required />
 				</div>
 			</form>
 			<button>Wyślij</button>

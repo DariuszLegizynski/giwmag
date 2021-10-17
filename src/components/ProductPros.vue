@@ -1,6 +1,6 @@
 <template>
 	<article class="product-pros">
-		<section>
+		<section class="product-pros__text">
 			<h1>Nasze Regały</h1>
 			<ul>
 				<li>wykonany z najwyższą starannością, dokładny i stabilny</li>
@@ -13,7 +13,10 @@
 			</ul>
 		</section>
 		<section>
-			<img src="" alt="Shelves in action" />
+			<img
+				src="/images/wysokiego-skladowania/palet20.jpeg"
+				alt="Shelves in action"
+			/>
 		</section>
 	</article>
 </template>
@@ -24,8 +27,15 @@ export default {}
 
 <style lang="scss" scoped>
 .product-pros {
-	margin: 1rem 0;
+	margin: 10rem 0;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+
+	&__text {
+		display: grid;
+		grid-template-columns: 1fr;
+		align-content: center;
+		justify-items: center;
+	}
 }
 </style>

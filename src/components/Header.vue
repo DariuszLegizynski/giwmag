@@ -1,5 +1,5 @@
 <template>
-	<article class="header">
+	<header class="header">
 		<section>
 			<img src="" alt="awesome logo of the more awesome company Wi-MAG" />
 		</section>
@@ -8,7 +8,7 @@
 			<button>O FIRMIE</button>
 			<button>KONTAKT</button>
 		</section>
-	</article>
+	</header>
 </template>
 
 <script>
@@ -19,6 +19,7 @@ export default {}
 .header {
 	margin-bottom: 1rem;
 	display: flex;
+	justify-content: space-between;
 
 	&__buttons {
 		display: flex;

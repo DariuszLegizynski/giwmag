@@ -1,6 +1,6 @@
 <template>
 	<article class="footer">
-		<section>
+		<section class="footer__address">
 			<h1>Dane Kontaktowe:</h1>
 			<h3>Wi-Mag</h3>
 			<p>ul. Wrocławska 12</p>
@@ -42,14 +42,22 @@ export default {}
 
 <style lang="scss" scoped>
 .footer {
-	margin: 1rem 0;
+	margin: 10rem 0;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+
+	&__address {
+		display: grid;
+		grid-template-columns: 1fr;
+		align-content: center;
+		justify-items: center;
+	}
 
 	&__contact {
 		display: grid;
 		grid-template-columns: 1fr;
 		align-content: center;
+		justify-items: center;
 	}
 }
 </style>

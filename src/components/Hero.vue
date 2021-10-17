@@ -1,17 +1,19 @@
 <template>
 	<article class="hero">
-		<section>
+		<section class="hero__left">
 			<img
-				class="hero__img"
+				class="img"
 				src="/images/chuttersnap-BNBA1h-NgdY-unsplash.jpeg"
 				alt="one of our awesome products"
 			/>
+			<div class="hero__call-to-action">
+				<CallToAction />
+			</div>
 		</section>
-		<section class="hero__btns">
-			<button>Regały Półkowe</button>
-			<button>Regały wysokiego składowania</button>
+		<section class="hero__right">
+			<button class="btn">Regały Półkowe</button>
+			<button class="btn">Regały wysokiego składowania</button>
 		</section>
-		<CallToAction />
 	</article>
 </template>
 
@@ -26,16 +28,21 @@ export default {
 
 <style lang="scss" scoped>
 .hero {
-	margin: 1rem 0;
+	margin-bottom: 10rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 
-	&__img {
-		object-fit: cover;
-		width: 100%;
+	&__left {
+		position: relative;
 	}
 
-	&__btns {
+	&__call-to-action {
+		position: absolute;
+		bottom: 10%;
+		left: 40%;
+	}
+
+	&__right {
 		display: grid;
 		grid-template-rows: 1fr 1fr;
 	}

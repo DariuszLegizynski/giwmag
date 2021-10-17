@@ -16,6 +16,8 @@ html {
 
 img {
 	display: block;
+	object-fit: cover;
+	width: 100%;
 }
 
 *::selection {

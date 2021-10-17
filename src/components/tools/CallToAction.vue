@@ -1,10 +1,10 @@
 <template>
-	<button>OFERTA</button>
-	<button>KONTAKT</button>
+	<button class="btn">OFERTA</button>
+	<button class="btn">KONTAKT</button>
 </template>
 
 <script>
 export default {}
 </script>
 
-<style></style>
+<style lang="scss" scoped></style>

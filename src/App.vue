@@ -20,6 +20,7 @@ export default {
 	components: {
 		Header,
 		Hero,
+
 		ProductPros,
 		References,
 		ProductsPresented,

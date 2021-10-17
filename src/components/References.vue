@@ -2,11 +2,31 @@
 	<article class="references">
 		<h1>Referencje</h1>
 		<section class="references__companies">
-			<img src="" alt="ekstra referencje" />
-			<img src="" alt="ekstra referencje" />
-			<img src="" alt="ekstra referencje" />
-			<img src="" alt="ekstra referencje" />
-			<img src="" alt="ekstra referencje" />
+			<img
+				class="references__logo"
+				src="@/assets/logo.png"
+				alt="ekstra referencje"
+			/>
+			<img
+				class="references__logo"
+				src="@/assets/logo.png"
+				alt="ekstra referencje"
+			/>
+			<img
+				class="references__logo"
+				src="@/assets/logo.png"
+				alt="ekstra referencje"
+			/>
+			<img
+				class="references__logo"
+				src="@/assets/logo.png"
+				alt="ekstra referencje"
+			/>
+			<img
+				class="references__logo"
+				src="@/assets/logo.png"
+				alt="ekstra referencje"
+			/>
 		</section>
 	</article>
 </template>
@@ -17,13 +37,19 @@ export default {}
 
 <style lang="scss" scoped>
 .references {
-	margin: 1rem 0;
+	margin: 10rem 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
 	&__companies {
 		display: flex;
+		width: 100%;
+		justify-content: space-evenly;
+	}
+
+	&__logo {
+		width: 8rem;
 	}
 }
 </style>

@@ -31,7 +31,7 @@
 					<textarea required />
 				</div>
 			</form>
-			<button>Wyślij</button>
+			<button class="btn">Wyślij</button>
 		</section>
 	</article>
 </template>

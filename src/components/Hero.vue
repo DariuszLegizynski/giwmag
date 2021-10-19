@@ -39,7 +39,8 @@ export default {
 	&__call-to-action {
 		position: absolute;
 		bottom: 10%;
-		left: 40%;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	&__right {

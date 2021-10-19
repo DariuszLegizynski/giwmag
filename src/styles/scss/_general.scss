@@ -20,6 +20,12 @@ img {
 	width: 100%;
 }
 
+button {
+	cursor: pointer;
+	background: transparent;
+	border: none;
+}
+
 *::selection {
 	background: $color-secondary;
 }

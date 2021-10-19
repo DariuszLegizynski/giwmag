@@ -1,5 +1,5 @@
 <template>
-	<button class="btn">OFERTA</button>
+	<button class="btn">PEŁNA OFERTA</button>
 	<button class="btn">KONTAKT</button>
 </template>
 

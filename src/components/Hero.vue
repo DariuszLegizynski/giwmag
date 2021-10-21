@@ -1,27 +1,17 @@
 <template>
 	<article class="hero">
 		<section class="hero__left">
-			<button class="btn">
-				<span class="hero__btn">Regały Półkowe</span>
-				<img
-					class="img"
-					src="/images/chuttersnap-BNBA1h-NgdY-unsplash.jpeg"
-					alt="one of our awesome products"
-				/>
-			</button>
+			<!-- <img
+				class="img"
+				src="/images/chuttersnap-BNBA1h-NgdY-unsplash.jpeg"
+				alt="one of our awesome products"
+			/> -->
 			<div class="hero__call-to-action">
 				<CallToAction />
 			</div>
 		</section>
 		<section class="hero__right">
-			<button class="btn">
-				<span class="hero__btn">Regały wysokiego składowania</span>
-				<img
-					class="img"
-					src="/images/chuttersnap-BNBA1h-NgdY-unsplash.jpeg"
-					alt="one of our awesome products"
-				/>
-			</button>
+			<p>Producent Regałów półkowych i wysokiego składowania</p>
 		</section>
 	</article>
 </template>
@@ -40,31 +30,32 @@ export default {
 .hero {
 	margin-bottom: 10rem;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 3fr 2fr;
 
 	&__left {
-		position: relative;
+		background: url('/images/chuttersnap-BNBA1h-NgdY-unsplash.jpeg') no-repeat
+			center;
+		background-size: cover;
+		height: 60rem;
 	}
 
 	&__right {
-		position: relative;
-	}
+		text-align: center;
 
-	&__btn {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		color: $color-white;
-		font-size: 4rem;
-		background-color: $color-primary;
+		& > p {
+			height: 100%;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+		}
 	}
 
 	&__call-to-action {
-		position: absolute;
-		bottom: 10%;
-		left: 50%;
-		transform: translateX(-50%);
+		display: flex;
+		justify-content: space-evenly;
+		align-items: flex-end;
+		height: 100%;
+		padding-bottom: 16rem;
 	}
 }
 </style>

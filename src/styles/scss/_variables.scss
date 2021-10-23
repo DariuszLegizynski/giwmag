@@ -1,15 +1,17 @@
-$color-primary: #070781;
-$color-secondary: #1eeb94;
-$color-tertiary: #20f5d7;
-$color-fourth: #28c6de;
-$color-highlight: #bc92ff;
+$color-primary: hsla(240, 90%, 27%, 1);
+$color-secondary: hsl(155, 84%, 52%);
+$color-tertiary: hsl(172, 91%, 54%);
+$color-fourth: hsl(188, 73%, 51%);
+$color-highlight: hsl(263, 100%, 79%);
 
-$color-reserve-1: #4a9f8d;
-$color-reserve-2: #005244;
-$color-reserve-3: #20a0f5;
-$color-reserve-4: #dec712;
-$color-reserve-5: #de3e8b;
+$color-reserve-1: hsl(167, 36%, 46%);
+$color-reserve-2: hsl(170, 100%, 16%);
+$color-reserve-3: hsl(204, 91%, 54%);
+$color-reserve-4: hsl(53, 85%, 47%);
+$color-reserve-5: hsl(331, 71%, 56%);
 
-$color-contrast-1: #de563e;
+$color-contrast-1: hsl(9, 71%, 56%);
 
-$color-white: #f5f5f5;
+$color-white: hsl(0, 0%, 96%);
+
+$gradient-main: linear-gradient(to right, $color-reserve-3, $color-primary);

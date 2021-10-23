@@ -1,6 +1,6 @@
 <template>
-	<button class="btn">OFERTA</button>
-	<button class="btn">KONTAKT</button>
+	<button class="btn btn--offer">OFERTA</button>
+	<button class="btn btn--contact">KONTAKT</button>
 </template>
 
 <script>
@@ -12,6 +12,19 @@ export default {}
 .btn {
 	color: $color-white;
 	font-size: 3.6rem;
-	background-color: $color-primary;
+	background-color: $color-reserve-3;
+	padding: 0.8rem 1.8rem;
+	border-radius: 3px;
+
+	&--offer {
+	}
+
+	&--contact {
+		background-color: $color-reserve-3;
+
+		&:hover {
+			background-color: $color-highlight;
+		}
+	}
 }
 </style>

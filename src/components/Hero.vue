@@ -47,6 +47,8 @@ export default {
 			display: flex;
 			justify-content: space-evenly;
 			align-items: center;
+			background-color: transparent;
+			color: $color-white;
 		}
 	}
 
@@ -55,7 +57,7 @@ export default {
 		justify-content: space-evenly;
 		align-items: flex-end;
 		height: 100%;
-		padding-bottom: 16rem;
+		padding-bottom: 12rem;
 	}
 }
 </style>

@@ -35,13 +35,13 @@ export default {}
 	}
 }
 .logo {
-	width: 20rem;
+	width: 14rem;
 }
 .btn {
 	background-color: $color-white;
 	color: $color-primary;
 	width: 100%;
-	font-size: 2rem;
+	font-size: 1.5rem;
 
 	&:hover {
 		background-color: $color-primary;

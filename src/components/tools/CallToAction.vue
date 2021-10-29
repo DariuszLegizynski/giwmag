@@ -11,7 +11,7 @@ export default {}
 @import '../../styles/scss/_variables.scss';
 .btn {
 	color: $color-white;
-	font-size: 3.6rem;
+	font-size: 1.8rem;
 	background-color: $color-reserve-3;
 	padding: 0.8rem 1.8rem;
 	border-radius: 3px;

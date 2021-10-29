@@ -56,7 +56,7 @@ export default {
 			),
 			url('/images/chuttersnap-BNBA1h-NgdY-unsplash.jpeg');
 		background-size: cover;
-		height: 60rem;
+		height: 30rem;
 	}
 
 	&__right {
@@ -70,11 +70,11 @@ export default {
 		justify-content: space-evenly;
 		align-items: flex-end;
 		height: 100%;
-		padding-bottom: 12rem;
+		padding-bottom: 6rem;
 	}
 }
 img {
-	max-height: 30rem;
+	max-height: 15rem;
 }
 .img--shelf {
 	object-fit: contain;
@@ -109,7 +109,7 @@ p {
 	justify-content: space-evenly;
 	align-items: center;
 	color: $color-white;
-	font-size: 3.2rem;
-	line-height: 3.6rem;
+	font-size: 2.4rem;
+	line-height: 2.8rem;
 }
 </style>

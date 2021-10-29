@@ -1,20 +1,10 @@
 @import './_variables.scss';
 @import './_components.scss';
 
-*,
-*::before,
-*::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: inherit;
-}
-
 html {
 	box-sizing: border-box;
-	font-size: 62.5%;
 	scroll-behavior: smooth;
 }
-
 img {
 	display: block;
 	object-fit: cover;
@@ -27,8 +17,28 @@ button {
 	border: none;
 }
 
-p {
-	font-size: 4rem;
+// p {
+// 	font-size: $font-size-48;
+// }
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+									supported by Chrome, Edge, Opera and Firefox */
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
 }
 
 *::selection {

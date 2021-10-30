@@ -10,7 +10,7 @@
 		<section class="header__buttons">
 			<button class="btn">OFERTA</button>
 			<button class="btn">O FIRMIE</button>
-			<button class="btn">KONTAKT</button>
+			<button class="btn btn--contact">KONTAKT</button>
 		</section>
 	</header>
 </template>
@@ -46,6 +46,10 @@ export default {}
 	&:hover {
 		background-color: $color-primary;
 		color: $color-white;
+	}
+
+	&--contact {
+		background-color: $color-reserve-5;
 	}
 }
 </style>

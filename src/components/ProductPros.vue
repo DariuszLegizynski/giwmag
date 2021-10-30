@@ -34,6 +34,7 @@ export default {}
 
 <style lang="scss" scoped>
 @import '@/styles/scss/_general.scss';
+
 .product-pros {
 	margin-top: 8rem;
 	display: grid;

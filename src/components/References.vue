@@ -1,31 +1,31 @@
 <template>
 	<article class="references">
-		<h1>Zaufali nam:</h1>
+		<h1>Dotychczas zaufali nam:</h1>
 		<section class="references__companies">
 			<img
 				class="references__logo"
-				src="@/assets/logo.png"
-				alt="ekstra referencje"
+				src="/images/logo/Ikea_logo.svg"
+				alt="logo of ikea"
 			/>
 			<img
 				class="references__logo"
-				src="@/assets/logo.png"
-				alt="ekstra referencje"
+				src="/images/logo/Leroy_Merlin.svg"
+				alt="logo Leroy Merlin"
+			/>
+			<img
+				class="references__logo logo--mrowka"
+				src="/images/logo/PSB-Mrowka.png"
+				alt="logo PSB Mrowka"
 			/>
 			<img
 				class="references__logo"
-				src="@/assets/logo.png"
-				alt="ekstra referencje"
+				src="/images/logo/Castorama_Logo.svg"
+				alt="logo Castorama"
 			/>
 			<img
 				class="references__logo"
-				src="@/assets/logo.png"
-				alt="ekstra referencje"
-			/>
-			<img
-				class="references__logo"
-				src="@/assets/logo.png"
-				alt="ekstra referencje"
+				src="/images/logo/bricoman_logo_3.png"
+				alt="logo Bricoman"
 			/>
 		</section>
 	</article>
@@ -36,6 +36,8 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+@import '@/styles/scss/_general.scss';
+
 .references {
 	margin: 10rem 0;
 	display: flex;
@@ -44,6 +46,7 @@ export default {}
 
 	& > h1 {
 		margin-bottom: 4rem;
+		color: $color-primary;
 	}
 
 	&__companies {
@@ -54,6 +57,10 @@ export default {}
 
 	&__logo {
 		width: 8rem;
+		object-fit: contain;
 	}
+}
+.logo--mrowka {
+	width: 4rem;
 }
 </style>

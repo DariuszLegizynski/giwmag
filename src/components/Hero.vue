@@ -44,7 +44,6 @@ export default {
 @import '@/styles/scss/_general.scss';
 
 .hero {
-	margin-bottom: 10rem;
 	display: grid;
 	grid-template-columns: 3fr 2fr;
 

@@ -1,6 +1,6 @@
 <template>
 	<article class="references">
-		<h1>Referencje</h1>
+		<h1>Zaufali nam:</h1>
 		<section class="references__companies">
 			<img
 				class="references__logo"
@@ -41,6 +41,10 @@ export default {}
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	& > h1 {
+		margin-bottom: 4rem;
+	}
 
 	&__companies {
 		display: flex;

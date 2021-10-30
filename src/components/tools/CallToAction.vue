@@ -17,11 +17,12 @@ export default {}
 	border-radius: 3px;
 
 	&--offer {
+		&:hover {
+			background-color: $color-highlight;
+		}
 	}
 
 	&--contact {
-		background-color: $color-reserve-3;
-
 		&:hover {
 			background-color: $color-highlight;
 		}

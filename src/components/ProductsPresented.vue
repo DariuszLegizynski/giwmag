@@ -60,7 +60,7 @@ export default {}
 			font-size: 1.2rem;
 			height: 3rem;
 			color: white;
-			background-color: $color-reserve-3;
+			background-color: $color-primary-light;
 		}
 	}
 

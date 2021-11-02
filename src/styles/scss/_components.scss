@@ -1,1 +1,41 @@
 @import './_variables.scss';
+
+h1 {
+	color: $color-white;
+	font-size: $font-size-30;
+}
+
+.btn {
+	color: $color-primary;
+	font-size: 1rem;
+	background-color: $color-white;
+	padding: 1.2rem 3.2rem;
+	border-radius: 3px;
+
+	&--default {
+		&:hover {
+			background-color: $color-primary-light;
+		}
+	}
+
+	&--highlight {
+		color: $color-white;
+		background-color: $color-reserve-5;
+
+		&:hover {
+			background-color: $color-highlight;
+		}
+	}
+}
+
+img {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+}
+
+button {
+	cursor: pointer;
+	background: transparent;
+	border: none;
+}

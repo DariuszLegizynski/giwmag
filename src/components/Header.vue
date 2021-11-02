@@ -22,11 +22,11 @@ export default {}
 <style lang="scss" scoped>
 @import '../styles/scss/_variables.scss';
 .header {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	position: sticky;
-	top: 0;
-	background-color: $color-white;
+	position: fixed;
+	width: 100vw;
+	height: 4rem;
+	background-color: transparent;
+	z-index: 10;
 
 	&__buttons {
 		width: 100%;
@@ -38,7 +38,7 @@ export default {}
 	width: 14rem;
 }
 .btn {
-	background-color: $color-white;
+	background-color: transparent;
 	color: $color-primary;
 	width: 100%;
 	font-size: 1.5rem;

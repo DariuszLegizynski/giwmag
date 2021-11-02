@@ -1,6 +1,9 @@
 <template>
-	<button class="btn btn--offer">OFERTA</button>
-	<button class="btn btn--contact">KONTAKT</button>
+	<h1>Regały dopasowane do Twoich potrzeb.</h1>
+	<div class="cta__btns">
+		<button class="btn btn--highlight">KONTAKT</button>
+		<button class="btn btn--default">OFERTA</button>
+	</div>
 </template>
 
 <script>
@@ -8,24 +11,14 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-@import '../../styles/scss/_variables.scss';
-.btn {
-	color: $color-white;
-	font-size: 1.8rem;
-	background-color: $color-reserve-3;
-	padding: 0.8rem 1.8rem;
-	border-radius: 3px;
-
-	&--offer {
-		&:hover {
-			background-color: $color-highlight;
-		}
-	}
-
-	&--contact {
-		&:hover {
-			background-color: $color-highlight;
-		}
-	}
+h1 {
+	padding: 0 1.5rem 3rem 1.5rem;
+	text-align: center;
+}
+.cta__btns {
+	margin-bottom: 4rem;
+	display: grid;
+	grid-template-rows: auto auto;
+	row-gap: 1rem;
 }
 </style>

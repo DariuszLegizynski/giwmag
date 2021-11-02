@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import CallToAction from '@/components/tools/CallToAction.vue'
+import CallToAction from '@/components/CallToAction.vue'
 export default {
 	components: {
 		CallToAction,
@@ -28,11 +28,10 @@ export default {
 @import '@/styles/scss/_general.scss';
 
 .hero {
-	position: relative;
 	height: 100vh;
-	background-image: url('/images/peek-a-boo/wi-mag_bg-horizontal_360x640.png');
-	background-size: contain;
-	background-repeat: no-repeat;
+	// background-image: url('/images/peek-a-boo/wi-mag_bg_rev_v4_horizontal_360x640.png');
+	// background-size: contain;
+	// background-repeat: no-repeat;
 
 	&__video {
 		position: absolute;
@@ -42,7 +41,6 @@ export default {
 		width: 100%;
 		z-index: -1;
 		background: $color-primary-light;
-
 		overflow: hidden;
 
 		&:before {
@@ -53,11 +51,8 @@ export default {
 			left: 0;
 			bottom: 0;
 			z-index: 1;
-			background: linear-gradient(
-				to bottom right,
-				$primary-opacity,
-				$highlight-opacity
-			);
+			// background: $gradient-main;
+			background: $gradient-secondary;
 		}
 
 		& > video {
@@ -72,6 +67,7 @@ export default {
 		align-items: center;
 		justify-content: center;
 		height: 100%;
+		padding-top: 6rem;
 	}
 }
 

@@ -1,12 +1,16 @@
 <template>
 	<header class="header">
 		<section>
-			<img src="" alt="awesome logo of the more awesome company Wi-MAG" />
+			<img
+				class="logo"
+				src="/images/logo/logo_wi-mag.png"
+				alt="awesome logo of the more awesome company Wi-MAG"
+			/>
 		</section>
 		<section class="header__buttons">
 			<button class="btn">OFERTA</button>
 			<button class="btn">O FIRMIE</button>
-			<button class="btn">KONTAKT</button>
+			<button class="btn btn--contact">KONTAKT</button>
 		</section>
 	</header>
 </template>
@@ -16,15 +20,36 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+@import '../styles/scss/_variables.scss';
 .header {
-	margin-bottom: 1rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	position: sticky;
+	top: 0;
+	background-color: $color-white;
 
 	&__buttons {
 		width: 100%;
 		display: flex;
 		justify-content: space-evenly;
+	}
+}
+.logo {
+	width: 14rem;
+}
+.btn {
+	background-color: $color-white;
+	color: $color-primary;
+	width: 100%;
+	font-size: 1.5rem;
+
+	&:hover {
+		background-color: $color-primary;
+		color: $color-white;
+	}
+
+	&--contact {
+		background-color: $color-reserve-5;
 	}
 }
 </style>

@@ -1,29 +1,32 @@
 <template>
 	<article class="products-presented">
-		<div class="products-presented__item">
-			<img
-				class="products-presented__img"
-				src="/images/polkowy-srubowy-metalowy/Regal_swi_metal_1.jpeg"
-				alt="regal srubowych"
-			/>
-			<button class="btn">Regały śrubowe</button>
-		</div>
-		<div class="products-presented__item">
-			<img
-				class="products-presented__img"
-				src="/images/polkowy-zaczepowy-ciezki/startowy.jpeg"
-				alt="regal srubowy zaczepowy"
-			/>
-			<button class="btn">Regały zaczepowe</button>
-		</div>
-		<div class="products-presented__item">
-			<img
-				class="products-presented__img"
-				src="/images/ruchindra-gunasekara-GK8x_XCcDZg-unsplash.jpeg"
-				alt="regal wysokiego skladowania"
-			/>
-			<button class="btn">Regały wysokiego składowania</button>
-		</div>
+		<h1>Nasze Produkty:</h1>
+		<section class="products-presented__items">
+			<div class="products-presented__item">
+				<button class="btn">Regały śrubowe</button>
+				<img
+					class="products-presented__img"
+					src="/images/polkowy-srubowy-metalowy/Regal_swi_metal_1.jpeg"
+					alt="regal srubowych"
+				/>
+			</div>
+			<div class="products-presented__item">
+				<button class="btn">Regały zaczepowe</button>
+				<img
+					class="products-presented__img"
+					src="/images/polkowy-zaczepowy-ciezki/startowy.jpeg"
+					alt="regal srubowy zaczepowy"
+				/>
+			</div>
+			<div class="products-presented__item">
+				<button class="btn">Regały wysokiego składowania</button>
+				<img
+					class="products-presented__img"
+					src="/images/ruchindra-gunasekara-GK8x_XCcDZg-unsplash.jpeg"
+					alt="regal wysokiego skladowania"
+				/>
+			</div>
+		</section>
 	</article>
 </template>
 
@@ -32,15 +35,33 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+@import '@/styles/scss/_general.scss';
+
 .products-presented {
 	margin: 10rem 0;
-	display: flex;
-	justify-content: space-evenly;
+	text-align: center;
+
+	& > h1 {
+		margin-bottom: 2rem;
+		color: $color-primary;
+	}
+
+	&__items {
+		display: flex;
+		justify-content: space-evenly;
+	}
 
 	&__item {
 		display: grid;
 		grid-template-columns: 1fr;
 		align-content: center;
+
+		& > button {
+			font-size: 1.2rem;
+			height: 3rem;
+			color: white;
+			background-color: $color-reserve-3;
+		}
 	}
 
 	&__img {

@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <h1>Wi-<span>-Mag</span></h1>
+    <h1 class="logo">Wi-<span>-Mag</span></h1>
     <nav class="header__buttons" :class="{ active: isBurgerActive }">
       <button class="btn">OFERTA</button>
       <button class="btn">O FIRMIE</button>
@@ -50,7 +50,9 @@ export default {
   }
 }
 .logo {
-  width: 7rem;
+  & > span {
+    color: $color-primary;
+  }
 }
 .btn {
   background-color: transparent;

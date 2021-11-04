@@ -1,6 +1,5 @@
 <template>
   <article class="hero">
-    <Header />
     <!-- <section class="hero__video">
       <video autoPlay muted loop>
         <source
@@ -29,11 +28,9 @@
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
 import CallToAction from '@/components/CallToAction.vue'
 export default {
   components: {
-    Header,
     CallToAction
   }
 }
@@ -43,8 +40,7 @@ export default {
 @import '@/styles/scss/_general.scss';
 
 .hero {
-  height: 100vh;
-  margin-top: 2rem;
+  margin-top: 2.2rem;
 
   &__video {
     position: absolute;
@@ -90,15 +86,10 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
 
-    // background-image: linear-gradient(
-    // 			to right bottom,
     // 			hsla(240, 90%, 27%, 0.8),
     // hsla(240, 90%, 27%, 0.7)
     //     hsla(240, 18%, 3%, 0.8),
     // hsla(240, 18%, 3%, 0.7)
-    // 		),
-    // 		url('/images/chuttersnap-BNBA1h-NgdY-unsplash.jpeg');
-    // 	background-size: cover;
   }
 
   &__text {

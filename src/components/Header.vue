@@ -32,7 +32,7 @@ export default {
 <style lang="scss" scoped>
 @import '@/styles/scss/_general.scss';
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100vw;
   height: auto;
@@ -40,6 +40,9 @@ export default {
   z-index: 10;
   display: flex;
   justify-content: space-between;
+  padding: 0.4rem;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 
   &__buttons {
     display: none;

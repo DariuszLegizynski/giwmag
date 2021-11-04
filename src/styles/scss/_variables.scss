@@ -23,14 +23,14 @@ $highlight-opacity: hsla(263, 100%, 79%, 0.8);
 $color-white-opacity: hsla(0, 0%, 96%, 0.6);
 
 $gradient-main: linear-gradient(
-	to bottom right,
-	$color-white-opacity,
-	$primary-opacity
+  to bottom right,
+  $color-white-opacity,
+  $primary-opacity
 );
 $gradient-secondary: linear-gradient(
-	to bottom right,
-	$primary-opacity,
-	$color-white-opacity
+  to bottom right,
+  $primary-opacity,
+  $color-white-opacity
 );
 
 $font-size-12: 0.6rem;
@@ -52,6 +52,6 @@ $line-height-72: 3.6rem;
 
 html,
 body {
-	font-size: 20px;
-	font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
 }

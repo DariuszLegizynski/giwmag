@@ -1,18 +1,19 @@
 <template>
   <Header />
   <Hero />
+  <ProductsPresented />
   <ProductPros />
   <References />
-  <ProductsPresented />
+
   <Footer />
 </template>
 
 <script>
 import Header from '@/components/Header.vue'
 import Hero from '@/components/Hero.vue'
+import ProductsPresented from '@/components/ProductsPresented.vue'
 import ProductPros from '@/components/ProductPros.vue'
 import References from '@/components/References.vue'
-import ProductsPresented from '@/components/ProductsPresented.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
@@ -20,9 +21,9 @@ export default {
   components: {
     Header,
     Hero,
+    ProductsPresented,
     ProductPros,
     References,
-    ProductsPresented,
     Footer
   }
 }

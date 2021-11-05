@@ -40,8 +40,7 @@ export default {
 @import '@/styles/scss/_general.scss';
 
 .hero {
-  margin-top: 2.2rem;
-
+  height: 100vh;
   &__video {
     position: absolute;
     top: 0;
@@ -85,15 +84,10 @@ export default {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    // 			hsla(240, 90%, 27%, 0.8),
-    // hsla(240, 90%, 27%, 0.7)
-    //     hsla(240, 18%, 3%, 0.8),
-    // hsla(240, 18%, 3%, 0.7)
   }
 
   &__text {
-    padding: 1.6rem;
+    padding: 0.8rem 1.6rem 1.6rem 1.6rem;
     text-align: left;
 
     & > h1,

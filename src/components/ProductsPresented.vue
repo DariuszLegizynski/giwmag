@@ -3,25 +3,31 @@
     <h1>Nasze Produkty:</h1>
     <section class="products-presented__items">
       <div class="products-presented__item rack rack--screw">
-        <h5>Regały półkowe - śrubowe</h5>
-        <p>
-          Słupy nośne oraz półki regału, śruby do skręcenia regału, elementy
-          usztywniające regał, plastikowe ochronne stopki.
-        </p>
+        <div class="products-presented__bg">
+          <h5>Regały półkowe - śrubowe</h5>
+          <p>
+            Słupy nośne oraz półki regału, śruby do skręcenia regału, elementy
+            usztywniające regał, plastikowe ochronne stopki.
+          </p>
+        </div>
         <button class="btn btn--reverse">Regały śrubowe</button>
       </div>
       <div class="products-presented__item rack rack--attach">
-        <h5>Regały półkowe - zaczepowe</h5>
-        <p>
-          Stelaż i wypełnienie, plastikowe stopki pod słupy nośne chroniące
-          podłoże, system wtykowy zapewnia stabilność regału bez elementów
-          usztywniających.
-        </p>
+        <div class="products-presented__bg">
+          <h5>Regały półkowe - zaczepowe</h5>
+          <p>
+            Stelaż i wypełnienie, plastikowe stopki pod słupy nośne chroniące
+            podłoże, system wtykowy zapewnia stabilność regału bez elementów
+            usztywniających.
+          </p>
+        </div>
         <button class="btn btn--reverse">Regały zaczepowe</button>
       </div>
       <div class="products-presented__item rack rack--high">
-        <h5>Regały wys. składowania</h5>
-        <p>Regały paletowe, zaczepy belkowe, ogromny wybór</p>
+        <div class="products-presented__bg">
+          <h5>Regały wysokiego składowania</h5>
+          <p>Regały paletowe, zaczepy belkowe, ogromny wybór</p>
+        </div>
         <button class="btn btn--reverse btn--tall">
           Regały wysokiego składowania
         </button>
@@ -62,10 +68,15 @@ export default {}
       margin-bottom: 1.5rem;
     }
   }
+
+  &__bg {
+    background-color: $primary-opacity;
+    padding: 1rem;
+  }
 }
 
 .btn--tall {
-  height: 4.8rem;
+  height: 3.6rem;
 }
 
 .rack {

@@ -28,8 +28,8 @@
           <h5>Regały wysokiego składowania</h5>
           <p>Regały paletowe, zaczepy belkowe, ogromny wybór</p>
         </div>
-        <button class="btn btn--reverse btn--tall">
-          Regały wysokiego składowania
+        <button class="btn btn--reverse">
+          Regały wys skład
         </button>
       </div>
     </section>
@@ -59,24 +59,16 @@ export default {}
     grid-template-columns: 1fr;
     align-content: center;
     padding: 1rem;
-
-    & > h5 {
-      margin-bottom: 0.75rem;
-    }
-
-    & > p {
-      margin-bottom: 1.5rem;
-    }
   }
 
   &__bg {
     background-color: $primary-opacity;
     padding: 1rem;
-  }
-}
 
-.btn--tall {
-  height: 3.6rem;
+    & > h5 {
+      margin-bottom: 0.75rem;
+    }
+  }
 }
 
 .rack {

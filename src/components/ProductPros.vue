@@ -1,9 +1,9 @@
 <template>
   <article class="product-pros">
     <section class="product-pros__header">
-      <h1>Postaw na nasze regały!</h1>
+      <h2>Postaw na nasze regały</h2>
       <img
-        src="/images/wysokiego-skladowania/palet20.jpeg"
+        src="/images/chuttersnap-BNBA1h-NgdY-unsplash.jpeg"
         alt="Shelves in action"
       />
     </section>
@@ -38,6 +38,7 @@ export default {}
 .product-pros {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 2.4rem;
 
   &__header,
   &__text {
@@ -49,9 +50,9 @@ export default {}
     justify-items: center;
     margin: 1rem;
 
-    & > h1 {
-      font-size: 2.6rem;
+    & > h2 {
       color: $color-primary;
+      margin-bottom: 1.2rem;
     }
 
     & > p {
@@ -75,7 +76,6 @@ export default {}
 
 @media only screen and (max-width: 640px) {
   .product-pros {
-    padding: 0.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;

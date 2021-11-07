@@ -1,28 +1,26 @@
 <template>
   <article class="product-pros">
-    <section class="product-pros__header">
-      <h2>Postaw na nasze regały</h2>
-      <img
-        src="/images/chuttersnap-BNBA1h-NgdY-unsplash.jpeg"
-        alt="Shelves in action"
-      />
-    </section>
-    <section class="product-pros__header">
-      <p>ponieważ:</p>
-      <div class="product-pros__text">
-        <span>gwarantujemy <strong>najwyższą jakość</strong> wykonania.</span>
-        <span>spełniamy normy <strong>PN-78 M-78320.</strong></span>
+    <h2>Postaw na nasze regały</h2>
+    <section class="product-pros__items">
+      <div class="product-pros__item product-pros__quality">
+        <span><strong>Najwyższa jakość</strong> wykonania.</span>
+      </div>
+      <div class="product-pros__item product-pros__norm">
+        <span>Spełniamy normy <strong>PN-78 M-78320.</strong></span>
+      </div>
+      <div class="product-pros__item product-pros__strong">
         <span>
-          nasze produkty są <strong>sprawdzone</strong> - próby wytrzymałościowe
+          <strong>Sprawdzone produkty</strong> - próby wytrzymałościowe
           potwierdzają deklarowane obciążenie.
         </span>
+      </div>
+      <div class="product-pros__item product-pros__montage">
         <span
-          >są proste w <strong>montażu</strong> i
-          <strong>demontażu.</strong></span
+          >Proste w <strong>montażu</strong> i <strong>demontażu.</strong></span
         >
-        <span
-          >dają się łatwo i bezproblemowo <strong>transportować.</strong></span
-        >
+      </div>
+      <div class="product-pros__item product-pros__transport">
+        <span>Łatwy i bezproblemowy <strong>transport.</strong></span>
       </div>
     </section>
   </article>
@@ -36,49 +34,56 @@ export default {}
 @import '@/styles/scss/_general.scss';
 
 .product-pros {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  &__header,
-  &__text {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-content: center;
-  }
-  &__header {
-    justify-items: center;
-    margin: 1rem;
+  //   &__text {
+  //     display: grid;
+  //     grid-template-columns: 1fr;
+  //     align-content: center;
+  //   }
 
-    & > h2 {
-      color: $color-primary;
-      margin-bottom: 1.2rem;
-    }
-
-    & > p {
-      margin: 1rem 0;
-      color: $color-primary;
-    }
-  }
-
-  &__text {
-    justify-items: flex-start;
-    font-size: 1.4rem;
-    margin-left: 1.4rem;
+  & > h2 {
     color: $color-primary;
-    line-height: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
 
-    & > * {
-      margin: 0.4rem 0;
-    }
+  &__items {
+    display: grid;
+    grid-template-rows: repeat(5, 10rem);
+    row-gap: 1rem;
+  }
+
+  &__quality {
+    background: orangered url('/icons/quality/quality-medal-svgrepo-com.svg')
+      center top no-repeat;
+  }
+
+  &__norm {
+    background: orangered url('/icons/norm/documents-svgrepo-com.svg') center
+      top no-repeat;
+  }
+
+  &__strong {
+    background: orangered url('/icons/strong/strength-svgrepo-com.svg') center
+      top no-repeat;
+  }
+
+  &__montage {
+    background: orangered url('/icons/montage/gear-svgrepo-com (1).svg') center
+      top no-repeat;
+  }
+
+  &__transport {
+    background: orangered
+      url('/icons/transport/platform-truck-with-a-box-svgrepo-com.svg') center
+      top no-repeat;
   }
 }
 
 @media only screen and (max-width: 640px) {
   .product-pros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }
 </style>

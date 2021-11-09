@@ -1,25 +1,68 @@
 <template>
   <article class="product-pros">
-    <h2>Postaw na nasze regały</h2>
+    <h2>Postaw na nasze regały:</h2>
     <section class="product-pros__items">
-      <div class="product-pros__item product-pros__quality">
-        <span><strong>Najwyższa jakość</strong> wykonania.</span>
+      <div class="product-pros__item">
+        <IconBase
+          viewBox="0 0 512 512"
+          :width="96"
+          :height="96"
+          iconColor="hsl(240, 90%, 27%)"
+        >
+          <IconQuality />
+        </IconBase>
+        <span
+          ><strong>Najwyższa jakość<br /></strong>wykonania.</span
+        >
       </div>
-      <div class="product-pros__item product-pros__norm">
-        <span>Spełniamy normy <strong>PN-78 M-78320.</strong></span>
+      <div class="product-pros__item">
+        <IconBase
+          viewBox="0 0 64 64"
+          :width="96"
+          :height="96"
+          iconColor="hsl(240, 90%, 27%)"
+        >
+          <IconNorm />
+        </IconBase>
+        <span>Spełniamy normę<br /><strong>PN-78 M-78320.</strong></span>
       </div>
-      <div class="product-pros__item product-pros__strong">
+      <div class="product-pros__item">
+        <IconBase
+          viewBox="0 0 469.567 469.567"
+          :width="96"
+          :height="96"
+          iconColor="hsl(240, 90%, 27%)"
+        >
+          <IconStrong />
+        </IconBase>
         <span>
           <strong>Sprawdzone produkty</strong> - próby wytrzymałościowe
           potwierdzają deklarowane obciążenie.
         </span>
       </div>
-      <div class="product-pros__item product-pros__montage">
+      <div class="product-pros__item">
+        <IconBase
+          viewBox="0 0 50 50"
+          :width="96"
+          :height="96"
+          iconColor="hsl(240, 90%, 27%)"
+        >
+          <IconGear />
+        </IconBase>
         <span
-          >Proste w <strong>montażu</strong> i <strong>demontażu.</strong></span
+          >Proste w<br /><strong>montażu</strong> i
+          <strong>demontażu.</strong></span
         >
       </div>
-      <div class="product-pros__item product-pros__transport">
+      <div class="product-pros__item">
+        <IconBase
+          viewBox="0 0 512.853 512.853"
+          :width="96"
+          :height="96"
+          iconColor="hsl(240, 90%, 27%)"
+        >
+          <IconTruck />
+        </IconBase>
         <span>Łatwy i bezproblemowy <strong>transport.</strong></span>
       </div>
     </section>
@@ -27,7 +70,23 @@
 </template>
 
 <script>
-export default {}
+import IconBase from '@/components/base/IconBase.vue'
+import IconQuality from '@/components/icons/IconQuality.vue'
+import IconNorm from '@/components/icons/IconNorm.vue'
+import IconStrong from '@/components/icons/IconStrong.vue'
+import IconGear from '@/components/icons/IconGear.vue'
+import IconTruck from '@/components/icons/IconTruck.vue'
+
+export default {
+  components: {
+    IconBase,
+    IconQuality,
+    IconNorm,
+    IconStrong,
+    IconGear,
+    IconTruck
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -37,6 +96,7 @@ export default {}
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 4rem 0;
 
   & > h2 {
     color: $color-primary;
@@ -45,39 +105,25 @@ export default {}
 
   &__items {
     display: grid;
-    grid-template-rows: repeat(5, 10rem);
+    grid-template-rows: repeat(5, 1fr);
     row-gap: 1rem;
   }
 
-  &__quality {
-    background: orangered url('/icons/quality/quality-medal-svgrepo-com.svg')
-      center top no-repeat;
-  }
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 0.4rem;
+    justify-items: center;
+    padding: 3rem 1rem 1rem 1rem;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid $color-border;
 
-  &__norm {
-    background: orangered url('/icons/norm/documents-svgrepo-com.svg') center
-      top no-repeat;
-  }
-
-  &__strong {
-    background: orangered url('/icons/strong/strength-svgrepo-com.svg') center
-      top no-repeat;
-  }
-
-  &__montage {
-    background: orangered url('/icons/montage/gear-svgrepo-com (1).svg') center
-      top no-repeat;
-  }
-
-  &__transport {
-    background: orangered
-      url('/icons/transport/platform-truck-with-a-box-svgrepo-com.svg') center
-      top no-repeat;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .product-pros {
+    & > span {
+      color: $color-black;
+    }
   }
 }
 </style>

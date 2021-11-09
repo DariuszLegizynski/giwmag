@@ -46,13 +46,17 @@ export default {}
 
   & > h1 {
     margin-bottom: 4rem;
+    padding: 0.4rem;
     color: $color-primary;
+    text-align: center;
   }
 
   &__companies {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: center;
+    justify-items: center;
+    row-gap: 4rem;
   }
 
   &__logo {

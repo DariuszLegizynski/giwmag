@@ -113,9 +113,9 @@ export default {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    row-gap: 0.4rem;
+    row-gap: 1rem;
     justify-items: center;
-    padding: 3rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     margin: 1rem;
     text-align: center;
     border-radius: 2px;

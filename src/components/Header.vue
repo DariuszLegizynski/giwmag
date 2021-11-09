@@ -1,55 +1,79 @@
 <template>
-	<header class="header">
-		<section>
-			<img
-				class="logo"
-				src="/images/logo/logo_wi-mag.png"
-				alt="awesome logo of the more awesome company Wi-MAG"
-			/>
-		</section>
-		<section class="header__buttons">
-			<button class="btn">OFERTA</button>
-			<button class="btn">O FIRMIE</button>
-			<button class="btn btn--contact">KONTAKT</button>
-		</section>
-	</header>
+  <header class="header">
+    <h1 class="logo">Wi-<span>-Mag</span></h1>
+    <nav class="header__buttons" :class="{ active: isBurgerActive }">
+      <button class="btn">OFERTA</button>
+      <button class="btn">O FIRMIE</button>
+      <button class="btn btn--highlight">KONTAKT</button>
+    </nav>
+    <Burger @click.prevent="toggle" :isBurgerActive="isBurgerActive" />
+  </header>
 </template>
 
 <script>
-export default {}
+import Burger from '@/components/Burger.vue'
+export default {
+  data() {
+    return {
+      isBurgerActive: false
+    }
+  },
+  components: {
+    Burger
+  },
+  methods: {
+    toggle() {
+      this.isBurgerActive = !this.isBurgerActive
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/scss/_variables.scss';
+@import '@/styles/scss/_general.scss';
 .header {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	position: sticky;
-	top: 0;
-	background-color: $color-white;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: auto;
+  background-color: transparent;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 
-	&__buttons {
-		width: 100%;
-		display: flex;
-		justify-content: space-evenly;
-	}
+  &__buttons {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 2rem;
+  }
 }
 .logo {
-	width: 14rem;
+  & > span {
+    color: $color-primary;
+  }
 }
 .btn {
-	background-color: $color-white;
-	color: $color-primary;
-	width: 100%;
-	font-size: 1.5rem;
+  background-color: transparent;
+  color: $color-white;
+  font-size: $font-size-12;
+}
+.active {
+  display: flex;
+  flex-direction: column;
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+}
 
-	&:hover {
-		background-color: $color-primary;
-		color: $color-white;
-	}
-
-	&--contact {
-		background-color: $color-reserve-5;
-	}
+@media only screen and (max-width: 640px) {
+  nav {
+    display: none;
+    visibility: hidden;
+  }
 }
 </style>

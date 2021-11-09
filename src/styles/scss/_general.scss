@@ -1,46 +1,59 @@
 @import './_variables.scss';
 @import './_components.scss';
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+  color: $color-white;
+}
+h1 {
+  font-size: $font-size-34;
+  line-height: $line-height-48;
+}
+h2 {
+  font-size: $font-size-24;
+  line-height: $line-height-24;
+}
+h3,
+h5 {
+  font-size: $font-size-20;
+  line-height: $line-height-24;
+}
+
+p {
+  font-size: $font-size-16;
+  line-height: 1.5;
+}
+
 html {
-	box-sizing: border-box;
-	scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-img {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-}
-
-button {
-	cursor: pointer;
-	background: transparent;
-	border: none;
-}
-
-// p {
-// 	font-size: $font-size-48;
-// }
 
 * {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Old versions of Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none; /* Non-prefixed version, currently
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
 									supported by Chrome, Edge, Opera and Firefox */
 }
 
 *,
 *::before,
 *::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 *::selection {
-	background: $color-secondary;
+  background: $color-secondary;
 }

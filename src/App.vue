@@ -1,31 +1,31 @@
 <template>
-	<Header />
-	<Hero />
-	<ProductPros />
-	<References />
-	<ProductsPresented />
-	<Footer />
+  <Header />
+  <Hero />
+  <ProductsPresented />
+  <ProductPros />
+  <References />
+
+  <Footer />
 </template>
 
 <script>
 import Header from '@/components/Header.vue'
 import Hero from '@/components/Hero.vue'
+import ProductsPresented from '@/components/ProductsPresented.vue'
 import ProductPros from '@/components/ProductPros.vue'
 import References from '@/components/References.vue'
-import ProductsPresented from '@/components/ProductsPresented.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
-	name: 'App',
-	components: {
-		Header,
-		Hero,
-
-		ProductPros,
-		References,
-		ProductsPresented,
-		Footer,
-	},
+  name: 'App',
+  components: {
+    Header,
+    Hero,
+    ProductsPresented,
+    ProductPros,
+    References,
+    Footer
+  }
 }
 </script>
 

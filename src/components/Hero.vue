@@ -1,42 +1,38 @@
 <template>
-	<article class="hero">
-		<section class="hero__left">
-			<!-- <img
-				class="img"
-				src="/images/chuttersnap-BNBA1h-NgdY-unsplash.jpeg"
-				alt="one of our awesome products"
-			/> -->
-			<div class="hero__call-to-action">
-				<CallToAction />
-			</div>
-		</section>
-		<section class="hero__right">
-			<div class="img--up">
-				<!-- <img
-				class="img--shelf"
-				src="/images/polkowy-srubowy-wiorowy/swi_wior2.jpeg"
-				alt="regal polkowy"
-			/> -->
-				<p>Regały<br />półkowe</p>
-			</div>
-			<div class="img--down">
-				<p>Regały<br />wysokiego<br />składowania</p>
-			</div>
-
-			<!-- <img
-				src="/images/jake-nebov-gVlNW-xrAZM-unsplash.jpeg"
-				alt="regal wysokiego skladowania"
-			/> -->
-		</section>
-	</article>
+  <article class="hero">
+    <!-- <section class="hero__video">
+      <video autoPlay muted loop>
+        <source
+          src="/videos/webm/production-ID_4294436.webm"
+          type="video/webm"
+        />
+        Your browser is not supported
+      </video>
+    </section> -->
+    <section class="hero__img" />
+    <section class="hero__text">
+      <h1>Fachowcy od regałów.</h1>
+      <h2>
+        Wykonujemy pełen zakres usług, wraz z dostarczeniem naszych produktów
+        pod same drzwi.
+      </h2>
+      <p>
+        Wykorzystujemy przestrzeń do maksimum, zwiększając wydajność magazynu,
+        optymalizujemy koszta, zapewniając najwyszą jakość.
+      </p>
+    </section>
+    <section class="hero__call-to-action">
+      <CallToAction />
+    </section>
+  </article>
 </template>
 
 <script>
-import CallToAction from '@/components/tools/CallToAction.vue'
+import CallToAction from '@/components/CallToAction.vue'
 export default {
-	components: {
-		CallToAction,
-	},
+  components: {
+    CallToAction
+  }
 }
 </script>
 
@@ -44,71 +40,70 @@ export default {
 @import '@/styles/scss/_general.scss';
 
 .hero {
-	display: grid;
-	grid-template-columns: 3fr 2fr;
+  height: 100vh;
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: $color-primary-light;
+    overflow: hidden;
 
-	&__left {
-		background-image: linear-gradient(
-				to right bottom,
-				hsla(240, 90%, 27%, 0.2),
-				hsla(240, 90%, 27%, 0.7)
-			),
-			url('/images/chuttersnap-BNBA1h-NgdY-unsplash.jpeg');
-		background-size: cover;
-		height: 30rem;
-	}
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      background: $gradient-secondary;
+    }
 
-	&__right {
-		text-align: center;
-		display: grid;
-		grid-template-rows: 1fr 1fr;
-	}
+    & > video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
 
-	&__call-to-action {
-		display: flex;
-		justify-content: space-evenly;
-		align-items: flex-end;
-		height: 100%;
-		padding-bottom: 6rem;
-	}
+  &__img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+        to right bottom,
+        hsla(240, 18%, 3%, 0.8),
+        hsla(240, 18%, 3%, 0.7)
+      ),
+      url('/images/ruchindra-gunasekara-GK8x_XCcDZg-unsplash.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__text {
+    padding: 0.8rem 1.6rem 1.6rem 1.6rem;
+    text-align: left;
+
+    & > h1,
+    & > h2 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
 }
-img {
-	max-height: 15rem;
-}
-.img--shelf {
-	object-fit: contain;
-}
-.img--up {
-	margin: 0 0 0.5rem 1rem;
-	background-image: linear-gradient(
-			to right bottom,
-			hsla(240, 90%, 27%, 0.4),
-			hsla(240, 90%, 27%, 0.8)
-		),
-		url('/images/third-serving-ifZ5K80s6yU-unsplash.jpeg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	max-height: 30rem;
-}
-.img--down {
-	margin: 0.5rem 0 0 1rem;
-	background-image: linear-gradient(
-			to left top,
-			hsla(240, 90%, 27%, 0.4),
-			hsla(240, 90%, 27%, 0.8)
-		),
-		url('/images/wysokiego-skladowania/palet20.jpeg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	max-height: 30rem;
-}
-p {
-	height: 100%;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	color: $color-white;
-	font-size: 2.4rem;
-	line-height: 2.8rem;
+
+@media only screen and (min-width: 360px) {
 }
 </style>

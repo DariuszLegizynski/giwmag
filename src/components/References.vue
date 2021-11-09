@@ -39,7 +39,7 @@ export default {}
 @import '@/styles/scss/_general.scss';
 
 .references {
-  margin: 10rem 0;
+  margin: 4rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,8 +51,8 @@ export default {}
 
   &__companies {
     display: flex;
-    width: 100%;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__logo {
@@ -64,12 +64,19 @@ export default {}
   width: 4rem;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 640px) {
   .references {
     &__companies {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       align-items: center;
+      justify-items: center;
+      column-gap: 4rem;
+      row-gap: 4rem;
+    }
+
+    &__logo:last-child {
+      grid-column-start: span 2;
     }
   }
 }

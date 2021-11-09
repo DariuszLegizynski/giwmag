@@ -44,6 +44,7 @@ export default {}
 @import '@/styles/scss/_general.scss';
 
 .products-presented {
+  margin: 4rem 0;
   & > h1 {
     margin-bottom: 2rem;
     color: $color-primary;

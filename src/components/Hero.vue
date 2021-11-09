@@ -41,6 +41,7 @@ export default {
 
 .hero {
   height: 100vh;
+
   &__video {
     position: absolute;
     top: 0;
@@ -100,7 +101,6 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
   }
 }
 

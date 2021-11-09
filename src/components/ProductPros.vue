@@ -96,7 +96,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 4rem;
+  margin: 4rem 0;
 
   & > h2 {
     color: $color-primary;
@@ -119,8 +119,7 @@ export default {
     margin: 1rem;
     text-align: center;
     border-radius: 2px;
-    border: 1px solid rgba(9, 9, 9, 0.1);
-    height: 100%;
+    border: 1px solid $color-border;
 
     & > span {
       color: $color-black;

@@ -10,7 +10,7 @@
             usztywniające regał, plastikowe ochronne stopki.
           </p>
         </div>
-        <button class="btn btn--reverse">Regały śrubowe</button>
+        <button class="btn btn--reverse">Zobacz</button>
       </div>
       <div class="products-presented__item rack rack--attach">
         <div class="products-presented__bg">
@@ -21,7 +21,7 @@
             usztywniających.
           </p>
         </div>
-        <button class="btn btn--reverse">Regały zaczepowe</button>
+        <button class="btn btn--reverse">Zobacz</button>
       </div>
       <div class="products-presented__item rack rack--high">
         <div class="products-presented__bg">
@@ -29,7 +29,7 @@
           <p>Regały paletowe, zaczepy belkowe, ogromny wybór</p>
         </div>
         <button class="btn btn--reverse">
-          Regały wys skład
+          Zobacz
         </button>
       </div>
     </section>
@@ -89,7 +89,7 @@ export default {}
 
   &--high {
     background-image: $gradient-main,
-      url('/images/ruchindra-gunasekara-GK8x_XCcDZg-unsplash.jpeg');
+      url('/images/pexels-tiger-lily-4483610.jpeg');
   }
 }
 

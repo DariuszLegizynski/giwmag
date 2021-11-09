@@ -113,13 +113,15 @@ export default {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    row-gap: 0.4rem;
+    row-gap: 1rem;
     justify-items: center;
-    padding: 3rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     margin: 1rem;
     text-align: center;
     border-radius: 2px;
     border: 1px solid $color-border;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.7);
 
     & > span {
       color: $color-black;

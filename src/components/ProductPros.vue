@@ -38,12 +38,6 @@ export default {}
   flex-direction: column;
   align-items: center;
 
-  //   &__text {
-  //     display: grid;
-  //     grid-template-columns: 1fr;
-  //     align-content: center;
-  //   }
-
   & > h2 {
     color: $color-primary;
     margin-bottom: 1.2rem;

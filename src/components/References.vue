@@ -39,20 +39,24 @@ export default {}
 @import '@/styles/scss/_general.scss';
 
 .references {
-  margin: 10rem 0;
+  margin: 4rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   & > h1 {
     margin-bottom: 4rem;
+    padding: 0.4rem;
     color: $color-primary;
+    text-align: center;
   }
 
   &__companies {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    row-gap: 4rem;
   }
 
   &__logo {
@@ -64,12 +68,19 @@ export default {}
   width: 4rem;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 640px) {
   .references {
     &__companies {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       align-items: center;
+      justify-items: center;
+      column-gap: 4rem;
+      row-gap: 4rem;
+    }
+
+    &__logo:last-child {
+      grid-column-start: span 2;
     }
   }
 }

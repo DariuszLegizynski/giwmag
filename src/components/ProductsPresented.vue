@@ -2,33 +2,38 @@
   <article class="products-presented">
     <h1>Nasze Produkty:</h1>
     <section class="products-presented__items">
-      <div class="products-presented__item rack rack--screw">
-        <div class="products-presented__bg">
-          <h5>Regały półkowe - śrubowe</h5>
-          <p>
-            Słupy nośne oraz półki regału, śruby do skręcenia regału, elementy
-            usztywniające regał, plastikowe ochronne stopki.
-          </p>
-        </div>
+      <div class="products-presented__item">
+        <img src="/images/pexels-tiger-lily-4483610.jpeg" alt="some racks" />
+        <h5 class="products-presented__title">Regały półkowe<br />śrubowe</h5>
+        <p class="products-presented__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+          ipsa voluptate facere dicta quia, eum dolor laboriosam autem, alias
+          deleniti quaerat pariatur.
+        </p>
+        <button class="btn btn--highlight">Zobacz</button>
+      </div>
+      <div class="products-presented__item">
+        <img
+          src="/images/third-serving-ifZ5K80s6yU-unsplash.jpeg"
+          alt="some racks"
+        />
+        <h5 class="products-presented__title">Regały półkowe<br />zaczepowe</h5>
+        <p class="products-presented__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+          ipsa voluptate facere dicta quia, eum dolor laboriosam autem, alias
+          deleniti quaerat pariatur.
+        </p>
         <button class="btn btn--reverse">Zobacz</button>
       </div>
-      <div class="products-presented__item rack rack--attach">
-        <div class="products-presented__bg">
-          <h5>Regały półkowe - zaczepowe</h5>
-          <p>
-            Stelaż i wypełnienie, plastikowe stopki pod słupy nośne chroniące
-            podłoże, system wtykowy zapewnia stabilność regału bez elementów
-            usztywniających.
-          </p>
-        </div>
-        <button class="btn btn--reverse">Zobacz</button>
-      </div>
-      <div class="products-presented__item rack rack--high">
-        <div class="products-presented__bg">
-          <h5>Regały wysokiego składowania</h5>
-          <p>Regały paletowe, zaczepy belkowe, ogromny wybór</p>
-        </div>
-        <button class="btn btn--reverse">
+      <div class="products-presented__item">
+        <img src="/images/wysokiego-skladowania/palet4.jpeg" alt="some racks" />
+        <h5 class="products-presented__title">Regały wysokiego składowania</h5>
+        <p class="products-presented__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+          ipsa voluptate facere dicta quia, eum dolor laboriosam autem, alias
+          deleniti quaerat pariatur.
+        </p>
+        <button class="btn btn--reverse btn--test">
           Zobacz
         </button>
       </div>
@@ -44,72 +49,79 @@ export default {}
 @import '@/styles/scss/_general.scss';
 
 .products-presented {
-  margin: 2rem 0 4rem 0;
+  margin: 1.6rem 0 4rem 0;
+  padding: 0 1rem;
+
   & > h1 {
-    margin-bottom: 2rem;
     color: $color-primary;
   }
 
   &__items {
-    display: flex;
-    justify-content: space-evenly;
+    margin: 1.6rem 0 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 7rem;
   }
 
   &__item {
     display: grid;
     grid-template-columns: 1fr;
-    align-content: center;
-    padding: 1rem;
+    background-color: $color-border;
   }
 
-  &__bg {
-    background-color: $primary-opacity;
-    padding: 1rem;
-
-    & > h5 {
-      margin-bottom: 0.75rem;
-    }
-  }
-}
-
-.rack {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  &--screw {
-    background-image: $gradient-main,
-      url('/images/polkowy-srubowy-metalowy/Regal_swi_metal_1.jpeg');
+  &__title {
+    transform: translateY(-50%);
+    justify-self: center;
+    background-color: $color-primary;
+    padding: 1.2rem 0;
+    text-align: center;
+    width: 80%;
   }
 
-  &--attach {
-    background-image: $gradient-main,
-      url('/images/polkowy-zaczepowy-ciezki/startowy.jpeg');
-  }
-
-  &--high {
-    background-image: $gradient-main,
-      url('/images/pexels-tiger-lily-4483610.jpeg');
+  &__content {
+    padding: 0 1.4rem 1.6rem 1.4rem;
+    color: $color-black;
   }
 }
 
-@media only screen and (max-width: 640px) {
-  .products-presented {
-    padding: 0.8rem;
-
-    &__items {
-      display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: repeat(3, 20rem);
-      row-gap: 2rem;
-      justify-items: center;
-    }
-    &__item {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-    }
-  }
+.btn {
+  margin: 0;
+  border-radius: 0;
 }
+
+.btn--test {
+  background-color: $primary-opacity;
+}
+// &__wrapper {
+//   position: relative;
+//   background-color: $white-opacity;
+//   -webkit-backdrop-filter: blur(3px);
+//   backdrop-filter: blur(3px);
+
+//   padding: 1rem;
+// }
+
+// .rack {
+//   background-position: center center;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+
+// &--screw {
+//   // background-image: $gradient-main,
+//   //   url('/images/polkowy-srubowy-metalowy/Regal_swi_metal_1.jpeg');
+//   background-image: url('/images/pexels-tiger-lily-4483610.jpeg');
+// }
+
+// &--attach {
+//   // background-image: $gradient-main,
+//   //   url('/images/polkowy-zaczepowy-ciezki/startowy.jpeg');
+//   background-image: url('/images/third-serving-ifZ5K80s6yU-unsplash.jpeg');
+// }
+
+// &--high {
+//   // background-image: $gradient-main,
+//   //   url('/images/pexels-tiger-lily-4483610.jpeg');
+//   background-image: url('/images/wysokiego-skladowania/palet4.jpeg');
+// }
+// }
 </style>

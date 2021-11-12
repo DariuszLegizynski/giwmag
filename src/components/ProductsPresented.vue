@@ -92,36 +92,4 @@ export default {}
 .btn--test {
   background-color: $primary-opacity;
 }
-// &__wrapper {
-//   position: relative;
-//   background-color: $white-opacity;
-//   -webkit-backdrop-filter: blur(3px);
-//   backdrop-filter: blur(3px);
-
-//   padding: 1rem;
-// }
-
-// .rack {
-//   background-position: center center;
-//   background-repeat: no-repeat;
-//   background-size: contain;
-
-// &--screw {
-//   // background-image: $gradient-main,
-//   //   url('/images/polkowy-srubowy-metalowy/Regal_swi_metal_1.jpeg');
-//   background-image: url('/images/pexels-tiger-lily-4483610.jpeg');
-// }
-
-// &--attach {
-//   // background-image: $gradient-main,
-//   //   url('/images/polkowy-zaczepowy-ciezki/startowy.jpeg');
-//   background-image: url('/images/third-serving-ifZ5K80s6yU-unsplash.jpeg');
-// }
-
-// &--high {
-//   // background-image: $gradient-main,
-//   //   url('/images/pexels-tiger-lily-4483610.jpeg');
-//   background-image: url('/images/wysokiego-skladowania/palet4.jpeg');
-// }
-// }
 </style>

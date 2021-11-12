@@ -12,23 +12,23 @@
       <form class="footer__form">
         <div class="footer__form__item">
           <label>Imię</label>
-          <input />
+          <input type="text" placeholder="Jan" required />
         </div>
         <div class="footer__form__item">
           <label>Nazwisko</label>
-          <input />
+          <input type="text" placeholder="Przykład" />
         </div>
         <div class="footer__form__item">
           <label>E-mail</label>
-          <input required />
+          <input type="email" placeholder="jan.przyklad@email.com" required />
         </div>
         <div class="footer__form__item">
           <label>Telefon</label>
-          <input />
+          <input type="number" placeholder="799 123 123" />
         </div>
         <div class="footer__form__item item--message">
           <label>Wiadomość</label>
-          <textarea required />
+          <textarea placeholder="Tekst wiadomości" required />
         </div>
       </form>
       <button class="btn btn--highlight">Wyślij</button>
@@ -44,12 +44,12 @@ export default {}
 @import '@/styles/scss/_general.scss';
 
 .footer {
-  padding: 2rem 0;
+  padding-top: 2rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 12rem 1fr;
   align-items: center;
-  background-color: $color-grey-light;
+  background-color: $color-primary;
 
   &__section {
     display: grid;
@@ -67,16 +67,17 @@ export default {}
     }
 
     & > * {
-      color: $color-primary;
+      color: $color-white;
+    }
+
+    & input,
+    & textarea {
+      padding: 0.2rem;
     }
 
     & .btn {
       border-radius: 0px;
       margin: 0;
-    }
-
-    & > * {
-      color: $color-primary;
     }
   }
 
@@ -89,6 +90,12 @@ export default {}
       align-items: center;
       justify-items: stretch;
       column-gap: 1rem;
+      margin-bottom: 0.4rem;
+
+      & > label {
+        font-size: $font-size-16;
+        line-height: $line-height-20;
+      }
     }
   }
 }
@@ -104,12 +111,4 @@ export default {}
     height: 4rem;
   }
 }
-
-// @media only screen and (min-width: 640px) {
-//   .footer {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//   }
-// }
 </style>

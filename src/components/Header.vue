@@ -46,7 +46,7 @@ export default {
   backdrop-filter: blur(3px);
 
   &__active {
-    padding: 0;
+    padding: 0.4rem 0.4rem 0rem 0;
   }
 
   &__buttons {

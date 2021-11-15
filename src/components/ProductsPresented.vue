@@ -73,7 +73,7 @@ export default {}
     transform: translateY(-50%);
     justify-self: center;
     background-color: $color-primary;
-    padding: 1.2rem 0;
+    padding: 0.8rem 0;
     text-align: center;
     width: 80%;
   }

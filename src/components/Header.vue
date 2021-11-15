@@ -1,7 +1,8 @@
 <template>
-  <header class="header">
+  <header class="header" :class="{ header__active: isBurgerActive }">
     <h1 class="logo">Wi-<span>-Mag</span></h1>
-    <nav class="header__buttons" :class="{ active: isBurgerActive }">
+    <nav class="header__buttons" :class="{ buttons__active: isBurgerActive }">
+      <div class="btn" />
       <button class="btn">OFERTA</button>
       <button class="btn">O FIRMIE</button>
       <button class="btn btn--highlight">KONTAKT</button>
@@ -44,6 +45,10 @@ export default {
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 
+  &__active {
+    padding: 0;
+  }
+
   &__buttons {
     display: none;
     flex-direction: column;
@@ -60,14 +65,15 @@ export default {
 .btn {
   background-color: transparent;
   color: $color-white;
-  font-size: $font-size-12;
+  margin: 0.6rem 0;
 }
-.active {
-  display: flex;
-  flex-direction: column;
+.buttons__active {
+  display: block;
   visibility: visible;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: $gradient-circular;
 }
 
 @media only screen and (max-width: 640px) {

@@ -1,14 +1,5 @@
 <template>
   <article class="hero">
-    <!-- <section class="hero__video">
-      <video autoPlay muted loop>
-        <source
-          src="/videos/webm/production-ID_4294436.webm"
-          type="video/webm"
-        />
-        Your browser is not supported
-      </video>
-    </section> -->
     <section class="hero__img" />
     <section class="hero__text">
       <h1>Fachowcy od regałów.</h1>
@@ -42,34 +33,6 @@ export default {
 .hero {
   height: 100vh;
 
-  &__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background: $color-primary-light;
-    overflow: hidden;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      z-index: 1;
-      background: $gradient-secondary;
-    }
-
-    & > video {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
-  }
-
   &__img {
     position: absolute;
     z-index: -1;
@@ -88,7 +51,7 @@ export default {
   }
 
   &__text {
-    padding: 0.8rem 1.6rem 1.6rem 1.6rem;
+    padding: 0.8rem 1.6rem 1.2rem 1.6rem;
     text-align: left;
 
     & > h1,

@@ -2,9 +2,8 @@
   <article class="products-presented">
     <h1>Nasze Produkty:</h1>
     <section class="products-presented__items">
-      <div class="products-presented__item">
-        <img src="/images/pexels-tiger-lily-4483610.jpeg" alt="some racks" />
-        <h5 class="products-presented__title">Regały półkowe<br />śrubowe</h5>
+      <div class="products-presented__item rack rack--screw">
+        <h2 class="products-presented__title">Regały półkowe<br />śrubowe</h2>
         <p class="products-presented__content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
           ipsa voluptate facere dicta quia, eum dolor laboriosam autem, alias
@@ -12,30 +11,23 @@
         </p>
         <button class="btn btn--highlight">Zobacz</button>
       </div>
-      <div class="products-presented__item">
-        <img
-          src="/images/third-serving-ifZ5K80s6yU-unsplash.jpeg"
-          alt="some racks"
-        />
-        <h5 class="products-presented__title">Regały półkowe<br />zaczepowe</h5>
+      <div class="products-presented__item rack rack--attach">
+        <h2 class="products-presented__title">Regały półkowe<br />zaczepowe</h2>
         <p class="products-presented__content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
           ipsa voluptate facere dicta quia, eum dolor laboriosam autem, alias
           deleniti quaerat pariatur.
         </p>
-        <button class="btn btn--reverse">Zobacz</button>
+        <button class="btn btn--highlight">Zobacz</button>
       </div>
-      <div class="products-presented__item">
-        <img src="/images/wysokiego-skladowania/palet4.jpeg" alt="some racks" />
-        <h5 class="products-presented__title">Regały wysokiego składowania</h5>
+      <div class="products-presented__item rack rack--high">
+        <h2 class="products-presented__title">Regały wysokiego składowania</h2>
         <p class="products-presented__content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
           ipsa voluptate facere dicta quia, eum dolor laboriosam autem, alias
           deleniti quaerat pariatur.
         </p>
-        <button class="btn btn--reverse btn--test">
-          Zobacz
-        </button>
+        <button class="btn btn--highlight">Zobacz</button>
       </div>
     </section>
   </article>
@@ -60,33 +52,55 @@ export default {}
     margin: 1.6rem 0 2rem 0;
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 7rem;
+    row-gap: 4rem;
   }
 
   &__item {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: $color-border;
+    // -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.7);
+    // box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.7);
   }
 
   &__title {
-    transform: translateY(-50%);
     justify-self: center;
-    background-color: $color-primary;
-    padding: 0.8rem 0;
     text-align: center;
-    width: 80%;
   }
 
   &__content {
-    padding: 0 1.4rem 1.6rem 1.4rem;
-    color: $color-black;
+    padding: 0 1.4rem;
+    font-size: $font-size-20;
+    font-weight: 500;
   }
 }
 
+.rack {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+
+  &--screw {
+    background-image: $gradient-main,
+      url('/images/jake-nebov-NmwnjkukM80-unsplash.jpeg');
+  }
+
+  &--attach {
+    background-image: $gradient-main,
+      url('/images/jake-nebov-NmwnjkukM80-unsplash.jpeg');
+  }
+
+  &--high {
+    background-image: $gradient-main,
+      url('/images/jake-nebov-NmwnjkukM80-unsplash.jpeg');
+  }
+}
 .btn {
   margin: 0;
-  border-radius: 0;
+  width: 8rem;
 }
 
 .btn--test {

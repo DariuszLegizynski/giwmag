@@ -3,10 +3,10 @@
     <section class="hero__img" />
     <section class="hero__text">
       <h1>Fachowcy od regałów.</h1>
-      <h2>
+      <h3>
         Wykonujemy pełen zakres usług, wraz z dostarczeniem naszych produktów
         pod same drzwi.
-      </h2>
+      </h3>
       <p>
         Wykorzystujemy przestrzeń do maksimum, zwiększając wydajność magazynu,
         optymalizujemy koszta, zapewniając najwyszą jakość.
@@ -31,7 +31,7 @@ export default {
 @import '@/styles/scss/_general.scss';
 
 .hero {
-  height: 100vh;
+  height: 100%;
 
   &__img {
     position: absolute;
@@ -55,7 +55,7 @@ export default {
     text-align: left;
 
     & > h1,
-    & > h2 {
+    & > h3 {
       margin-bottom: 1rem;
     }
   }

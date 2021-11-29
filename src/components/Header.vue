@@ -73,7 +73,7 @@ export default {
   visibility: visible;
   top: 0;
   right: 0;
-  width: 70vw;
+  width: 80vw;
   height: 100vh;
   -webkit-backdrop-filter: blur(9px);
   backdrop-filter: blur(9px);

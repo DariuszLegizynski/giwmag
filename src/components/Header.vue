@@ -2,7 +2,7 @@
   <header class="header" :class="{ header__active: isBurgerActive }">
     <h1 class="logo">Wi-<span>-Mag</span></h1>
     <nav class="header__buttons" :class="{ buttons__active: isBurgerActive }">
-      <div class="btn" />
+      <div class="btn sr-only">MENU</div>
       <button class="btn">OFERTA</button>
       <button class="btn">O FIRMIE</button>
       <button class="btn btn--highlight">KONTAKT</button>
@@ -46,7 +46,8 @@ export default {
   backdrop-filter: blur(3px);
 
   &__active {
-    padding: 0.4rem 0.4rem 0rem 0;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
   }
 
   &__buttons {
@@ -71,9 +72,11 @@ export default {
   display: block;
   visibility: visible;
   top: 0;
-  width: 100vw;
+  right: 0;
+  width: 70vw;
   height: 100vh;
-  background: $gradient-circular;
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
 }
 
 @media only screen and (max-width: 640px) {

@@ -51,7 +51,7 @@ export default {
   }
 
   &__text {
-    padding: 0.8rem 1.6rem 1.2rem 1.6rem;
+    padding: 0.8rem 1.6rem;
     text-align: left;
 
     & > h1,

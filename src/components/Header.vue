@@ -3,24 +3,46 @@
     <h1 class="logo">Wi-<span>-Mag</span></h1>
     <nav class="header__buttons" :class="{ buttons__active: isBurgerActive }">
       <div class="btn sr-only">MENU</div>
-      <button class="btn">OFERTA</button>
+      <button class="btn" @click.stop="this.observe">OFERTA</button>
       <button class="btn">O FIRMIE</button>
       <button class="btn btn--highlight">KONTAKT</button>
     </nav>
-    <Burger @click.prevent="toggle" :isBurgerActive="isBurgerActive" />
+    <Burger
+      @click.prevent="toggle"
+      :isBurgerActive="isBurgerActive"
+      :isContrastActive="isContrastActive"
+    />
   </header>
 </template>
 
 <script>
 import Burger from '@/components/Burger.vue'
+
 export default {
   data() {
     return {
-      isBurgerActive: false
+      isBurgerActive: false,
+      isContrastActive: true,
+      observer: null
     }
   },
   components: {
     Burger
+  },
+  mounted() {
+    this.observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) {
+          console.log('intersect')
+          this.isContrastActive = true
+        } else {
+          this.isContrastActive = false
+        }
+      },
+      { rootMargin: '-5% 0px 0px 0px' }
+    )
+
+    this.observer.observe(document.querySelector('.observer'))
   },
   methods: {
     toggle() {
@@ -68,6 +90,10 @@ export default {
   color: $color-white;
   margin: 0.6rem 0;
 }
+
+.btn.secondary {
+  color: $color-primary;
+}
 .buttons__active {
   display: block;
   visibility: visible;
@@ -77,6 +103,10 @@ export default {
   height: 100vh;
   -webkit-backdrop-filter: blur(9px);
   backdrop-filter: blur(9px);
+  // background-color: rgba(253, 253, 253, 0.4);
+}
+.header__buttons.secondary {
+  background-color: rgba(7, 7, 131, 0.7);
 }
 
 @media only screen and (max-width: 640px) {

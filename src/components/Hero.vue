@@ -1,5 +1,5 @@
 <template>
-  <article class="hero">
+  <article class="hero observer">
     <section class="hero__img" />
     <section class="hero__text">
       <h1>Fachowcy od regałów.</h1>
@@ -31,7 +31,7 @@ export default {
 @import '@/styles/scss/_general.scss';
 
 .hero {
-  height: 100vh;
+  height: auto;
 
   &__img {
     position: absolute;

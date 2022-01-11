@@ -1,5 +1,5 @@
 <template>
-  <article class="footer">
+  <article class="footer observer">
     <section class="footer__section">
       <h1>Skontaktuj się z nami:</h1>
       <h3>Wi-Mag</h3>

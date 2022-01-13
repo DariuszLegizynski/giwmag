@@ -4,7 +4,6 @@
   <ProductsPresented />
   <ProductPros />
   <References />
-
   <Footer />
 </template>
 

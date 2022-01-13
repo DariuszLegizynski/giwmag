@@ -49,7 +49,7 @@ export default {}
 @import '@/styles/scss/_general.scss';
 
 .products-presented {
-  margin: 1.6rem 0 4rem 0;
+  margin: 3.2rem 0 4rem 0;
   padding: 0 1rem;
 
   & > h1 {

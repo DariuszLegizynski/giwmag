@@ -1,5 +1,5 @@
 <template>
-  <div class="burger">
+  <div class="burger fade-in-bg">
     <div
       class="burger__stick"
       :class="[{ active: isBurgerActive }, { contrast: isContrastActive }]"

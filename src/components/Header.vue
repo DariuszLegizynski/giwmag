@@ -1,6 +1,6 @@
 <template>
   <header
-    class="header"
+    class="header fade-in-bg"
     :class="{
       header__active: isBurgerActive,
       header__scroll: isContrastActive
@@ -8,10 +8,11 @@
   >
     <h1 class="logo">Wi-<span>-Mag</span></h1>
     <nav
-      class="header__buttons"
+      class="header__sideBar"
       :class="{
-        buttons__active: isBurgerActive,
-        sideBar__scroll: isContrastActive
+        sideBar__scroll: isContrastActive,
+        slideIn: isBurgerActive,
+        slideOut: !isBurgerActive
       }"
     >
       <div class="btn sr-only">MENU</div>
@@ -89,18 +90,15 @@ export default {
     box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
   }
 
-  &__buttons {
-    display: none;
+  &__sideBar {
     flex-direction: column;
     align-items: center;
     position: fixed;
     top: 2rem;
-  }
-}
-.sideBar {
-  &__scroll {
-    background-color: $color-primary;
-    color: $color-white;
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
   }
 }
 .logo {
@@ -117,24 +115,15 @@ export default {
 .btn.secondary {
   color: $color-primary;
 }
-.buttons__active {
-  display: block;
-  visibility: visible;
-  top: 0;
-  right: 0;
-  width: 80vw;
-  height: 100vh;
-  -webkit-backdrop-filter: blur(9px);
-  backdrop-filter: blur(9px);
-}
-.header__buttons.secondary {
+.header__sideBar.secondary {
   background-color: rgba(7, 7, 131, 0.7);
 }
 
-@media only screen and (max-width: 640px) {
-  nav {
-    display: none;
-    visibility: hidden;
-  }
-}
+// @media only screen and (max-width: 640px) {
+//   nav {
+// transform: translateX(100%);
+// -webkit-transform: translateX(100%);
+//     transition: transform 0.5s ease-in-out;
+//   }
+// }
 </style>

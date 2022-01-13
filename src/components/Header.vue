@@ -1,7 +1,19 @@
 <template>
-  <header class="header" :class="{ header__active: isBurgerActive }">
+  <header
+    class="header"
+    :class="{
+      header__active: isBurgerActive,
+      header__scroll: isContrastActive
+    }"
+  >
     <h1 class="logo">Wi-<span>-Mag</span></h1>
-    <nav class="header__buttons" :class="{ buttons__active: isBurgerActive }">
+    <nav
+      class="header__buttons"
+      :class="{
+        buttons__active: isBurgerActive,
+        sideBar__scroll: isContrastActive
+      }"
+    >
       <div class="btn sr-only">MENU</div>
       <button class="btn" @click.stop="this.observe">OFERTA</button>
       <button class="btn">O FIRMIE</button>
@@ -39,7 +51,7 @@ export default {
           this.isContrastActive = false
         }
       },
-      { rootMargin: '-5% 0px 0px 0px' }
+      { rootMargin: '-10% 0px 0px 0px' }
     )
 
     this.observer.observe(document.querySelector('.observer'))
@@ -72,12 +84,23 @@ export default {
     backdrop-filter: none;
   }
 
+  &__scroll {
+    background-color: $color-white;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+  }
+
   &__buttons {
     display: none;
     flex-direction: column;
     align-items: center;
     position: fixed;
     top: 2rem;
+  }
+}
+.sideBar {
+  &__scroll {
+    background-color: $color-primary;
+    color: $color-white;
   }
 }
 .logo {
@@ -103,7 +126,6 @@ export default {
   height: 100vh;
   -webkit-backdrop-filter: blur(9px);
   backdrop-filter: blur(9px);
-  // background-color: rgba(253, 253, 253, 0.4);
 }
 .header__buttons.secondary {
   background-color: rgba(7, 7, 131, 0.7);

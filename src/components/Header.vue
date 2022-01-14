@@ -2,30 +2,31 @@
   <header
     class="header fade-in-bg"
     :class="{
-      header__active: isBurgerActive,
-      header__scroll: isContrastActive
+      header__scroll: isContrastActive,
+      header__active: isBurgerActive
     }"
   >
     <h1 class="logo">Wi-<span>-Mag</span></h1>
-    <nav
-      class="header__sideBar"
-      :class="{
-        sideBar__scroll: isContrastActive,
-        slideIn: isBurgerActive,
-        slideOut: !isBurgerActive
-      }"
-    >
-      <div class="btn sr-only">MENU</div>
-      <button class="btn" @click.stop="this.observe">OFERTA</button>
-      <button class="btn">O FIRMIE</button>
-      <button class="btn btn--highlight">KONTAKT</button>
-    </nav>
+
     <Burger
       @click.prevent="toggle"
       :isBurgerActive="isBurgerActive"
       :isContrastActive="isContrastActive"
     />
   </header>
+  <nav
+    class="sideBar fade-in-bg"
+    :class="{
+      sideBar__scroll: isContrastActive,
+      slideIn: isBurgerActive,
+      slideOut: !isBurgerActive
+    }"
+  >
+    <div class="btn sr-only">MENU</div>
+    <button class="btn" @click.stop="this.observe">OFERTA</button>
+    <button class="btn">O FIRMIE</button>
+    <button class="btn btn--highlight">KONTAKT</button>
+  </nav>
 </template>
 
 <script>
@@ -83,22 +84,13 @@ export default {
   &__active {
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
+    background-color: transparent !important;
+    box-shadow: none !important;
   }
 
   &__scroll {
-    background-color: $color-white;
+    background-color: $primary-opacity;
     box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
-  }
-
-  &__sideBar {
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    top: 2rem;
-    -webkit-backdrop-filter: blur(9px);
-    backdrop-filter: blur(9px);
-    transform: translateX(100%);
-    -webkit-transform: translateX(100%);
   }
 }
 .logo {
@@ -106,17 +98,28 @@ export default {
     color: $color-primary;
   }
 }
+
+.sideBar {
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  padding-bottom: 100%;
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  background-color: $black-opacity;
+
+  &__scroll {
+    background-color: $primary-opacity;
+  }
+}
 .btn {
   background-color: transparent;
   color: $color-white;
   margin: 0.6rem 0;
-}
-
-.btn.secondary {
-  color: $color-primary;
-}
-.header__sideBar.secondary {
-  background-color: rgba(7, 7, 131, 0.7);
 }
 
 // @media only screen and (max-width: 640px) {

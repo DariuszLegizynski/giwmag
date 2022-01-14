@@ -1,5 +1,5 @@
 <template>
-  <div class="burger">
+  <div class="burger fade-in-bg">
     <div
       class="burger__stick"
       :class="[{ active: isBurgerActive }, { contrast: isContrastActive }]"
@@ -74,14 +74,14 @@ export default {
   }
 }
 
-.contrast {
-  background-color: $color-primary;
+// .contrast {
+//   background-color: $color-primary;
 
-  &::before,
-  &::after {
-    background-color: $color-primary;
-  }
-}
+//   &::before,
+//   &::after {
+//     background-color: $color-primary;
+//   }
+// }
 
 @media only screen and (min-width: 640px) {
   .burger {

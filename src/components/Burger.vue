@@ -1,6 +1,9 @@
 <template>
-  <div class="burger">
-    <div class="burger__stick" :class="{ active: isBurgerActive }" />
+  <div class="burger fade-in-bg">
+    <div
+      class="burger__stick"
+      :class="[{ active: isBurgerActive }, { contrast: isContrastActive }]"
+    />
   </div>
 </template>
 
@@ -8,6 +11,10 @@
 export default {
   props: {
     isBurgerActive: {
+      type: Boolean,
+      required: true
+    },
+    isContrastActive: {
       type: Boolean,
       required: true
     }
@@ -56,8 +63,7 @@ export default {
 }
 
 .active {
-  // transform: translateX(0px);
-  background: transparent;
+  background-color: transparent !important;
 
   &::before {
     transform: rotate(45deg);
@@ -67,6 +73,15 @@ export default {
     transform: rotate(-45deg);
   }
 }
+
+// .contrast {
+//   background-color: $color-primary;
+
+//   &::before,
+//   &::after {
+//     background-color: $color-primary;
+//   }
+// }
 
 @media only screen and (min-width: 640px) {
   .burger {

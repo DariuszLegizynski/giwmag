@@ -105,7 +105,7 @@ export default {
   position: fixed;
   z-index: 9;
   top: 0;
-  padding-bottom: 100%;
+  padding: 2rem 0 100% 0;
   -webkit-backdrop-filter: blur(9px);
   backdrop-filter: blur(9px);
   transform: translateX(100%);

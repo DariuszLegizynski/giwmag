@@ -4,18 +4,17 @@
     <section class="products-presented__items">
       <div class="products-presented__container">
         <div class="products-presented__wrapper">
-          <div class="products-presented__item">
-            <ScrollParallax
-              class="products-presented__img"
-              direction="y"
-              :speed="-0.1"
-            >
-              <img
-                src="/images/pexels-tiger-lily-4483610.jpeg"
-                alt="classical shelves"
-              />
-            </ScrollParallax>
-            <!-- <h5 class="products-presented__title">
+          <ScrollParallax
+            class="products-presented__img"
+            direction="y"
+            :speed="-0.1"
+          >
+            <img
+              src="/images/jake-nebov-NmwnjkukM80-unsplash.jpeg"
+              alt="classical shelves"
+            />
+          </ScrollParallax>
+          <!-- <h5 class="products-presented__title">
               Regały półkowe<br />śrubowe
             </h5>
             <p class="products-presented__content">
@@ -24,24 +23,22 @@
               alias deleniti quaerat pariatur.
             </p>
             <button class="btn btn--highlight">Zobacz</button> -->
-          </div>
         </div>
       </div>
 
       <div class="products-presented__container">
         <div class="products-presented__wrapper">
-          <div class="products-presented__item">
-            <ScrollParallax
-              class="products-presented__img"
-              direction="y"
-              :speed="-0.1"
-            >
-              <img
-                src="/images/third-serving-ifZ5K80s6yU-unsplash.jpeg"
-                alt="some racks"
-              />
-            </ScrollParallax>
-            <!-- <h5 class="products-presented__title">
+          <ScrollParallax
+            class="products-presented__img"
+            direction="y"
+            :speed="-0.1"
+          >
+            <img
+              src="/images/jake-nebov-gVlNW-xrAZM-unsplash.jpeg"
+              alt="some racks"
+            />
+          </ScrollParallax>
+          <!-- <h5 class="products-presented__title">
               Regały półkowe<br />zaczepowe
             </h5>
             <p class="products-presented__content">
@@ -50,24 +47,22 @@
               alias deleniti quaerat pariatur.
             </p>
             <button class="btn btn--reverse">Zobacz</button> -->
-          </div>
         </div>
       </div>
 
       <div class="products-presented__container">
         <div class="products-presented__wrapper">
-          <div class="products-presented__item">
-            <ScrollParallax
-              class="products-presented__img"
-              direction="y"
-              :speed="-0.1"
-            >
-              <img
-                src="/images/wysokiego-skladowania/palet4.jpeg"
-                alt="some racks"
-              />
-            </ScrollParallax>
-            <!-- <h5 class="products-presented__title">
+          <ScrollParallax
+            class="products-presented__img"
+            direction="y"
+            :speed="-0.1"
+          >
+            <img
+              src="/images/jake-nebov-NmwnjkukM80-unsplash.jpeg"
+              alt="some racks"
+            />
+          </ScrollParallax>
+          <!-- <h5 class="products-presented__title">
               Regały wysokiego składowania
             </h5>
             <p class="products-presented__content">
@@ -78,7 +73,6 @@
             <button class="btn btn--reverse btn--test">
               Zobacz
             </button> -->
-          </div>
         </div>
       </div>
     </section>
@@ -110,9 +104,7 @@ export default {
     width: 100%;
     overflow: hidden;
     margin: 0 0 0.75rem;
-    padding: 0 0 45%;
-    -webkit-transform: rotate(1deg);
-    transform: rotate(1deg);
+    padding: 0 0 90%;
   }
 
   &__wrapper {
@@ -130,16 +122,6 @@ export default {
     grid-template-columns: 1fr;
     row-gap: 7rem;
   }
-
-  &__item {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: $color-border;
-  }
-
-  // &__img {
-  //   margin: 1rem 0;
-  // }
 
   &__title {
     transform: translateY(-50%);

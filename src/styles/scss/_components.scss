@@ -10,8 +10,8 @@ button {
   color: $color-primary;
   background-color: $color-white;
   font-family: 'PublicSans-SemiBold';
-  font-size: $font-size-26;
-  line-height: $line-height-26;
+  font-size: $font-size-24;
+  line-height: $line-height-24;
   padding: 0.9rem;
   border-radius: 4px;
   margin: 0.6rem;
@@ -33,10 +33,6 @@ button {
   }
 
   &--reverse {
-    font-size: $font-size-18;
-    line-height: $line-height-24;
-    height: auto;
-    width: auto;
     color: $color-white;
     background-color: $color-primary-light;
   }

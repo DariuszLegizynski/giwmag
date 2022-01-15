@@ -45,7 +45,7 @@ export default {}
   align-items: center;
 
   & > h1 {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     padding: 0.4rem;
     color: $color-primary;
     text-align: center;

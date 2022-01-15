@@ -5,8 +5,8 @@
       <div class="product-pros__item">
         <IconBase
           viewBox="0 0 512 512"
-          :width="96"
-          :height="96"
+          :width="64"
+          :height="64"
           iconColor="hsl(240, 90%, 27%)"
         >
           <IconQuality />
@@ -18,8 +18,8 @@
       <div class="product-pros__item">
         <IconBase
           viewBox="0 0 64 64"
-          :width="96"
-          :height="96"
+          :width="64"
+          :height="64"
           iconColor="hsl(240, 90%, 27%)"
         >
           <IconNorm />
@@ -29,8 +29,8 @@
       <div class="product-pros__item">
         <IconBase
           viewBox="0 0 469.567 469.567"
-          :width="96"
-          :height="96"
+          :width="64"
+          :height="64"
           iconColor="hsl(240, 90%, 27%)"
         >
           <IconStrong />
@@ -43,8 +43,8 @@
       <div class="product-pros__item">
         <IconBase
           viewBox="0 0 50 50"
-          :width="96"
-          :height="96"
+          :width="64"
+          :height="64"
           iconColor="hsl(240, 90%, 27%)"
         >
           <IconGear />
@@ -57,8 +57,8 @@
       <div class="product-pros__item">
         <IconBase
           viewBox="0 0 512.853 512.853"
-          :width="96"
-          :height="96"
+          :width="64"
+          :height="64"
           iconColor="hsl(240, 90%, 27%)"
         >
           <IconTruck />
@@ -106,22 +106,15 @@ export default {
   &__items {
     display: grid;
     grid-template-rows: repeat(5, 1fr);
-    row-gap: 1rem;
+    row-gap: 0.6rem;
   }
 
   &__item {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    row-gap: 1rem;
-    justify-items: center;
-    padding: 2rem 1rem 1rem 1rem;
-    margin: 1rem;
-    text-align: center;
-    border-radius: 2px;
-    border: 1px solid $color-border;
-    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.7);
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.7);
+    grid-template-columns: 1fr 2fr;
+    justify-items: start;
+    align-items: center;
+    margin: 0 1.6rem;
 
     & > span {
       color: $color-black;

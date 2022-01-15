@@ -96,6 +96,8 @@ export default {
 .logo {
   & > span {
     color: $color-primary;
+    font-size: $font-size-34;
+    line-height: $line-height-40;
   }
 }
 

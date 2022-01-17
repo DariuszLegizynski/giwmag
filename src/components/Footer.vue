@@ -2,33 +2,36 @@
   <article class="footer">
     <section class="footer__section">
       <h1>Skontaktuj się z nami:</h1>
-      <h3>Wi-Mag</h3>
-      <p>ul. Wrocławska 12</p>
-      <p>tel./fax 71 318-50-06</p>
-      <p>e-mail: wimag@o2.pl</p>
+      <div class="footer__section__top">
+        <h3>Z.P.U. WI-MAG s.c.</h3>
+        <p>ul. Wrocławska 12</p>
+        <p>55-002 Kamieniec Wrocławski</p>
+      </div>
+      <div class="footer__section__bottom">
+        <p>tel./fax:</p>
+        <strong>+48 71 318-50-06</strong>
+        <p>e-mail:</p>
+        <strong>wimag@o2.pl</strong>
+      </div>
     </section>
     <section class="footer__section">
-      <h3>Formularz kontaktowy</h3>
+      <h3>Napisz do nas</h3>
       <form class="footer__form">
         <div class="footer__form__item">
-          <label>Imię</label>
-          <input type="text" placeholder="Jan" required />
+          <input type="text" placeholder="Imię (wymagane)" required />
         </div>
         <div class="footer__form__item">
-          <label>Nazwisko</label>
-          <input type="text" placeholder="Przykład" />
+          <input type="text" placeholder="Nazwisko (wymagane)" required />
+        </div>
+        <div class="footer__form__item footerObserver">
+          <input type="email" placeholder="E-mail (wymagane)" required />
         </div>
         <div class="footer__form__item">
-          <label>E-mail</label>
-          <input type="email" placeholder="jan.przyklad@email.com" required />
+          <input type="number" placeholder="telefon" />
         </div>
         <div class="footer__form__item">
-          <label>Telefon</label>
-          <input type="number" placeholder="799 123 123" />
-        </div>
-        <div class="footer__form__item item--message">
           <label>Wiadomość</label>
-          <textarea placeholder="Tekst wiadomości" required />
+          <textarea placeholder="Twoja wiadomość" required />
         </div>
       </form>
       <button class="btn btn--highlight">Wyślij</button>
@@ -47,23 +50,40 @@ export default {}
   padding-top: 2rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 12rem 1fr;
+  grid-template-rows: auto auto;
   align-items: center;
-  background-color: $color-primary;
+  background-color: $color-primary-light;
+  row-gap: 3rem;
 
   &__section {
     display: grid;
     grid-template-columns: 1fr;
     align-content: center;
     justify-items: center;
+    text-align: center;
 
     & > h1 {
       font-size: $font-size-28;
-      margin-bottom: 1rem;
+      margin-top: 1rem;
     }
 
-    & > h3 {
-      margin-bottom: 0.4rem;
+    &__top {
+      margin: 2rem 0 1rem 0;
+
+      & > p {
+        margin: 0.2rem 0;
+      }
+    }
+
+    &__bottom {
+      & > p {
+        font-size: $font-size-18;
+        margin-top: 0.8rem;
+      }
+
+      & > strong {
+        font-size: $font-size-28;
+      }
     }
 
     & > * {
@@ -72,7 +92,17 @@ export default {}
 
     & input,
     & textarea {
-      padding: 0.2rem;
+      margin: 0.8rem;
+      padding: 0.4rem;
+    }
+    & input {
+      width: 80%;
+      border-bottom: 1px solid $color-white;
+    }
+    & textarea {
+      width: 100%;
+      min-height: 4rem;
+      border: 1px solid $color-white;
     }
 
     & .btn {
@@ -82,33 +112,16 @@ export default {}
   }
 
   &__form {
-    padding: 1rem;
+    padding: 0.4rem 1rem;
+    width: 80%;
 
     &__item {
-      display: grid;
-      grid-template-columns: 1fr 8rem;
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-items: stretch;
-      column-gap: 1rem;
       margin-bottom: 0.4rem;
-
-      & > label {
-        font-size: $font-size-16;
-        line-height: $line-height-20;
-      }
+      max-width: 100%;
     }
-  }
-}
-
-.item--message {
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  justify-items: center;
-  margin-top: 0.8rem;
-
-  & > textarea {
-    width: 100%;
-    height: 4rem;
   }
 }
 </style>

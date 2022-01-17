@@ -37,7 +37,8 @@ export default {
     return {
       isBurgerActive: false,
       isContrastActive: true,
-      observer: null
+      observer: null,
+      footerObserver: null
     }
   },
   components: {
@@ -47,7 +48,19 @@ export default {
     this.observer = new IntersectionObserver(
       ([entry]) => {
         if (!entry.isIntersecting) {
-          console.log('intersect')
+          this.isContrastActive = true
+        } else {
+          this.isContrastActive = false
+        }
+      },
+      { rootMargin: '-5% 0px 0px 0px' }
+    )
+
+    this.observer.observe(document.querySelector('.observer'))
+
+    this.footerObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) {
           this.isContrastActive = true
         } else {
           this.isContrastActive = false
@@ -56,7 +69,7 @@ export default {
       { rootMargin: '-10% 0px 0px 0px' }
     )
 
-    this.observer.observe(document.querySelector('.observer'))
+    this.footerObserver.observe(document.querySelector('.footerObserver'))
   },
   methods: {
     toggle() {

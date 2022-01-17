@@ -44,3 +44,24 @@ img {
   width: 100%;
   height: auto;
 }
+
+input {
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+
+  &::placeholder {
+    color: $color-white;
+    opacity: 1;
+  }
+}
+
+textarea {
+  border: none;
+  background-color: transparent;
+
+  &::placeholder {
+    color: $color-white;
+    opacity: 1;
+  }
+}

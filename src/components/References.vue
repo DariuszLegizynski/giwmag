@@ -6,33 +6,50 @@
         class="references__logo"
         src="/images/logo/Ikea_logo.svg"
         alt="logo of ikea"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-sine"
       />
       <img
         class="references__logo"
         src="/images/logo/Leroy_Merlin.svg"
         alt="logo Leroy Merlin"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-sine"
       />
       <img
         class="references__logo logo--mrowka"
         src="/images/logo/PSB-Mrowka.png"
         alt="logo PSB Mrowka"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-sine"
       />
       <img
         class="references__logo"
         src="/images/logo/Castorama_Logo.svg"
         alt="logo Castorama"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-sine"
       />
       <img
         class="references__logo"
         src="/images/logo/bricoman_logo_3.png"
         alt="logo Bricoman"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-sine"
       />
     </section>
   </article>
 </template>
 
 <script>
-export default {}
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+export default {
+  created() {
+    AOS.init()
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -45,7 +62,7 @@ export default {}
   align-items: center;
 
   & > h1 {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     padding: 0.4rem;
     color: $color-primary;
     text-align: center;

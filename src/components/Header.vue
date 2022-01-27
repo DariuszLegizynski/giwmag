@@ -37,7 +37,8 @@ export default {
     return {
       isBurgerActive: false,
       isContrastActive: true,
-      observer: null
+      observer: null,
+      footerObserver: null
     }
   },
   components: {
@@ -47,7 +48,19 @@ export default {
     this.observer = new IntersectionObserver(
       ([entry]) => {
         if (!entry.isIntersecting) {
-          console.log('intersect')
+          this.isContrastActive = true
+        } else {
+          this.isContrastActive = false
+        }
+      },
+      { rootMargin: '-5% 0px 0px 0px' }
+    )
+
+    this.observer.observe(document.querySelector('.observer'))
+
+    this.footerObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) {
           this.isContrastActive = true
         } else {
           this.isContrastActive = false
@@ -56,7 +69,7 @@ export default {
       { rootMargin: '-10% 0px 0px 0px' }
     )
 
-    this.observer.observe(document.querySelector('.observer'))
+    this.footerObserver.observe(document.querySelector('.footerObserver'))
   },
   methods: {
     toggle() {
@@ -96,6 +109,8 @@ export default {
 .logo {
   & > span {
     color: $color-primary;
+    font-size: $font-size-34;
+    line-height: $line-height-40;
   }
 }
 
@@ -105,7 +120,7 @@ export default {
   position: fixed;
   z-index: 9;
   top: 0;
-  padding-bottom: 100%;
+  padding: 2rem 0 100% 0;
   -webkit-backdrop-filter: blur(9px);
   backdrop-filter: blur(9px);
   transform: translateX(100%);

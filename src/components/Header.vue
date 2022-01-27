@@ -8,16 +8,12 @@
   >
     <h1 class="logo">Wi-<span>-Mag</span></h1>
 
-    <Burger
-      @click.prevent="toggle"
-      :isBurgerActive="isBurgerActive"
-      :isContrastActive="isContrastActive"
-    />
+    <Burger @click.prevent="toggle" :isBurgerActive="isBurgerActive" />
   </header>
   <nav
     class="sideBar fade-in-bg"
     :class="{
-      sideBar__scroll: isContrastActive,
+      sideBar__scroll: !isContrastActive,
       slideIn: isBurgerActive,
       slideOut: !isBurgerActive
     }"
@@ -56,20 +52,9 @@ export default {
       { rootMargin: '-5% 0px 0px 0px' }
     )
 
-    this.observer.observe(document.querySelector('.observer'))
-
-    this.footerObserver = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) {
-          this.isContrastActive = true
-        } else {
-          this.isContrastActive = false
-        }
-      },
-      { rootMargin: '-10% 0px 0px 0px' }
-    )
-
-    this.footerObserver.observe(document.querySelector('.footerObserver'))
+    document
+      .querySelectorAll('.observer')
+      .forEach(el => this.observer.observe(el))
   },
   methods: {
     toggle() {
@@ -125,10 +110,10 @@ export default {
   backdrop-filter: blur(9px);
   transform: translateX(100%);
   -webkit-transform: translateX(100%);
-  background-color: $black-opacity;
+  background-color: $primary-opacity;
 
   &__scroll {
-    background-color: $primary-opacity;
+    background-color: $black-opacity;
   }
 }
 .btn {

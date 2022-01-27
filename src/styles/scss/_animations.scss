@@ -50,6 +50,25 @@
   -webkit-animation: slide-out 0.5s forwards;
 }
 
+.fadeInFromBottom {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  position: relative;
+  animation: fadeInFromBottom 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInFromBottom {
+  from {
+    top: 10rem;
+    opacity: 0;
+  }
+  to {
+    top: 0rem;
+    opacity: 1;
+  }
+}
+
 @keyframes slide-in {
   100% {
     transform: translateX(0%);

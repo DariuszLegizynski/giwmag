@@ -21,7 +21,7 @@
           <input type="text" placeholder="Imię (wymagane)" required />
         </div>
         <div class="footer__form__item">
-          <input type="text" placeholder="Nazwisko (wymagane)" required />
+          <input type="text" placeholder="Nazwisko" />
         </div>
         <div class="footer__form__item footerObserver">
           <input type="email" placeholder="E-mail (wymagane)" required />

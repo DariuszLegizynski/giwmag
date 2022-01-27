@@ -1,18 +1,21 @@
 <template>
   <article class="products-presented">
     <section class="products-presented__items">
-      <div class="products-presented__item">
-        <h3 class="products-presented__title">Regały półkowe śrubowe</h3>
+      <div class="products-presented__item" data-aos="fade-up">
+        <h3 class="products-presented__title">
+          Regały półkowe śrubowe
+        </h3>
         <div class="products-presented__container">
           <div class="products-presented__img-wrapper">
             <ScrollParallax
               class="products-presented__img"
               direction="y"
-              :speed="-0.05"
+              :speed="-0.1"
             >
               <img
                 src="/images/jake-nebov-NmwnjkukM80-unsplash.jpeg"
                 alt="classical shelves"
+                loading="lazy"
               />
             </ScrollParallax>
           </div>
@@ -25,7 +28,7 @@
         <button class="btn btn--highlight">Zobacz</button>
       </div>
 
-      <div class="products-presented__item">
+      <div class="products-presented__item" data-aos="fade-up">
         <h3 class="products-presented__title">
           Regały półkowe zaczepowe
         </h3>
@@ -34,11 +37,12 @@
             <ScrollParallax
               class="products-presented__img"
               direction="y"
-              :speed="-0.05"
+              :speed="-0.1"
             >
               <img
                 src="/images/jake-nebov-gVlNW-xrAZM-unsplash.jpeg"
                 alt="some racks"
+                loading="lazy"
               />
             </ScrollParallax>
           </div>
@@ -48,10 +52,10 @@
           ipsa voluptate facere dicta quia, eum dolor laboriosam autem, alias
           deleniti quaerat pariatur.
         </p>
-        <button class="btn btn--reverse">Zobacz</button>
+        <button class="btn btn--highlight">Zobacz</button>
       </div>
 
-      <div class="products-presented__item">
+      <div class="products-presented__item" data-aos="fade-up">
         <h3 class="products-presented__title">
           Regały wysokiego składowania
         </h3>
@@ -60,11 +64,12 @@
             <ScrollParallax
               class="products-presented__img"
               direction="y"
-              :speed="-0.05"
+              :speed="-0.1"
             >
               <img
                 src="/images/jake-nebov-NmwnjkukM80-unsplash.jpeg"
                 alt="some racks"
+                loading="lazy"
               />
             </ScrollParallax>
           </div>
@@ -74,7 +79,7 @@
           ipsa voluptate facere dicta quia, eum dolor laboriosam autem, alias
           deleniti quaerat pariatur.
         </p>
-        <button class="btn btn--reverse btn--test">
+        <button class="btn btn--highlight">
           Zobacz
         </button>
       </div>
@@ -83,10 +88,16 @@
 </template>
 
 <script>
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 import ScrollParallax from 'vue3-parallax/src/components/ScrollParallax.vue'
 export default {
   components: {
     ScrollParallax
+  },
+  created() {
+    AOS.init()
   }
 }
 </script>

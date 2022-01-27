@@ -45,7 +45,8 @@ img {
   height: auto;
 }
 
-input {
+input,
+textarea {
   border: none;
   text-decoration: none;
   background-color: transparent;
@@ -54,14 +55,8 @@ input {
     color: $color-white;
     opacity: 1;
   }
-}
 
-textarea {
-  border: none;
-  background-color: transparent;
-
-  &::placeholder {
-    color: $color-white;
-    opacity: 1;
+  &:focus-visible {
+    outline: none;
   }
 }

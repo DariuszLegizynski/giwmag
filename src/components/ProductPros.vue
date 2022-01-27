@@ -2,7 +2,12 @@
   <article class="product-pros">
     <h2>Postaw na nasze regały:</h2>
     <section class="product-pros__items">
-      <div class="product-pros__item">
+      <div
+        class="product-pros__item"
+        data-aos="fade-right"
+        data-aos-offset="150"
+        data-aos-easing="ease-in-sine"
+      >
         <IconBase
           viewBox="0 0 512 512"
           :width="64"
@@ -15,7 +20,12 @@
           ><strong>Najwyższa jakość<br /></strong>wykonania.</span
         >
       </div>
-      <div class="product-pros__item">
+      <div
+        class="product-pros__item"
+        data-aos="fade-right"
+        data-aos-offset="150"
+        data-aos-easing="ease-in-sine"
+      >
         <IconBase
           viewBox="0 0 64 64"
           :width="64"
@@ -26,7 +36,12 @@
         </IconBase>
         <span>Spełniamy normę<br /><strong>PN-78 M-78320.</strong></span>
       </div>
-      <div class="product-pros__item">
+      <div
+        class="product-pros__item"
+        data-aos="fade-right"
+        data-aos-offset="150"
+        data-aos-easing="ease-in-sine"
+      >
         <IconBase
           viewBox="0 0 469.567 469.567"
           :width="64"
@@ -40,7 +55,12 @@
           potwierdzają deklarowane obciążenie.
         </span>
       </div>
-      <div class="product-pros__item">
+      <div
+        class="product-pros__item"
+        data-aos="fade-right"
+        data-aos-offset="150"
+        data-aos-easing="ease-in-sine"
+      >
         <IconBase
           viewBox="0 0 50 50"
           :width="64"
@@ -54,7 +74,12 @@
           <strong>demontażu.</strong></span
         >
       </div>
-      <div class="product-pros__item">
+      <div
+        class="product-pros__item"
+        data-aos="fade-right"
+        data-aos-offset="150"
+        data-aos-easing="ease-in-sine"
+      >
         <IconBase
           viewBox="0 0 512.853 512.853"
           :width="64"

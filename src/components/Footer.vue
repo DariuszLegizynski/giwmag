@@ -23,7 +23,7 @@
         <div class="footer__form__item">
           <input type="text" placeholder="Nazwisko" />
         </div>
-        <div class="footer__form__item footerObserver">
+        <div class="footer__form__item observer">
           <input type="email" placeholder="E-mail (wymagane)" required />
         </div>
         <div class="footer__form__item">

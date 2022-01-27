@@ -106,7 +106,7 @@ export default {
 @import '@/styles/scss/_general.scss';
 
 .products-presented {
-  margin: 3.2rem 0 5rem 0;
+  margin: 8rem 0 5rem 0;
   padding: 0 1rem;
 
   &__container {
@@ -136,6 +136,7 @@ export default {
   &__title {
     color: $color-black;
     padding: 0.8rem 1.4rem;
+    margin-bottom: 0.8rem;
     text-align: center;
   }
 

@@ -5,7 +5,6 @@
       <div
         class="product-pros__item"
         data-aos="fade-right"
-        data-aos-offset="150"
         data-aos-easing="ease-in-sine"
       >
         <IconBase
@@ -23,7 +22,6 @@
       <div
         class="product-pros__item"
         data-aos="fade-right"
-        data-aos-offset="150"
         data-aos-easing="ease-in-sine"
       >
         <IconBase
@@ -39,7 +37,6 @@
       <div
         class="product-pros__item"
         data-aos="fade-right"
-        data-aos-offset="150"
         data-aos-easing="ease-in-sine"
       >
         <IconBase
@@ -58,7 +55,6 @@
       <div
         class="product-pros__item"
         data-aos="fade-right"
-        data-aos-offset="150"
         data-aos-easing="ease-in-sine"
       >
         <IconBase
@@ -77,7 +73,6 @@
       <div
         class="product-pros__item"
         data-aos="fade-right"
-        data-aos-offset="150"
         data-aos-easing="ease-in-sine"
       >
         <IconBase

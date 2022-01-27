@@ -7,7 +7,6 @@
         src="/images/logo/Ikea_logo.svg"
         alt="logo of ikea"
         data-aos="fade-up"
-        data-aos-offset="300"
         data-aos-easing="ease-in-sine"
       />
       <img
@@ -15,7 +14,6 @@
         src="/images/logo/Leroy_Merlin.svg"
         alt="logo Leroy Merlin"
         data-aos="fade-up"
-        data-aos-offset="300"
         data-aos-easing="ease-in-sine"
       />
       <img
@@ -23,7 +21,6 @@
         src="/images/logo/PSB-Mrowka.png"
         alt="logo PSB Mrowka"
         data-aos="fade-up"
-        data-aos-offset="400"
         data-aos-easing="ease-in-sine"
       />
       <img
@@ -31,7 +28,6 @@
         src="/images/logo/Castorama_Logo.svg"
         alt="logo Castorama"
         data-aos="fade-up"
-        data-aos-offset="500"
         data-aos-easing="ease-in-sine"
       />
       <img
@@ -39,7 +35,6 @@
         src="/images/logo/bricoman_logo_3.png"
         alt="logo Bricoman"
         data-aos="fade-up"
-        data-aos-offset="500"
         data-aos-easing="ease-in-sine"
       />
     </section>

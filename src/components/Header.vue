@@ -6,11 +6,12 @@
       header__active: isBurgerActive
     }"
   >
-    <RouterLink to="/">
-      <h1 class="logo">Wi-<span>-Mag</span></h1>
-    </RouterLink>
+    <h1 @click="$router.push('/')" class="logo">Wi-<span>-Mag</span></h1>
 
-    <Burger @click.prevent="toggle" :isBurgerActive="isBurgerActive" />
+    <Burger
+      @click.prevent="this.isBurgerActive = !this.isBurgerActive"
+      :isBurgerActive="isBurgerActive"
+    />
   </header>
   <nav
     class="sideBar fade-in-bg"
@@ -21,9 +22,15 @@
     }"
   >
     <div class="btn sr-only">MENU</div>
-    <button @click="$router.push('/offer')" class="btn">OFERTA</button>
-    <button @click="$router.push('/about')" class="btn">O FIRMIE</button>
-    <a href="#footer"><button class="btn btn--highlight">KONTAKT</button></a>
+    <button @click="$router.push('/offer')" class="btn">
+      OFERTA
+    </button>
+    <button @click="$router.push('/about')" class="btn">
+      O FIRMIE
+    </button>
+    <button @click="$router.push('/home#footer')" class="btn btn--highlight">
+      KONTAKT
+    </button>
   </nav>
 </template>
 
@@ -35,8 +42,7 @@ export default {
     return {
       isBurgerActive: false,
       isContrastActive: true,
-      observer: null,
-      footerObserver: null
+      observer: null
     }
   },
   components: {
@@ -57,11 +63,6 @@ export default {
     document
       .querySelectorAll('.observer')
       .forEach(el => this.observer.observe(el))
-  },
-  methods: {
-    toggle() {
-      this.isBurgerActive = !this.isBurgerActive
-    }
   }
 }
 </script>

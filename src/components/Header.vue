@@ -48,11 +48,6 @@ export default {
   components: {
     Burger
   },
-  // computed: {
-  //   toggle() {
-  //     return !this.isBurgerActive
-  //   }
-  // },
   watch: {
     isBurgerActive: {
       toggle() {

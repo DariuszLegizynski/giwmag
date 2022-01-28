@@ -1,5 +1,10 @@
 @import './_variables.scss';
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 button {
   cursor: pointer;
   background: transparent;

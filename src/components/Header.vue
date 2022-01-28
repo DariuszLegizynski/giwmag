@@ -6,9 +6,9 @@
       header__active: isBurgerActive
     }"
   >
-    <h1 class="logo">Wi-<span>-Mag</span></h1>
+    <h1 @click="$router.push('/')" class="logo">Wi-<span>-Mag</span></h1>
 
-    <Burger @click.prevent="toggle" :isBurgerActive="isBurgerActive" />
+    <Burger @click.prevent="toggle()" :isBurgerActive="isBurgerActive" />
   </header>
   <nav
     class="sideBar fade-in-bg"
@@ -19,9 +19,18 @@
     }"
   >
     <div class="btn sr-only">MENU</div>
-    <button class="btn" @click.stop="this.observe">OFERTA</button>
-    <button class="btn">O FIRMIE</button>
-    <button class="btn btn--highlight">KONTAKT</button>
+    <button @click=";[$router.push('/offer'), toggle()]" class="btn">
+      OFERTA
+    </button>
+    <button @click=";[$router.push('/about'), toggle()]" class="btn">
+      O FIRMIE
+    </button>
+    <button
+      @click=";[$router.push('/home#footer'), toggle()]"
+      class="btn btn--highlight"
+    >
+      KONTAKT
+    </button>
   </nav>
 </template>
 
@@ -33,12 +42,28 @@ export default {
     return {
       isBurgerActive: false,
       isContrastActive: true,
-      observer: null,
-      footerObserver: null
+      observer: null
     }
   },
   components: {
     Burger
+  },
+  // computed: {
+  //   toggle() {
+  //     return !this.isBurgerActive
+  //   }
+  // },
+  watch: {
+    isBurgerActive: {
+      toggle() {
+        this.isBurgerActive = !this.isBurgerActive
+      }
+    }
+  },
+  methods: {
+    toggle() {
+      this.isBurgerActive = !this.isBurgerActive
+    }
   },
   mounted() {
     this.observer = new IntersectionObserver(
@@ -55,11 +80,6 @@ export default {
     document
       .querySelectorAll('.observer')
       .forEach(el => this.observer.observe(el))
-  },
-  methods: {
-    toggle() {
-      this.isBurgerActive = !this.isBurgerActive
-    }
   }
 }
 </script>

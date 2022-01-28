@@ -1,6 +1,10 @@
 <template>
   <div class="cta__btns">
-    <button class="btn btn--highlight">Zapytaj nas</button>
+    <button class="btn btn--highlight">
+      <a href="#footer">
+        Zapytaj nas
+      </a>
+    </button>
     <button class="btn btn--default">Nasze produkty</button>
   </div>
 </template>

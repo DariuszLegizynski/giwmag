@@ -1,5 +1,5 @@
 <template>
-  <article class="hero observer">
+  <article class="hero observer" id="hero">
     <section class="hero__img" />
     <section class="hero__text">
       <h1>Fachowcy od regałów.</h1>

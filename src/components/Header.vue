@@ -6,7 +6,9 @@
       header__active: isBurgerActive
     }"
   >
-    <h1 class="logo">Wi-<span>-Mag</span></h1>
+    <RouterLink to="/">
+      <h1 class="logo">Wi-<span>-Mag</span></h1>
+    </RouterLink>
 
     <Burger @click.prevent="toggle" :isBurgerActive="isBurgerActive" />
   </header>
@@ -19,9 +21,9 @@
     }"
   >
     <div class="btn sr-only">MENU</div>
-    <button class="btn" @click.stop="this.observe">OFERTA</button>
-    <button class="btn">O FIRMIE</button>
-    <button class="btn btn--highlight">KONTAKT</button>
+    <button @click="$router.push('/offer')" class="btn">OFERTA</button>
+    <button @click="$router.push('/about')" class="btn">O FIRMIE</button>
+    <a href="#footer"><button class="btn btn--highlight">KONTAKT</button></a>
   </nav>
 </template>
 

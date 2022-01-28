@@ -1,5 +1,5 @@
 <template>
-  <article class="footer">
+  <article class="footer" id="footer">
     <section class="footer__section">
       <h1>Skontaktuj się z nami:</h1>
       <div class="footer__section__top">

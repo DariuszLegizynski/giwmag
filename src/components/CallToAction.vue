@@ -5,7 +5,9 @@
         Zapytaj nas
       </a>
     </button>
-    <button class="btn btn--default">Nasze produkty</button>
+    <button class="btn btn--default">
+      <a href="#products">Nasze produkty</a>
+    </button>
   </div>
 </template>
 
@@ -14,6 +16,8 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+@import '@/styles/scss/_general.scss';
+
 .cta__btns {
   display: flex;
   flex-direction: column;

@@ -81,6 +81,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/styles/scss/_general.scss';
+
 .header {
   position: sticky;
   top: 0;
@@ -103,7 +104,7 @@ export default {
 
   &__scroll {
     background-color: $primary-opacity;
-    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 }
 .logo {

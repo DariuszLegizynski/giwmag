@@ -1,5 +1,8 @@
 <template>
-  <article class="products-presented">
+  <article class="products-presented" id="products">
+    <button @click="$router.push('/offer')" class="btn btn--default">
+      Pełna Oferta
+    </button>
     <section class="products-presented__items">
       <div class="products-presented__item" data-aos="fade-up">
         <h3 class="products-presented__title">

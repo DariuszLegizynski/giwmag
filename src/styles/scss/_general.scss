@@ -1,36 +1,7 @@
 @import './_variables.scss';
 @import './_components.scss';
 @import './animations.scss';
-
-@font-face {
-  font-family: 'PublicSans-Regular';
-  font-style: normal;
-  font-weight: normal;
-  font-display: auto;
-  src: local('PublicSans-Regular'),
-    url('/fonts/PublicSans/PublicSans-Regular.woff2') format('woff2'),
-    url('/fonts/PublicSans/PublicSans-Regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'PublicSans-Bold';
-  font-style: bold;
-  font-weight: bold;
-  font-display: auto;
-  src: local('PublicSans-Bold'),
-    url('/fonts/PublicSans/PublicSans-Bold.woff2') format('woff2'),
-    url('/fonts/PublicSans/PublicSans-Bold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'PublicSans-SemiBold';
-  font-style: bold;
-  font-weight: bold;
-  font-display: auto;
-  src: local('PublicSans-SemiBold'),
-    url('/fonts/PublicSans/PublicSans-SemiBold.woff2') format('woff2'),
-    url('/fonts/PublicSans/PublicSans-SemiBold.woff') format('woff');
-}
+@import './_fonts.scss';
 
 body {
   background-color: $color-white;
@@ -51,6 +22,17 @@ p {
   color: $color-white;
 }
 
+h1,
+h4,
+h5,
+span {
+  font-family: 'NotoSerifDisplay-Light';
+}
+h2,
+h3 {
+  font-family: 'Montserrat-Light';
+}
+
 h1 {
   font-size: $font-size-34;
   line-height: $line-height-40;
@@ -65,8 +47,12 @@ h3 {
 }
 
 p {
-  font-size: $font-size-16;
+  font-size: $font-size-14;
   line-height: $line-height-24;
+}
+
+i {
+  font-family: 'NotoSerifDisplay-LightItalic';
 }
 
 span {

@@ -2,14 +2,12 @@
   <article class="hero observer" id="hero">
     <section class="hero__img" />
     <section class="hero__text">
-      <h1>Fachowcy od regałów.</h1>
-      <h2>
-        Wykonujemy pełen zakres usług, wraz z dostarczeniem naszych produktów
-        pod same drzwi.
-      </h2>
+      <h3>Pełen zakres usług,<br />produkt pod same drzwi.</h3>
+      <h1><i>Fachowcy</i> od regałów.</h1>
       <p>
-        Wykorzystujemy przestrzeń do maksimum, zwiększając wydajność magazynu,
-        optymalizujemy koszta, zapewniając najwyszą jakość.
+        Maksymalnie wykorzystujemy przestrzeń,<br />
+        optymalizujemy koszta,<br />
+        zapewniamy najwyszą jakość.
       </p>
     </section>
     <section class="hero__call-to-action">
@@ -52,10 +50,17 @@ export default {
 
   &__text {
     padding: 0.8rem 1.6rem;
-    text-align: left;
+    text-align: center;
 
-    & > h1,
-    & > h2 {
+    & > h3 {
+      margin: 2rem 0;
+    }
+
+    & > h1 {
+      margin: 1rem 0 3rem 0;
+    }
+
+    & > p {
       margin-bottom: 1rem;
     }
   }

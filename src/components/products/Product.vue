@@ -1,10 +1,9 @@
 <template>
-  <h3>Regały bezkołkowe</h3>
   <ul class="products">
     <li class="products__item" v-for="item in 7" :key="item">
       <RouterLink to="#">
         <div class="products__thumbnail">
-          <span>Shelf Presented</span>
+          <span>Regał</span>
         </div>
       </RouterLink>
     </li>
@@ -18,9 +17,6 @@ export default {}
 <style lang="scss" scoped>
 @import '@/styles/scss/_general.scss';
 
-h3 {
-  color: $color-black;
-}
 .products {
   display: -webkit-grid;
   display: grid;
@@ -51,6 +47,7 @@ h3 {
       height: 100%;
       display: flex;
       align-items: center;
+      justify-content: center;
     }
   }
 }

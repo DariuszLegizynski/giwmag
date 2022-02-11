@@ -53,11 +53,11 @@ export default {
     text-align: center;
 
     & > h3 {
-      margin: 2rem 0;
+      margin: 1.6rem 0;
     }
 
     & > h1 {
-      margin: 1rem 0 3rem 0;
+      margin: 1rem 0 1.6rem 0;
     }
 
     & > p {

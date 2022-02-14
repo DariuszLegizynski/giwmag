@@ -1,17 +1,85 @@
 <template>
   <ul class="products">
-    <li class="products__item" v-for="item in 7" :key="item">
-      <RouterLink to="#">
-        <div class="products__thumbnail">
-          <span>Regał</span>
-        </div>
-      </RouterLink>
+    <li
+      class="products__item"
+      v-for="product in this.products"
+      :key="product.id"
+    >
+      <Product :product="product" />
     </li>
   </ul>
 </template>
 
 <script>
-export default {}
+import Product from '@/components/products/Product.vue'
+
+export default {
+  components: {
+    Product
+  },
+  data() {
+    return {
+      products: [
+        {
+          id: 1,
+          category: 'półkowy',
+          sub_category: 'śrubowy',
+          title: 'cięźki',
+          thumbnailImage: 'https://picsum.photos/150/200',
+          Image: 'https://picsum.photos'
+        },
+        {
+          id: 2,
+          category: 'półkowy',
+          sub_category: 'śrubowy',
+          title: 'metalowy',
+          thumbnailImage: 'https://picsum.photos/150/200',
+          Image: 'https://picsum.photos'
+        },
+        {
+          id: 3,
+          category: 'półkowy',
+          sub_category: 'śrubowy',
+          title: 'wiórowy',
+          thumbnailImage: 'https://picsum.photos/150/200',
+          Image: 'https://picsum.photos'
+        },
+        {
+          id: 4,
+          category: 'półkowy',
+          sub_category: 'zaczepowy',
+          title: 'cięźki',
+          thumbnailImage: 'https://picsum.photos/150/200',
+          Image: 'https://picsum.photos'
+        },
+        {
+          id: 5,
+          category: 'półkowy',
+          sub_category: 'zaczepowy',
+          title: 'metalowy',
+          thumbnailImage: 'https://picsum.photos/150/200',
+          Image: 'https://picsum.photos'
+        },
+        {
+          id: 6,
+          category: 'półkowy',
+          sub_category: 'zaczepowy',
+          title: 'wiórowy',
+          thumbnailImage: 'https://picsum.photos/150/200',
+          Image: 'https://picsum.photos'
+        },
+        {
+          id: 7,
+          category: 'wysokiego',
+          sub_category: '',
+          title: 'składowania',
+          thumbnailImage: 'https://picsum.photos/150/200',
+          Image: 'https://picsum.photos'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -24,31 +92,5 @@ export default {}
   grid-auto-rows: minmax(10rem, 1fr);
   column-gap: 1rem;
   row-gap: 1rem;
-
-  &__thumbnail {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-image: linear-gradient(
-        to right bottom,
-        hsla(240, 18%, 3%, 0.35),
-        hsla(240, 18%, 3%, 0.35)
-      ),
-      url('https://picsum.photos/150/200');
-    background-position: center center;
-    background-repeat: no-repeat;
-
-    & > span {
-      font-size: 1.5rem;
-      letter-spacing: -0.01em;
-      line-height: 1.3;
-      text-align: center;
-      color: #fff;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
 }
 </style>

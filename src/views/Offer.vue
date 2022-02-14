@@ -3,7 +3,7 @@
   <div class="offer">
     <h1>Nasza Oferta</h1>
     <h3>Kategorie</h3>
-    <div class="offer__container" v-for="item in 6" :key="item">
+    <div class="offer__container">
       <ProductList />
     </div>
   </div>
@@ -23,6 +23,7 @@ export default {
 
 .btn--back {
   margin: 0;
+  padding: 1.2rem 0 0 0;
 }
 
 .offer {
@@ -31,6 +32,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0.8rem 0;
   }
 
   & > h3 {
@@ -38,6 +40,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 0.8rem;
   }
 
   &__container {

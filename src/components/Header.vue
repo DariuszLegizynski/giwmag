@@ -6,7 +6,7 @@
       header__active: isBurgerActive
     }"
   >
-    <h1 @click="$router.push('/')" class="logo">Wi-<span>-Mag</span></h1>
+    <h2 @click="$router.push('/')" class="logo">Wi-<span>-Mag</span></h2>
 
     <Burger @click.prevent="toggle()" :isBurgerActive="isBurgerActive" />
   </header>
@@ -91,6 +91,7 @@ export default {
   z-index: 10;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0.4rem;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
@@ -108,10 +109,13 @@ export default {
   }
 }
 .logo {
+  font-family: 'PublicSans-Regular';
+
   & > span {
     color: $color-primary;
-    font-size: $font-size-34;
-    line-height: $line-height-40;
+    font-size: $font-size-32;
+    line-height: $line-height-34;
+    font-family: 'PublicSans-Regular';
   }
 }
 

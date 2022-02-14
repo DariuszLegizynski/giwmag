@@ -1,30 +1,33 @@
 <template>
-  <ul class="products">
-    <li class="products__item" v-for="item in 7" :key="item">
-      <RouterLink to="#">
-        <div class="products__thumbnail">
-          <span>Regał</span>
-        </div>
-      </RouterLink>
-    </li>
-  </ul>
+  <section class="product">
+    <RouterLink to="#">
+      <div class="product__thumbnail">
+        <span>Regał</span>
+        <span>{{ product.category }}</span>
+        <span>{{ product.sub_category }}</span>
+        <span>{{ product.title }}</span>
+      </div>
+    </RouterLink>
+  </section>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    product: {
+      type: Object
+    }
+  },
+  mounted() {
+    console.log(this.product)
+  }
+}
 </script>
 
 <style lang="scss" scoped>
 @import '@/styles/scss/_general.scss';
 
-.products {
-  display: -webkit-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
-  grid-auto-rows: minmax(10rem, 1fr);
-  column-gap: 1rem;
-  row-gap: 1rem;
-
+.product {
   &__thumbnail {
     width: 100%;
     height: 100%;

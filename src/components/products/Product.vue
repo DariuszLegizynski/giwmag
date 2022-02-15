@@ -2,10 +2,8 @@
   <section class="product">
     <RouterLink to="#">
       <div class="product__thumbnail">
-        <span>Regał</span>
-        <span>{{ product.category }}</span>
-        <span>{{ product.sub_category }}</span>
-        <span>{{ product.title }}</span>
+        <h3>{{ product.name }}</h3>
+        <span>{{ product.type }} {{ product.type_continued }}</span>
       </div>
     </RouterLink>
   </section>
@@ -28,6 +26,9 @@ export default {
 @import '@/styles/scss/_general.scss';
 
 .product {
+  width: 100%;
+  height: 100%;
+
   &__thumbnail {
     width: 100%;
     height: 100%;

@@ -1,10 +1,6 @@
 <template>
   <ul class="products">
-    <li
-      class="products__item"
-      v-for="product in this.products"
-      :key="product.id"
-    >
+    <li v-for="product in this.products" :key="product.id">
       <Product :product="product" />
     </li>
   </ul>
@@ -22,59 +18,84 @@ export default {
       products: [
         {
           id: 1,
-          category: 'półkowy',
-          sub_category: 'śrubowy',
-          title: 'cięźki',
+          name: 'Regały',
+          type: 'śrubowe',
+          type_continued: '',
           thumbnailImage: 'https://picsum.photos/150/200',
-          Image: 'https://picsum.photos'
+          product_list: [
+            {
+              id: 1,
+              sub_category: 'ciężki',
+              thumbnailImage: 'https://picsum.photos/150/200',
+              Image: 'https://picsum.photos'
+            },
+            {
+              id: 2,
+              sub_category: 'metalowy',
+              thumbnailImage: 'https://picsum.photos/150/200',
+              Image: 'https://picsum.photos'
+            },
+            {
+              id: 3,
+              sub_category: 'wiórowy',
+              thumbnailImage: 'https://picsum.photos/150/200',
+              Image: 'https://picsum.photos'
+            }
+          ]
         },
         {
           id: 2,
-          category: 'półkowy',
-          sub_category: 'śrubowy',
-          title: 'metalowy',
+          name: 'Regały',
+          type: 'zaczepowe',
+          type_continued: '',
           thumbnailImage: 'https://picsum.photos/150/200',
-          Image: 'https://picsum.photos'
+          product_list: [
+            {
+              id: 4,
+              sub_category: 'ciężki',
+              thumbnailImage: 'https://picsum.photos/150/200',
+              Image: 'https://picsum.photos'
+            },
+            {
+              id: 5,
+              sub_category: 'metalowy',
+              thumbnailImage: 'https://picsum.photos/150/200',
+              Image: 'https://picsum.photos'
+            },
+            {
+              id: 6,
+              sub_category: 'wiórowy',
+              thumbnailImage: 'https://picsum.photos/150/200',
+              Image: 'https://picsum.photos'
+            }
+          ]
         },
         {
           id: 3,
-          category: 'półkowy',
-          sub_category: 'śrubowy',
-          title: 'wiórowy',
+          name: 'Regały',
+          type: 'wysokiego',
+          type_continued: 'składowania',
           thumbnailImage: 'https://picsum.photos/150/200',
-          Image: 'https://picsum.photos'
-        },
-        {
-          id: 4,
-          category: 'półkowy',
-          sub_category: 'zaczepowy',
-          title: 'cięźki',
-          thumbnailImage: 'https://picsum.photos/150/200',
-          Image: 'https://picsum.photos'
-        },
-        {
-          id: 5,
-          category: 'półkowy',
-          sub_category: 'zaczepowy',
-          title: 'metalowy',
-          thumbnailImage: 'https://picsum.photos/150/200',
-          Image: 'https://picsum.photos'
-        },
-        {
-          id: 6,
-          category: 'półkowy',
-          sub_category: 'zaczepowy',
-          title: 'wiórowy',
-          thumbnailImage: 'https://picsum.photos/150/200',
-          Image: 'https://picsum.photos'
-        },
-        {
-          id: 7,
-          category: 'wysokiego',
-          sub_category: '',
-          title: 'składowania',
-          thumbnailImage: 'https://picsum.photos/150/200',
-          Image: 'https://picsum.photos'
+          product_list: [
+            {
+              id: 1,
+              sub_category: 'ciężki',
+              thumbnailImage: 'https://picsum.photos/150/200',
+              Image: 'https://picsum.photos'
+            },
+            {
+              id: 2,
+              sub_category: 'metalowy',
+              thumbnailImage: 'https://picsum.photos/150/200',
+              Image: 'https://picsum.photos'
+            },
+            {
+              id: 3,
+              sub_category: 'wiórowy',
+              thumbnailImage: 'https://picsum.photos/150/200',
+              Image: 'https://picsum.photos'
+            }
+          ]
         }
       ]
     }

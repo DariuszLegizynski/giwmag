@@ -21,7 +21,8 @@ export default {
           name: 'Regały',
           type: 'śrubowe',
           type_continued: '',
-          thumbnailImage: 'https://picsum.photos/150/200',
+          thumbnailImage:
+            '/images/polkowy-srubowy-metalowy/Regal_swi_metal_1.jpeg',
           product_list: [
             {
               id: 1,
@@ -48,7 +49,7 @@ export default {
           name: 'Regały',
           type: 'zaczepowe',
           type_continued: '',
-          thumbnailImage: 'https://picsum.photos/150/200',
+          thumbnailImage: '/images/polkowy-zaczepowy-ciezki/startowy.jpeg',
           product_list: [
             {
               id: 4,
@@ -75,7 +76,7 @@ export default {
           name: 'Regały',
           type: 'wysokiego',
           type_continued: 'składowania',
-          thumbnailImage: 'https://picsum.photos/150/200',
+          thumbnailImage: '/images/polkowy-srubowy-wiorowy/SWI_wior_1.jpeg',
           product_list: [
             {
               id: 1,

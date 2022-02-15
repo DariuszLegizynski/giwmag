@@ -37,6 +37,16 @@
 }
 
 @font-face {
+  font-family: 'NotoSerifDisplay-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: local('NotoSerifDisplay-Regular'),
+    url('/fonts/Noto_Serif_Display/NotoSerifDisplay-Regular.ttf')
+      format('opentype');
+}
+
+@font-face {
   font-family: 'PublicSans-Regular';
   font-style: normal;
   font-weight: normal;

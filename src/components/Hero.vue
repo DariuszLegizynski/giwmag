@@ -4,11 +4,11 @@
     <section class="hero__text">
       <h3>Pełen zakres usług,<br />produkt pod same drzwi.</h3>
       <h1><i>Fachowcy</i> od regałów.</h1>
-      <p>
+      <span>
         Maksymalnie wykorzystujemy przestrzeń,<br />
         optymalizujemy koszta,<br />
         zapewniamy najwyszą jakość.
-      </p>
+      </span>
     </section>
     <section class="hero__call-to-action">
       <CallToAction />

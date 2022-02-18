@@ -23,9 +23,9 @@ export default {
     backgroundImageStyle() {
       return {
         backgroundImage: `linear-gradient(
-        to right bottom,
-        rgba(7, 7, 131, 0.15),
-        rgba(7, 7, 131, 0.45)
+        to bottom,
+        rgba(7, 7, 131, 0.85),
+        transparent
       ), url(${this.product.thumbnailImage})`
       }
     }

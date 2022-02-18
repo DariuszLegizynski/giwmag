@@ -136,6 +136,10 @@ export default {
     row-gap: 4rem;
   }
 
+  &__item {
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
   &__title {
     color: $color-black;
     padding: 0.8rem 1.4rem;

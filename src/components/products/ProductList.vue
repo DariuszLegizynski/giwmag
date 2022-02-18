@@ -22,7 +22,7 @@ export default {
           type: 'śrubowe',
           type_continued: '',
           thumbnailImage:
-            '/images/polkowy-srubowy-metalowy/Regal_swi_metal_1.jpeg',
+            '/images/jake-nebov-w9yUy-3Dhlw-unsplash.jpeg',
           product_list: [
             {
               id: 1,
@@ -49,7 +49,7 @@ export default {
           name: 'Regały',
           type: 'zaczepowe',
           type_continued: '',
-          thumbnailImage: '/images/polkowy-zaczepowy-ciezki/startowy.jpeg',
+          thumbnailImage: '/images/arno-senoner-yqu6tJkSQ_k-unsplash.jpeg',
           product_list: [
             {
               id: 4,
@@ -76,7 +76,7 @@ export default {
           name: 'Regały',
           type: 'wysokiego',
           type_continued: 'składowania',
-          thumbnailImage: '/images/polkowy-srubowy-wiorowy/SWI_wior_1.jpeg',
+          thumbnailImage: '/images/annie-spratt-A-G8FsDDQC0-unsplash.jpeg',
           product_list: [
             {
               id: 1,

@@ -1,13 +1,12 @@
 <template>
   <section class="product">
     <RouterLink to="#">
-      <div class="product__thumbnail" :style="backgroundImageStyle">
-        <p>
-          {{ product.name }}<br />{{ product.type }}<br />{{
-            product.type_continued
-          }}
-        </p>
-      </div>
+      <div class="product__thumbnail" :style="backgroundImageStyle"></div>
+      <p class="product__description">
+        {{ product.name }}<br />{{ product.type }}<br />{{
+          product.type_continued
+        }}
+      </p>
     </RouterLink>
   </section>
 </template>
@@ -22,11 +21,13 @@ export default {
   computed: {
     backgroundImageStyle() {
       return {
-        backgroundImage: `linear-gradient(
-        to bottom,
-        rgba(7, 7, 131, 0.85),
+        backgroundImage: `
+        linear-gradient(
+          to bottom,
+        rgba(7, 7, 131, 0.5),
         transparent
-      ), url(${this.product.thumbnailImage})`
+      ),
+      url(${this.product.thumbnailImage})`
       }
     }
   },
@@ -51,15 +52,23 @@ export default {
     background-repeat: no-repeat;
 
     & > p {
+      padding-left: 0.3rem;
       font-size: $font-size-24;
       line-height: $line-height-36;
-      text-align: center;
       color: #fff;
       height: 100%;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      align-items: flex-start;
+      justify-content: flex-start;
+      // text-align: center;
     }
+  }
+
+  &__description {
+    width: 100%;
+    color: $color-primary;
+    padding-top: 0.4rem;
+    // border: 2px solid $color-primary;
   }
 }
 </style>

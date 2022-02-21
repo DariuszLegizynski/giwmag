@@ -21,8 +21,7 @@ export default {
           name: 'Regały',
           type: 'śrubowe',
           type_continued: '',
-          thumbnailImage:
-            '/images/jake-nebov-w9yUy-3Dhlw-unsplash.jpeg',
+          thumbnailImage: '/images/jake-nebov-w9yUy-3Dhlw-unsplash.jpeg',
           product_list: [
             {
               id: 1,
@@ -112,7 +111,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
   grid-auto-rows: minmax(10rem, 1fr);
-  column-gap: 1rem;
-  row-gap: 1rem;
+  column-gap: 0.75rem;
+  row-gap: 3.5rem;
 }
 </style>

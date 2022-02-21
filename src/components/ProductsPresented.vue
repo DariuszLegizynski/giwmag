@@ -112,6 +112,10 @@ export default {
   margin: 8rem 0 5rem 0;
   padding: 0 1rem;
 
+  & > .btn {
+    font-family: 'Montserrat-Medium';
+  }
+
   &__container {
     position: relative;
     width: 100%;

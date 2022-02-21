@@ -22,14 +22,17 @@ span {
 }
 
 h1,
-p {
-  font-family: 'Montserrat-Regular'
+h2,
+h3 {
+  font-family: 'Montserrat-Regular';
 }
 
-h2,
-h3,
+p {
+  font-family: 'Montserrat-Bold';
+  letter-spacing: 1px;
+}
 span {
-  font-family: 'Montserrat-Light';
+  font-family: 'Montserrat-Medium';
 }
 
 h1 {
@@ -46,7 +49,7 @@ h3 {
 }
 
 p {
-  font-size: $font-size-14;
+  font-size: $font-size-20;
   line-height: $line-height-24;
 }
 

@@ -1,8 +1,7 @@
 <template>
-  <button @click="$router.push('/')" class="btn btn--back">Powrót</button>
+  <button @click="$router.push('/')" class="btn btn--back">&lt; Powrót</button>
   <div class="offer">
-    <h1>Nasza Oferta</h1>
-    <h3>Kategorie</h3>
+    <h2>Nasza Oferta</h2>
     <div class="offer__container">
       <ProductList />
     </div>
@@ -27,26 +26,18 @@ export default {
 }
 
 .offer {
-  & > h1 {
-    color: $color-black;
+  & > h2 {
+    color: $color-primary;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0.8rem 0;
   }
 
-  & > h3 {
-    color: $color-black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 0.8rem;
-  }
-
   &__container {
     width: 100%;
     display: block;
-    padding: 0 1rem 3.75rem 1rem;
+    padding: 0 0.75rem 3.75rem 0.75rem;
   }
 }
 </style>

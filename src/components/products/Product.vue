@@ -1,9 +1,9 @@
 <template>
   <section class="product">
     <RouterLink to="#">
-      <div class="product__thumbnail" :style="backgroundImageStyle"></div>
+      <div class="product__thumbnail" :style="backgroundImageStyle" />
       <p class="product__description">
-        {{ product.name }}<br />{{ product.type }}<br />{{
+        {{ product.name }} {{ product.type }}<br />{{
           product.type_continued
         }}
       </p>
@@ -22,11 +22,6 @@ export default {
     backgroundImageStyle() {
       return {
         backgroundImage: `
-        linear-gradient(
-          to bottom,
-        rgba(7, 7, 131, 0.5),
-        transparent
-      ),
       url(${this.product.thumbnailImage})`
       }
     }
@@ -42,7 +37,7 @@ export default {
 
 .product {
   width: 100%;
-  height: 100%;
+  height: 10rem;
 
   &__thumbnail {
     width: 100%;
@@ -50,6 +45,7 @@ export default {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    // border: 2px solid $color-primary;
 
     & > p {
       padding-left: 0.3rem;
@@ -60,15 +56,15 @@ export default {
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;
-      // text-align: center;
     }
   }
 
   &__description {
     width: 100%;
-    color: $color-primary;
-    padding-top: 0.4rem;
-    // border: 2px solid $color-primary;
+    color: $color-white;
+    padding: 0.4rem 0 0.4rem 0.4rem;
+    background-color: $color-primary;
+    text-align:center;
   }
 }
 </style>

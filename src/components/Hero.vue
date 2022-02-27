@@ -29,11 +29,10 @@ export default {
 @import '@/styles/scss/_general.scss';
 
 .hero {
-  height: auto;
+  height: 85.6vh;
 
   &__img {
     position: absolute;
-    z-index: -1;
     top: 0;
     height: 100%;
     width: 100%;
@@ -42,7 +41,7 @@ export default {
         hsla(240, 18%, 3%, 0.8),
         hsla(240, 18%, 3%, 0.7)
       ),
-      url('/images/ruchindra-gunasekara-GK8x_XCcDZg-unsplash.jpeg');
+      url('/images/portrait/ruchindra-gunasekara-GK8x_XCcDZg-unsplash.jpeg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,6 +50,7 @@ export default {
   &__text {
     padding: 0.8rem 1.6rem;
     text-align: center;
+    position: absolute;
 
     & > h3 {
       margin: 1.6rem 0;
@@ -69,6 +69,11 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: flex-end;
+    padding-bottom: 4.4rem;
   }
 }
 

@@ -2,11 +2,14 @@
   <section class="product">
     <RouterLink to="#">
       <div class="product__thumbnail" :style="backgroundImageStyle" />
-      <p class="product__description">
-        {{ product.name }} {{ product.type }}<br />{{
-          product.type_continued
-        }}
-      </p>
+      <div class="product__description">
+        <p class="product__text">
+          {{ product.name }} {{ product.type }}<br />{{
+            product.type_continued
+          }}
+        </p>
+        <p class="product__arrow">więcej</p>
+      </div>
     </RouterLink>
   </section>
 </template>
@@ -51,11 +54,29 @@ export default {
   }
 
   &__description {
-    width: 100%;
-    color: $color-white;
-    padding: 0.8rem 0 0.8rem 0.4rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    column-gap: 0.8rem;
     background-color: $color-primary;
-    text-align:center;
+  }
+
+  &__text {
+    padding-left: 0.8rem;
+    text-align: center;
+    color: $color-white;
+    font-size: 1rem;
+    font-family: 'PublicSans-Bold';
+  }
+
+  &__arrow {
+    color: $color-primary;
+    background-color: $color-secondary;
+    width: 100%;
+    text-align: center;
+    padding: 0.4rem;
+    border: 8px solid $color-primary;
   }
 }
 </style>

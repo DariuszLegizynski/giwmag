@@ -21,8 +21,11 @@ export default {
   computed: {
     backgroundImageStyle() {
       return {
-        backgroundImage: `
-      url(${this.product.thumbnailImage})`
+        backgroundImage: `linear-gradient(
+        to bottom,
+        transparent 70%,
+        hsla(240, 90%, 27%, 0.4)
+), url(${this.product.thumbnailImage})`
       }
     }
   },
@@ -45,24 +48,12 @@ export default {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    // border: 2px solid $color-primary;
-
-    & > p {
-      padding-left: 0.3rem;
-      font-size: $font-size-24;
-      line-height: $line-height-36;
-      color: #fff;
-      height: 100%;
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-    }
   }
 
   &__description {
     width: 100%;
     color: $color-white;
-    padding: 0.4rem 0 0.4rem 0.4rem;
+    padding: 0.8rem 0 0.8rem 0.4rem;
     background-color: $color-primary;
     text-align:center;
   }

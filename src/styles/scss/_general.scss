@@ -1,44 +1,12 @@
 @import './_variables.scss';
 @import './_components.scss';
 @import './animations.scss';
+@import './_fonts.scss';
 
-@font-face {
-  font-family: 'PublicSans-Regular';
-  font-style: normal;
-  font-weight: normal;
-  font-display: auto;
-  src: local('PublicSans-Regular'),
-    url('/fonts/PublicSans/PublicSans-Regular.woff2') format('woff2'),
-    url('/fonts/PublicSans/PublicSans-Regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'PublicSans-Bold';
-  font-style: bold;
-  font-weight: bold;
-  font-display: auto;
-  src: local('PublicSans-Bold'),
-    url('/fonts/PublicSans/PublicSans-Bold.woff2') format('woff2'),
-    url('/fonts/PublicSans/PublicSans-Bold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'PublicSans-SemiBold';
-  font-style: bold;
-  font-weight: bold;
-  font-display: auto;
-  src: local('PublicSans-SemiBold'),
-    url('/fonts/PublicSans/PublicSans-SemiBold.woff2') format('woff2'),
-    url('/fonts/PublicSans/PublicSans-SemiBold.woff') format('woff');
-}
-
+html,
 body {
-  background-color: $color-white;
+  background-color: $color-secondary;
   font-family: 'PublicSans-Regular';
-  // background: rgba(7, 7, 131, 0.7);
-}
-
-html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -46,19 +14,32 @@ html {
 h1,
 h2,
 h3,
-h4,
-h5,
-p {
+p,
+span {
   color: $color-white;
 }
 
+h1,
+h2,
+h3 {
+  font-family: 'Montserrat-Regular';
+}
+
+p {
+  font-family: 'Montserrat-Bold';
+  letter-spacing: 1px;
+}
+span {
+  font-family: 'Montserrat-Medium';
+}
+
 h1 {
-  font-size: $font-size-34;
-  line-height: $line-height-40;
+  font-size: $font-size-36;
+  line-height: $line-height-44;
 }
 h2 {
-  font-size: $font-size-26;
-  line-height: $line-height-32;
+  font-size: $font-size-32;
+  line-height: $line-height-34;
 }
 h3 {
   font-size: $font-size-20;
@@ -66,8 +47,12 @@ h3 {
 }
 
 p {
-  font-size: $font-size-16;
+  font-size: $font-size-20;
   line-height: $line-height-24;
+}
+
+i {
+  font-family: 'NotoSerifDisplay-LightItalic';
 }
 
 span {

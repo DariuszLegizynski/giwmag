@@ -1,5 +1,8 @@
 <template>
-  <article class="products-presented">
+  <article class="products-presented" id="products">
+    <button @click="$router.push('/offer')" class="btn btn--default">
+      Pełna Oferta
+    </button>
     <section class="products-presented__items">
       <div class="products-presented__item" data-aos="fade-up">
         <h3 class="products-presented__title">
@@ -13,7 +16,7 @@
               :speed="-0.1"
             >
               <img
-                src="/images/jake-nebov-NmwnjkukM80-unsplash.jpeg"
+                src="/images/portrait/jake-nebov-NmwnjkukM80-unsplash.jpeg"
                 alt="classical shelves"
                 loading="lazy"
               />
@@ -40,7 +43,7 @@
               :speed="-0.1"
             >
               <img
-                src="/images/jake-nebov-gVlNW-xrAZM-unsplash.jpeg"
+                src="/images/portrait/jake-nebov-gVlNW-xrAZM-unsplash.jpeg"
                 alt="some racks"
                 loading="lazy"
               />
@@ -67,7 +70,7 @@
               :speed="-0.1"
             >
               <img
-                src="/images/jake-nebov-NmwnjkukM80-unsplash.jpeg"
+                src="/images/portrait/jake-nebov-NmwnjkukM80-unsplash.jpeg"
                 alt="some racks"
                 loading="lazy"
               />
@@ -106,8 +109,12 @@ export default {
 @import '@/styles/scss/_general.scss';
 
 .products-presented {
-  margin: 8rem 0 5rem 0;
-  padding: 0 1rem;
+  padding: 4rem 1rem;
+  background-color: $color-secondary;
+
+  & > .btn {
+    font-family: 'Montserrat-Medium';
+  }
 
   &__container {
     position: relative;
@@ -131,6 +138,11 @@ export default {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 4rem;
+  }
+
+  &__item {
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: $color-white;
   }
 
   &__title {

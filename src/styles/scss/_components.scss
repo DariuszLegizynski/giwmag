@@ -1,5 +1,10 @@
 @import './_variables.scss';
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 button {
   cursor: pointer;
   background: transparent;
@@ -9,13 +14,19 @@ button {
 .btn {
   color: $color-primary;
   background-color: $color-white;
-  font-family: 'PublicSans-SemiBold';
+  font-family: 'Montserrat-Regular';
   font-size: $font-size-24;
   line-height: $line-height-24;
   padding: 0.9rem;
   border-radius: 4px;
   margin: 0.6rem;
   width: 100%;
+
+  &--back {
+    font-size: $font-size-16;
+    line-height: $line-height-16;
+    background-color: $color-secondary;
+  }
 
   &--default {
     &:hover {
@@ -59,4 +70,9 @@ textarea {
   &:focus-visible {
     outline: none;
   }
+}
+
+ul,
+li {
+  list-style: none;
 }

@@ -121,6 +121,7 @@ export default {
   & > h2 {
     color: $color-primary;
     margin-bottom: 1.2rem;
+    text-align: center;
   }
 
   &__items {

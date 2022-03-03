@@ -6,26 +6,31 @@
       header__active: isBurgerActive
     }"
   >
-    <h1 class="logo">Wi-<span>-Mag</span></h1>
+    <h2 @click="$router.push('/')" class="logo">Wi-<span>-Mag</span></h2>
 
-    <Burger
-      @click.prevent="toggle"
-      :isBurgerActive="isBurgerActive"
-      :isContrastActive="isContrastActive"
-    />
+    <Burger @click.prevent="toggle()" :isBurgerActive="isBurgerActive" />
   </header>
   <nav
     class="sideBar fade-in-bg"
     :class="{
-      sideBar__scroll: isContrastActive,
+      sideBar__scroll: !isContrastActive,
       slideIn: isBurgerActive,
       slideOut: !isBurgerActive
     }"
   >
     <div class="btn sr-only">MENU</div>
-    <button class="btn" @click.stop="this.observe">OFERTA</button>
-    <button class="btn">O FIRMIE</button>
-    <button class="btn btn--highlight">KONTAKT</button>
+    <button @click=";[$router.push('/offer'), toggle()]" class="btn">
+      OFERTA
+    </button>
+    <button @click=";[$router.push('/about'), toggle()]" class="btn">
+      O FIRMIE
+    </button>
+    <button
+      @click=";[$router.push('/home#footer'), toggle()]"
+      class="btn btn--highlight"
+    >
+      KONTAKT
+    </button>
   </nav>
 </template>
 
@@ -37,12 +42,23 @@ export default {
     return {
       isBurgerActive: false,
       isContrastActive: true,
-      observer: null,
-      footerObserver: null
+      observer: null
     }
   },
   components: {
     Burger
+  },
+  watch: {
+    isBurgerActive: {
+      toggle() {
+        this.isBurgerActive = !this.isBurgerActive
+      }
+    }
+  },
+  methods: {
+    toggle() {
+      this.isBurgerActive = !this.isBurgerActive
+    }
   },
   mounted() {
     this.observer = new IntersectionObserver(
@@ -56,31 +72,16 @@ export default {
       { rootMargin: '-5% 0px 0px 0px' }
     )
 
-    this.observer.observe(document.querySelector('.observer'))
-
-    this.footerObserver = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) {
-          this.isContrastActive = true
-        } else {
-          this.isContrastActive = false
-        }
-      },
-      { rootMargin: '-10% 0px 0px 0px' }
-    )
-
-    this.footerObserver.observe(document.querySelector('.footerObserver'))
-  },
-  methods: {
-    toggle() {
-      this.isBurgerActive = !this.isBurgerActive
-    }
+    document
+      .querySelectorAll('.observer')
+      .forEach(el => this.observer.observe(el))
   }
 }
 </script>
 
 <style lang="scss" scoped>
 @import '@/styles/scss/_general.scss';
+
 .header {
   position: sticky;
   top: 0;
@@ -90,6 +91,7 @@ export default {
   z-index: 10;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0.4rem;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
@@ -103,14 +105,17 @@ export default {
 
   &__scroll {
     background-color: $primary-opacity;
-    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 }
 .logo {
+  font-family: 'PublicSans-Regular';
+
   & > span {
     color: $color-primary;
-    font-size: $font-size-34;
-    line-height: $line-height-40;
+    font-size: $font-size-32;
+    line-height: $line-height-34;
+    font-family: 'PublicSans-Regular';
   }
 }
 
@@ -125,10 +130,10 @@ export default {
   backdrop-filter: blur(9px);
   transform: translateX(100%);
   -webkit-transform: translateX(100%);
-  background-color: $black-opacity;
+  background-color: $primary-opacity;
 
   &__scroll {
-    background-color: $primary-opacity;
+    background-color: $black-opacity;
   }
 }
 .btn {

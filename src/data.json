@@ -1,0 +1,85 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Regały",
+      "type": "śrubowe",
+      "type_continued": "",
+      "thumbnail_image": "/images/landscape/pexels-tiger-lily-4483610.jpeg",
+      "product_list": [
+        {
+          "id": 1,
+          "sub_category": "ciężki",
+          "thumbnail_image": "/images/polkowy-srubowy-ciezki/P1010724.jpeg",
+          "image": "/images/polkowy-srubowy-ciezki/P1010717a.jpeg"
+        },
+        {
+          "id": 2,
+          "sub_category": "metalowy",
+          "thumbnail_image": "/images/polkowy-srubowy-metalowy/Regal_swi_metal_5.jpeg",
+          "image": "/images/polkowy-srubowy-metalowy/Regal_swi_metal_1.jpeg"
+        },
+        {
+          "id": 3,
+          "sub_category": "wiórowy",
+          "thumbnail_image": "/images/polkowy-srubowy-wiorowy/swi_wior2.jpeg",
+          "image": "/images/polkowy-srubowy-wiorowy/SWI_wior_1.jpeg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Regały",
+      "type": "zaczepowe",
+      "type_continued": "",
+      "thumbnail_image": "/images/landscape/sikai-gu-vzdFzNNgt1k-unsplash.jpeg",
+      "product_list": [
+        {
+          "id": 4,
+          "sub_category": "ciężki",
+          "thumbnail_image": "https://picsum.photos/150/200",
+          "image": "https://picsum.photos"
+        },
+        {
+          "id": 5,
+          "sub_category": "metalowy",
+          "thumbnail_image": "https://picsum.photos/150/200",
+          "image": "https://picsum.photos"
+        },
+        {
+          "id": 6,
+          "sub_category": "wiórowy",
+          "thumbnail_image": "https://picsum.photos/150/200",
+          "image": "https://picsum.photos"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Regały",
+      "type": "wysokiego",
+      "type_continued": "składowania",
+      "thumbnail_image": "/images/landscape/chuttersnap-JWaXthlA9Cc-unsplash.jpeg",
+      "product_list": [
+        {
+          "id": 1,
+          "sub_category": "ciężki",
+          "thumbnail_image": "https://picsum.photos/150/200",
+          "image": "https://picsum.photos"
+        },
+        {
+          "id": 2,
+          "sub_category": "metalowy",
+          "thumbnail_image": "https://picsum.photos/150/200",
+          "image": "https://picsum.photos"
+        },
+        {
+          "id": 3,
+          "sub_category": "wiórowy",
+          "thumbnail_image": "https://picsum.photos/150/200",
+          "image": "https://picsum.photos"
+        }
+      ]
+    }
+  ]
+}

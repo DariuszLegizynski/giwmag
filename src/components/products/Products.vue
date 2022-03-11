@@ -1,6 +1,6 @@
 <template>
   <section class="product">
-    <RouterLink to="#">
+    <RouterLink :to="`/offer/product/${product.id}`">
       <div class="product__thumbnail" :style="backgroundImageStyle" />
       <div class="product__description">
         <p class="product__text">
@@ -28,13 +28,10 @@ export default {
         to bottom,
         transparent 70%,
         hsla(240, 90%, 27%, 0.4)
-), url(${this.product.thumbnailImage})`
+), url(${this.product.thumbnail_image})`
       }
     }
   },
-  mounted() {
-    console.log(this.product)
-  }
 }
 </script>
 
@@ -71,8 +68,8 @@ export default {
   }
 
   &__arrow {
-    color: $color-primary;
-    background-color: $color-secondary;
+    color: $color-white;
+    background-color: $color-tertiary;
     width: 100%;
     text-align: center;
     padding: 0.4rem;

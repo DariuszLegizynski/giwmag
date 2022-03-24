@@ -52,7 +52,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/styles/scss/_general.scss';
-.poduct-presented {
+.product-presented {
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: $color-white;
 
@@ -87,5 +87,9 @@ export default {
   & > .btn {
     font-family: 'Montserrat-Medium';
   }
+}
+.btn {
+  margin: 0;
+  border-radius: 0;
 }
 </style>

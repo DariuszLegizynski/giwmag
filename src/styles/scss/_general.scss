@@ -19,14 +19,12 @@ span {
   color: $color-white;
 }
 
-h1,
-h2,
-h3 {
-  font-family: 'Montserrat-Regular';
+h1, h2, h3 {
+  font-family: 'Montserrat-Bold';
 }
 
 p {
-  font-family: 'Montserrat-Bold';
+  font-family: 'Montserrat-Regular';
   letter-spacing: 1px;
 }
 span {
@@ -34,7 +32,7 @@ span {
 }
 
 h1 {
-  font-size: $font-size-36;
+  font-size: $font-size-38;
   line-height: $line-height-44;
 }
 h2 {

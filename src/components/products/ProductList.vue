@@ -1,186 +1,22 @@
 <template>
   <ul class="products-alt">
-    <li class="products__list" v-for="product in this.productsAlternative" :key="product.id">
-      <Product :product="product" />
+    <li class="products__list" v-for="product in products" :key="product.id">
+      <Products :product="product" />
     </li>
   </ul>
 </template>
 
 <script>
-import Product from '@/components/products/Product.vue'
+import Products from '@/components/products/Products.vue'
+import localDataBase from '@/data.json'
 
 export default {
   components: {
-    Product
+    Products
   },
-  data() {
-    return {
-      products: [
-        {
-          id: 1,
-          name: 'Regały',
-          type: 'śrubowe',
-          type_continued: '',
-          thumbnailImage: '/images/portrait/jake-nebov-w9yUy-3Dhlw-unsplash.jpeg',
-          product_list: [
-            {
-              id: 1,
-              sub_category: 'ciężki',
-              thumbnailImage: 'https://picsum.photos/150/200',
-              Image: 'https://picsum.photos'
-            },
-            {
-              id: 2,
-              sub_category: 'metalowy',
-              thumbnailImage: 'https://picsum.photos/150/200',
-              Image: 'https://picsum.photos'
-            },
-            {
-              id: 3,
-              sub_category: 'wiórowy',
-              thumbnailImage: 'https://picsum.photos/150/200',
-              Image: 'https://picsum.photos'
-            }
-          ]
-        },
-        {
-          id: 2,
-          name: 'Regały',
-          type: 'zaczepowe',
-          type_continued: '',
-          thumbnailImage: '/images/portrait/arno-senoner-yqu6tJkSQ_k-unsplash.jpeg',
-          product_list: [
-            {
-              id: 4,
-              sub_category: 'ciężki',
-              thumbnailImage: 'https://picsum.photos/150/200',
-              Image: 'https://picsum.photos'
-            },
-            {
-              id: 5,
-              sub_category: 'metalowy',
-              thumbnailImage: 'https://picsum.photos/150/200',
-              Image: 'https://picsum.photos'
-            },
-            {
-              id: 6,
-              sub_category: 'wiórowy',
-              thumbnailImage: 'https://picsum.photos/150/200',
-              Image: 'https://picsum.photos'
-            }
-          ]
-        },
-        {
-          id: 3,
-          name: 'Regały',
-          type: 'wysokiego',
-          type_continued: 'składowania',
-          thumbnailImage: '/images/portrait/annie-spratt-A-G8FsDDQC0-unsplash.jpeg',
-          product_list: [
-            {
-              id: 1,
-              sub_category: 'ciężki',
-              thumbnailImage: 'https://picsum.photos/150/200',
-              Image: 'https://picsum.photos'
-            },
-            {
-              id: 2,
-              sub_category: 'metalowy',
-              thumbnailImage: 'https://picsum.photos/150/200',
-              Image: 'https://picsum.photos'
-            },
-            {
-              id: 3,
-              sub_category: 'wiórowy',
-              thumbnailImage: 'https://picsum.photos/150/200',
-              Image: 'https://picsum.photos'
-            }
-          ]
-        }
-      ],
-      productsAlternative: [
-        {
-          id: 1,
-          name: 'Regały',
-          type: 'śrubowe',
-          type_continued: '',
-          thumbnailImage: '/images/landscape/pexels-tiger-lily-4483610.jpeg',
-          product_list: [
-            {
-              id: 1,
-              sub_category: 'ciężki',
-              thumbnailImage: 'https://picsum.photos/150/200',
-              Image: 'https://picsum.photos'
-            },
-            {
-              id: 2,
-              sub_category: 'metalowy',
-              thumbnailImage: 'https://picsum.photos/150/200',
-              Image: 'https://picsum.photos'
-            },
-            {
-              id: 3,
-              sub_category: 'wiórowy',
-              thumbnailImage: 'https://picsum.photos/150/200',
-              Image: 'https://picsum.photos'
-            }
-          ]
-        },
-        {
-          id: 2,
-          name: 'Regały',
-          type: 'zaczepowe',
-          type_continued: '',
-          thumbnailImage: '/images/landscape/sikai-gu-vzdFzNNgt1k-unsplash.jpeg',
-          product_list: [
-            {
-              id: 4,
-              sub_category: 'ciężki',
-              thumbnailImage: 'https://picsum.photos/150/200',
-              Image: 'https://picsum.photos'
-            },
-            {
-              id: 5,
-              sub_category: 'metalowy',
-              thumbnailImage: 'https://picsum.photos/150/200',
-              Image: 'https://picsum.photos'
-            },
-            {
-              id: 6,
-              sub_category: 'wiórowy',
-              thumbnailImage: 'https://picsum.photos/150/200',
-              Image: 'https://picsum.photos'
-            }
-          ]
-        },
-        {
-          id: 3,
-          name: 'Regały',
-          type: 'wysokiego',
-          type_continued: 'składowania',
-          thumbnailImage: '/images/landscape/chuttersnap-JWaXthlA9Cc-unsplash.jpeg',
-          product_list: [
-            {
-              id: 1,
-              sub_category: 'ciężki',
-              thumbnailImage: 'https://picsum.photos/150/200',
-              Image: 'https://picsum.photos'
-            },
-            {
-              id: 2,
-              sub_category: 'metalowy',
-              thumbnailImage: 'https://picsum.photos/150/200',
-              Image: 'https://picsum.photos'
-            },
-            {
-              id: 3,
-              sub_category: 'wiórowy',
-              thumbnailImage: 'https://picsum.photos/150/200',
-              Image: 'https://picsum.photos'
-            }
-          ]
-        }
-      ]
+  computed: {
+    products() {
+      return localDataBase.products
     }
   }
 }

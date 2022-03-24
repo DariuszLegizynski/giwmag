@@ -1,107 +1,23 @@
 <template>
   <article class="products-presented" id="products">
+    <h1>Postaw na<br />nasze produkty</h1>
+    <section class="products-presented__items">
+      <ProductPresented :parallaxScrollSpeed="-0.1" />
+      <ProductPresented :parallaxScrollSpeed="-0.1" />
+      <ProductPresented :parallaxScrollSpeed="-0.1" />
+    </section>
     <button @click="$router.push('/offer')" class="btn btn--default">
       Pełna Oferta
     </button>
-    <section class="products-presented__items">
-      <div class="products-presented__item" data-aos="fade-up">
-        <h3 class="products-presented__title">
-          Regały półkowe śrubowe
-        </h3>
-        <div class="products-presented__container">
-          <div class="products-presented__img-wrapper">
-            <ScrollParallax
-              class="products-presented__img"
-              direction="y"
-              :speed="-0.1"
-            >
-              <img
-                src="/images/portrait/jake-nebov-NmwnjkukM80-unsplash.jpeg"
-                alt="classical shelves"
-                loading="lazy"
-              />
-            </ScrollParallax>
-          </div>
-        </div>
-        <p class="products-presented__content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-          ipsa voluptate facere dicta quia, eum dolor laboriosam autem, alias
-          deleniti quaerat pariatur.
-        </p>
-        <button class="btn btn--highlight">Zobacz</button>
-      </div>
-
-      <div class="products-presented__item" data-aos="fade-up">
-        <h3 class="products-presented__title">
-          Regały półkowe zaczepowe
-        </h3>
-        <div class="products-presented__container">
-          <div class="products-presented__img-wrapper">
-            <ScrollParallax
-              class="products-presented__img"
-              direction="y"
-              :speed="-0.1"
-            >
-              <img
-                src="/images/portrait/jake-nebov-gVlNW-xrAZM-unsplash.jpeg"
-                alt="some racks"
-                loading="lazy"
-              />
-            </ScrollParallax>
-          </div>
-        </div>
-        <p class="products-presented__content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-          ipsa voluptate facere dicta quia, eum dolor laboriosam autem, alias
-          deleniti quaerat pariatur.
-        </p>
-        <button class="btn btn--highlight">Zobacz</button>
-      </div>
-
-      <div class="products-presented__item" data-aos="fade-up">
-        <h3 class="products-presented__title">
-          Regały wysokiego składowania
-        </h3>
-        <div class="products-presented__container">
-          <div class="products-presented__img-wrapper">
-            <ScrollParallax
-              class="products-presented__img"
-              direction="y"
-              :speed="-0.1"
-            >
-              <img
-                src="/images/portrait/jake-nebov-NmwnjkukM80-unsplash.jpeg"
-                alt="some racks"
-                loading="lazy"
-              />
-            </ScrollParallax>
-          </div>
-        </div>
-        <p class="products-presented__content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-          ipsa voluptate facere dicta quia, eum dolor laboriosam autem, alias
-          deleniti quaerat pariatur.
-        </p>
-        <button class="btn btn--highlight">
-          Zobacz
-        </button>
-      </div>
-    </section>
   </article>
 </template>
 
 <script>
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-
-import ScrollParallax from 'vue3-parallax/src/components/ScrollParallax.vue'
+import ProductPresented from '@/components/products/ProductPresented.vue'
 export default {
   components: {
-    ScrollParallax
+    ProductPresented,
   },
-  created() {
-    AOS.init()
-  }
 }
 </script>
 
@@ -112,50 +28,15 @@ export default {
   padding: 4rem 1rem;
   background-color: $color-secondary;
 
-  & > .btn {
-    font-family: 'Montserrat-Medium';
-  }
-
-  &__container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    margin: 0 0 0.75rem;
-    padding: 0 0 90% 0;
-  }
-
-  &__img-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
   &__items {
     margin: 1.6rem 0 2rem 0;
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 4rem;
   }
-
-  &__item {
-    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: $color-white;
-  }
-
-  &__title {
-    color: $color-black;
-    padding: 0.8rem 1.4rem;
-    margin-bottom: 0.8rem;
-    text-align: center;
-  }
-
-  &__content {
-    padding: 0.6rem 1.4rem 1.2rem 1.4rem;
-    color: $color-black;
-  }
+}
+h1 {
+  color: $color-black;
 }
 
 .btn {

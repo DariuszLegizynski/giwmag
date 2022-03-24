@@ -1,12 +1,12 @@
 <template>
-  <article class="products-presented" id="products">
+  <article id="products" class="products-presented">
     <h1>Postaw na<br />nasze produkty</h1>
     <section class="products-presented__items">
       <ProductPresented :parallaxScrollSpeed="-0.1" />
       <ProductPresented :parallaxScrollSpeed="-0.1" />
       <ProductPresented :parallaxScrollSpeed="-0.1" />
     </section>
-    <button @click="$router.push('/offer')" class="btn btn--default">
+    <button class="btn btn--default" @click="$router.push('/offer')">
       Pełna Oferta
     </button>
   </article>
@@ -42,9 +42,5 @@ h1 {
 .btn {
   margin: 0;
   border-radius: 0;
-}
-
-.btn--test {
-  background-color: $primary-opacity;
 }
 </style>

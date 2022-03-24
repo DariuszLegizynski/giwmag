@@ -31,7 +31,7 @@
         </div>
         <div class="footer__form__item">
           <label>Wiadomość</label>
-          <textarea placeholder="Twoja wiadomość" required />
+          <textarea placeholder="Co chcesz nam przekzać?" required />
         </div>
       </form>
       <button class="btn btn--highlight">Wyślij</button>

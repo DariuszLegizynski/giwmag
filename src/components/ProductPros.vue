@@ -116,7 +116,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4rem 0;
+  padding: 4rem 0;
   background-color: $color-white;
 
   & > h2 {
@@ -128,7 +128,6 @@ export default {
   &__items {
     display: grid;
     grid-template-rows: repeat(5, 1fr);
-    row-gap: 0.6rem;
   }
 
   &__item {

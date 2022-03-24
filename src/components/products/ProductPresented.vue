@@ -16,14 +16,17 @@
       </div>
     </div>
     <h3 class="product-presented__title">
-      Regały wysokiego składowania
+      {{ title }}
     </h3>
-    <p class="product-presented__content">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ipsa
-      voluptate facere dicta quia, eum dolor laboriosam autem, alias deleniti
-      quaerat pariatur.
-    </p>
-    <button class="btn btn--highlight">
+    <div class="product-presented__content">
+      <ul class="product-presented__text-wrapper">
+        <li>- zimnowalcowana<br/>blacha DC01</li>
+        <li>- malowanie<br/>proszkowe</li>
+        <li>- skręcane<br/>śrubami 6x12mm</li>
+        <li>- popiel<br/>RAL7035</li>
+      </ul>
+    </div>
+    <button class="btn btn--default-reverse">
       Zobacz
     </button>
   </section>
@@ -39,6 +42,10 @@ export default {
     ScrollParallax,
   },
   props: {
+    title: {
+      type: String,
+      default: '',
+    },
     parallaxScrollSpeed: {
       type: Number,
       default: 0,
@@ -61,7 +68,7 @@ export default {
     width: 100%;
     overflow: hidden;
     margin: 0 0 0.75rem;
-    padding: 0 0 90% 0;
+    padding: 0 0 60% 0;
   }
 
   &__img-wrapper {
@@ -76,14 +83,28 @@ export default {
   &__title {
     color: $color-black;
     padding: 0.8rem 1rem;
-    margin-bottom: 0.8rem;
     text-align: center;
+    font-size: $font-size-24;
   }
 
   &__content {
-    padding: 0.6rem 1.4rem 1.2rem 1.4rem;
+    padding: 0.6rem 1.2rem 1.2rem 1.2rem;
     color: $color-black;
   }
+
+  &__text-wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-auto-rows: 1.8rem;
+    column-gap: .4rem;
+    row-gap: 1rem;
+
+    & > li {
+      font-size: $font-size-14;
+      text-transform: uppercase;
+    }
+  }
+
   & > .btn {
     font-family: 'Montserrat-Medium';
   }

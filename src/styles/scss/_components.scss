@@ -2,7 +2,13 @@
 
 a {
   text-decoration: none;
+  color: inherit;
   cursor: pointer;
+
+  &:hover, &:active {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 button {
@@ -28,22 +34,22 @@ button {
     background-color: $color-secondary;
   }
 
-  &--default {
-    &:hover {
-      background-color: $color-primary-light;
-    }
-  }
-
   &--highlight {
     color: $color-white;
-    background-color: $color-reserve-5;
-
-    &:hover {
-      background-color: $color-highlight;
-    }
+    background-color: $color-highlight;
+  }
+  &--highlight-reverse {
+    color: $color-highlight;
+    background-color: $color-white;
+    border: 2px solid $color-highlight;
   }
 
-  &--reverse {
+  &--default {
+    color: $color-primary-light;
+    background-color: $color-white;
+  }
+
+  &--default-reverse {
     color: $color-white;
     background-color: $color-primary-light;
   }

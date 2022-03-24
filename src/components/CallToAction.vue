@@ -5,8 +5,8 @@
         Zapytaj nas
       </a>
     </button>
-    <button class="btn btn--default">
-      <a href="#products">Nasze produkty</a>
+    <button class="btn btn--default-reverse">
+      <a href="#products">Nasza oferta</a>
     </button>
   </div>
 </template>

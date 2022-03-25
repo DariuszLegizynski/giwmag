@@ -128,6 +128,7 @@ export default {
   &__items {
     display: grid;
     grid-template-rows: repeat(5, 1fr);
+    row-gap: 0.6rem;
   }
 
   &__item {

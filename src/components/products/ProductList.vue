@@ -1,18 +1,18 @@
 <template>
-  <ul class="products-alt">
+  <ul class="products">
     <li class="products__list" v-for="product in products" :key="product.id">
-      <Products :product="product" />
+      <Product isPortrait :product="product" />
     </li>
   </ul>
 </template>
 
 <script>
-import Products from '@/components/products/Products.vue'
+import Product from '@/components/products/Product.vue'
 import localDataBase from '@/data.json'
 
 export default {
   components: {
-    Products
+    Product
   },
   computed: {
     products() {
@@ -28,16 +28,16 @@ export default {
 .products {
   display: -webkit-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  grid-template-columns: 1fr;
   grid-auto-rows: minmax(10rem, 1fr);
   column-gap: 0.75rem;
-  row-gap: 3.5rem;
+  // row-gap: .75rem;
 
   &__list {
     width: 100%;
 
     &:not(:last-child){
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
   }
   }
 }
@@ -47,7 +47,5 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  
 }
 </style>

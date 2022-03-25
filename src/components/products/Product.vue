@@ -1,14 +1,15 @@
 <template>
   <section class="product">
     <RouterLink :to="`/offer/product/${product.id}`">
-      <div class="product__thumbnail" :style="backgroundImageStyle" />
-      <div class="product__description">
-        <p class="product__text">
-          {{ product.name }} {{ product.type }}<br />{{
-            product.type_continued
-          }}
-        </p>
-        <p class="product__arrow">więcej</p>
+      <div class="product__container">
+        <div class="product__thumbnail" :style="isPortrait ? portraitImageStyle : backgroundImageStyle" />
+        <div class="product__description">
+          <p class="product__text">
+            {{ product.name }} {{ product.type }}<br />{{
+              product.type_continued
+            }}
+          </p>
+        </div>
       </div>
     </RouterLink>
   </section>
@@ -18,7 +19,12 @@
 export default {
   props: {
     product: {
-      type: Object
+      type: Object,
+      default: () => ({})
+    },
+    isPortrait: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
@@ -30,6 +36,15 @@ export default {
         hsla(240, 90%, 27%, 0.4)
 ), url(${this.product.thumbnail_image})`
       }
+    },
+    portraitImageStyle() {
+      return {
+        backgroundImage: `linear-gradient(
+        to bottom,
+        transparent 70%,
+        hsla(240, 90%, 27%, 0.4)
+), url(${this.product.thumbnail_portrait})`
+      }
     }
   },
 }
@@ -40,12 +55,17 @@ export default {
 
 .product {
   width: 100%;
-  height: 10rem;
+  height: 8rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
 
   &__thumbnail {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
+    width: 6rem;
+    height: 9rem;
+    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
   }
@@ -54,13 +74,14 @@ export default {
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4rem;
     column-gap: 0.8rem;
-    background-color: $color-primary;
+    background-color: $color-tertiary;
   }
 
   &__text {
-    padding-left: 0.8rem;
+    // padding-left: 0.8rem;
     text-align: center;
     color: $color-white;
     font-size: 1rem;

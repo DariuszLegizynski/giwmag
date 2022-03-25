@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import ProductPresented from '@/components/products/ProductPresented.vue'
+import ProductPresented from '@/components/home/ProductPresented.vue'
 export default {
   components: {
     ProductPresented,

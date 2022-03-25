@@ -8,7 +8,7 @@
       <p class="products-categories__text">
         {{ product.name }} {{ product.type }}<br />{{ product.type_continued }}
       </p>
-      <div>\/</div>
+      <div>\|/</div>
     </div>
   </section>
   <section v-if="isExpanded">
@@ -53,8 +53,9 @@ export default {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
   column-gap: .4rem;
-  height: 100%;
   width: 100%;
+  height: 6rem;
+  background-color: $color-white;
 
   &__thumbnail {
     background-size: cover;

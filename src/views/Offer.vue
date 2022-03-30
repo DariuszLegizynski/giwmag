@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import ProductList from '@/components/products/ProductList.vue'
+import ProductList from '@/components/offer/ProductList.vue'
 export default {
   components: {
     ProductList
@@ -24,6 +24,7 @@ export default {
 
 .offer {
   padding-top: 1rem;
+  background-color: $color-secondary;
 
   & .btn {
     padding: 0.4rem;
@@ -45,6 +46,7 @@ export default {
     width: 100%;
     display: block;
     padding: 1rem 0.75rem 4.75rem 0.75rem;
+    
   }
 }
 </style>

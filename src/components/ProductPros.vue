@@ -116,7 +116,8 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4rem 0;
+  padding: 4rem 0;
+  background-color: $color-white;
 
   & > h2 {
     color: $color-primary;

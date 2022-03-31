@@ -12,6 +12,7 @@
     "core-js": "^3.19.3",
     "node-sass": "^6.0.1",
     "vue": "^3.0.0",
+    "vue-gtag": "^2.0.1",
     "vue-router": "^4.0.0-0",
     "vue3-parallax": "^0.1.3"
   },

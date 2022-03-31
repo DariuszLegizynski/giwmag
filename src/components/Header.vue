@@ -3,30 +3,41 @@
     class="header fade-in-bg"
     :class="{
       header__scroll: isContrastActive,
-      header__active: isBurgerActive
+      header__active: isBurgerActive,
     }"
   >
-    <h2 @click="$router.push('/')" class="logo">Wi-<span>-Mag</span></h2>
+    <h2
+      @click="$router.push('/'); track( handle='logo-click', category='button toggled', description='logo was clicked' )"
+      class="logo"
+    >
+      Wi-<span>-Mag</span>
+    </h2>
 
-    <Burger @click.prevent="toggle()" :isBurgerActive="isBurgerActive" />
+    <Burger @click.prevent="toggle" :isBurgerActive="isBurgerActive" />
   </header>
   <nav
     class="sideBar fade-in-bg"
     :class="{
       sideBar__scroll: !isContrastActive,
       slideIn: isBurgerActive,
-      slideOut: !isBurgerActive
+      slideOut: !isBurgerActive,
     }"
   >
     <div class="btn sr-only">MENU</div>
-    <button @click=";[$router.push('/offer'), toggle()]" class="btn">
+    <button
+      @click="$router.push('/offer'); toggle( handle='offer-click', category='offer button toggled', description='offer btn was clicked' )"
+      class="btn"
+    >
       OFERTA
     </button>
-    <button @click=";[$router.push('/about'), toggle()]" class="btn">
+    <button
+      @click="$router.push('/about'); toggle( handle='about-click', category='about button toggled', description='about btn was clicked' )"
+      class="btn"
+    >
       O FIRMIE
     </button>
     <button
-      @click=";[$router.push('/home#footer'), toggle()]"
+      @click="$router.push('/home#footer'); toggle( handle='contact-click', category='contact button toggled', description='contact btn was clicked' )"
       class="btn btn--highlight"
     >
       KONTAKT
@@ -41,41 +52,50 @@ export default {
   data() {
     return {
       isBurgerActive: false,
-      isContrastActive: true,
-      observer: null
+      isContrastActive: false,
+      observer: null,
     }
   },
   components: {
-    Burger
+    Burger,
   },
   watch: {
-    isBurgerActive: {
-      toggle() {
-        this.isBurgerActive = !this.isBurgerActive
-      }
-    }
+    isBurgerActive(newVal, oldVal) {
+      console.log('newVal: ', newVal)
+      console.log('oldVal: ', oldVal)
+    },
   },
   methods: {
-    toggle() {
+    track(handle="test handle", category="test category", description="test description") {
+      this.$gtag.event(handle, {
+        event_category: category,
+        event_label: description,
+        value: 1,
+      })
+    },
+    toggle(...args) {
       this.isBurgerActive = !this.isBurgerActive
-    }
+      this.track(...args)
+    },
+    activateObserver() {
+      this.observer = new IntersectionObserver(
+        ([entry]) => {
+          if (!entry.isIntersecting) {
+            this.isContrastActive = true
+          } else {
+            this.isContrastActive = false
+          }
+        },
+        { rootMargin: '-5% 0px 0px 0px' }
+      )
+      document
+        .querySelectorAll('.observer')
+        .forEach(el => this.observer.observe(el))
+    },
   },
-  mounted() {
-    this.observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) {
-          this.isContrastActive = true
-        } else {
-          this.isContrastActive = false
-        }
-      },
-      { rootMargin: '-5% 0px 0px 0px' }
-    )
-
-    document
-      .querySelectorAll('.observer')
-      .forEach(el => this.observer.observe(el))
-  }
+  created() {
+    this.activateObserver()
+  },
 }
 </script>
 

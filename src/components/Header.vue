@@ -7,13 +7,13 @@
     }"
   >
     <h2
-      @click="$router.push('/'); track( handle='logo-click', category='button toggled', description='logo was clicked' )"
+      @click="$router.push('/'); handleTrack(handle='logo-click', category='button toggled', description='logo was clicked' )"
       class="logo"
     >
       Wi-<span>-Mag</span>
     </h2>
 
-    <Burger @click.prevent="toggle" :isBurgerActive="isBurgerActive" />
+    <Burger @click.stop="toggle" :isBurgerActive="isBurgerActive" />
   </header>
   <nav
     class="sideBar fade-in-bg"
@@ -25,19 +25,19 @@
   >
     <div class="btn sr-only">MENU</div>
     <button
-      @click="$router.push('/offer'); toggle( handle='offer-click', category='offer button toggled', description='offer btn was clicked' )"
+      @click="$router.push('/offer'); toggle(); handleTrack(handle='offer-click', category='offer button toggled', description='offer btn was clicked' )"
       class="btn"
     >
       OFERTA
     </button>
     <button
-      @click="$router.push('/about'); toggle( handle='about-click', category='about button toggled', description='about btn was clicked' )"
+      @click="$router.push('/about'); toggle(); handleTrack(handle='about-click', category='about button toggled', description='about btn was clicked' )"
       class="btn"
     >
       O FIRMIE
     </button>
     <button
-      @click="$router.push('/home#footer'); toggle( handle='contact-click', category='contact button toggled', description='contact btn was clicked' )"
+      @click="$router.push('/home#footer'); toggle(); handleTrack( handle='contact-click', category='contact button toggled', description='contact btn was clicked' )"
       class="btn btn--highlight"
     >
       KONTAKT
@@ -47,6 +47,7 @@
 
 <script>
 import Burger from '@/components/Burger.vue'
+import { trackButtonClick } from '@/entities/Gtag.js'
 
 export default {
   data() {
@@ -66,20 +67,16 @@ export default {
     },
   },
   methods: {
-    track(handle="test handle", category="test category", description="test description") {
-      this.$gtag.event(handle, {
-        event_category: category,
-        event_label: description,
-        value: 1,
-      })
+    handleTrack(...args){
+      trackButtonClick(...args)
     },
-    toggle(...args) {
+    toggle() {
       this.isBurgerActive = !this.isBurgerActive
-      this.track(...args)
     },
     activateObserver() {
       this.observer = new IntersectionObserver(
         ([entry]) => {
+          console.log("isIntersecting : ", entry.isIntersecting)
           if (!entry.isIntersecting) {
             this.isContrastActive = true
           } else {

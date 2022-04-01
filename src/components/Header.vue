@@ -3,30 +3,41 @@
     class="header fade-in-bg"
     :class="{
       header__scroll: isContrastActive,
-      header__active: isBurgerActive
+      header__active: isBurgerActive,
     }"
   >
-    <h2 @click="$router.push('/')" class="logo">Wi-<span>-Mag</span></h2>
+    <h2
+      @click="$router.push('/'); handleTrack(handle='logo-click', category='button toggled', description='logo was clicked' )"
+      class="logo"
+    >
+      Wi-<span>-Mag</span>
+    </h2>
 
-    <Burger @click.prevent="toggle()" :isBurgerActive="isBurgerActive" />
+    <Burger @click.stop="toggle" :isBurgerActive="isBurgerActive" />
   </header>
   <nav
     class="sideBar fade-in-bg"
     :class="{
       sideBar__scroll: !isContrastActive,
       slideIn: isBurgerActive,
-      slideOut: !isBurgerActive
+      slideOut: !isBurgerActive,
     }"
   >
     <div class="btn sr-only">MENU</div>
-    <button @click=";[$router.push('/offer'), toggle()]" class="btn">
+    <button
+      @click="$router.push('/offer'); toggle(); handleTrack(handle='offer-click', category='offer button toggled', description='offer btn was clicked' )"
+      class="btn"
+    >
       OFERTA
     </button>
-    <button @click=";[$router.push('/about'), toggle()]" class="btn">
+    <button
+      @click="$router.push('/about'); toggle(); handleTrack(handle='about-click', category='about button toggled', description='about btn was clicked' )"
+      class="btn"
+    >
       O FIRMIE
     </button>
     <button
-      @click=";[$router.push('/home#footer'), toggle()]"
+      @click="$router.push('/home#footer'); toggle(); handleTrack( handle='contact-click', category='contact button toggled', description='contact btn was clicked' )"
       class="btn btn--highlight"
     >
       KONTAKT
@@ -36,46 +47,52 @@
 
 <script>
 import Burger from '@/components/Burger.vue'
+import { trackButtonClick } from '@/entities/Gtag.js'
 
 export default {
   data() {
     return {
       isBurgerActive: false,
-      isContrastActive: true,
-      observer: null
+      isContrastActive: false,
+      observer: null,
     }
   },
   components: {
-    Burger
+    Burger,
   },
   watch: {
-    isBurgerActive: {
-      toggle() {
-        this.isBurgerActive = !this.isBurgerActive
-      }
-    }
+    isBurgerActive(newVal, oldVal) {
+      console.log('newVal: ', newVal)
+      console.log('oldVal: ', oldVal)
+    },
   },
   methods: {
+    handleTrack(...args){
+      trackButtonClick(...args)
+    },
     toggle() {
       this.isBurgerActive = !this.isBurgerActive
-    }
+    },
+    activateObserver() {
+      this.observer = new IntersectionObserver(
+        ([entry]) => {
+          console.log("isIntersecting : ", entry.isIntersecting)
+          if (!entry.isIntersecting) {
+            this.isContrastActive = true
+          } else {
+            this.isContrastActive = false
+          }
+        },
+        { rootMargin: '-5% 0px 0px 0px' }
+      )
+      document
+        .querySelectorAll('.observer')
+        .forEach(el => this.observer.observe(el))
+    },
   },
-  mounted() {
-    this.observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) {
-          this.isContrastActive = true
-        } else {
-          this.isContrastActive = false
-        }
-      },
-      { rootMargin: '-5% 0px 0px 0px' }
-    )
-
-    document
-      .querySelectorAll('.observer')
-      .forEach(el => this.observer.observe(el))
-  }
+  created() {
+    this.activateObserver()
+  },
 }
 </script>
 

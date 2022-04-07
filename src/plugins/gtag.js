@@ -1,4 +1,3 @@
-import { createApp } from 'vue'
 import { event } from 'vue-gtag'
 
 const track = binding => () => {
@@ -9,14 +8,16 @@ const track = binding => () => {
   })
 }
 
-createApp.directive('track', {
-  bind(el, binding) {
+const TrackDirective = {
+  beforeMount(el, binding) {
     const trackFn = track(binding)
 
     el.addEventListener('click', trackFn)
     el.trackFn = trackFn
   },
-  unbind(el) {
+  unmounted(el) {
     el.removeEventListener('click', el.trackFn)
   },
-})
+}
+
+export default TrackDirective

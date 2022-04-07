@@ -17,13 +17,13 @@
     <section class="footer__section">
       <h3>Napisz do nas</h3>
       <form class="footer__form">
-        <div class="footer__form__item">
+        <div class="footer__form__item observer">
           <input type="text" placeholder="Imię (wymagane)" required />
         </div>
         <div class="footer__form__item">
           <input type="text" placeholder="Nazwisko" />
         </div>
-        <div class="footer__form__item observer">
+        <div class="footer__form__item observer" ref="test">
           <input type="email" placeholder="E-mail (wymagane)" required />
         </div>
         <div class="footer__form__item">
@@ -34,8 +34,11 @@
           <textarea placeholder="Co chcesz nam przekzać?" required />
         </div>
       </form>
-      <button class="btn btn--highlight">Wyślij</button>
+      <button class="btn btn--highlight"
+      v-track="{category: 'Send btn clicked', label: 'send btn was clicked'}"
+      >Wyślij</button>
     </section>
+    
   </article>
 </template>
 
@@ -45,6 +48,7 @@ export default {}
 
 <style lang="scss" scoped>
 @import '@/styles/scss/_general.scss';
+
 
 .footer {
   padding-top: 2rem;

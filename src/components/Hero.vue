@@ -18,6 +18,7 @@
 
 <script>
 import CallToAction from '@/components/CallToAction.vue'
+
 export default {
   components: {
     CallToAction

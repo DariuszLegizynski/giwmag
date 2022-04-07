@@ -7,7 +7,8 @@
     }"
   >
     <h2
-      @click="$router.push('/'); handleTrack(handle='logo-click', category='button toggled', description='logo was clicked' )"
+      @click="$router.push('/')"
+      v-track="{category: 'logo clicked', label: 'logo was clicked'}"
       class="logo"
     >
       Wi-<span>-Mag</span>
@@ -25,19 +26,22 @@
   >
     <div class="btn sr-only">MENU</div>
     <button
-      @click="$router.push('/offer'); toggle(); handleTrack(handle='offer-click', category='offer button toggled', description='offer btn was clicked' )"
+      @click="$router.push('/offer'); toggle()"
+      v-track="{category: 'Offer btn clicked', label: 'offer btn was clicked'}"
       class="btn"
     >
       OFERTA
     </button>
     <button
-      @click="$router.push('/about'); toggle(); handleTrack(handle='about-click', category='about button toggled', description='about btn was clicked' )"
+      @click="$router.push('/about'); toggle()"
+      v-track="{category: 'About btn clicked', label: 'about btn was clicked'}"
       class="btn"
     >
       O FIRMIE
     </button>
     <button
-      @click="$router.push('/home#footer'); toggle(); handleTrack( handle='contact-click', category='contact button toggled', description='contact btn was clicked' )"
+      @click="$router.push('/home#footer'); toggle()"
+      v-track="{category: 'Contact btn clicked', label: 'contact btn was clicked'}"
       class="btn btn--highlight"
     >
       KONTAKT
@@ -47,7 +51,6 @@
 
 <script>
 import Burger from '@/components/Burger.vue'
-import { trackButtonClick } from '@/entities/Gtag.js'
 
 export default {
   data() {
@@ -67,16 +70,13 @@ export default {
     },
   },
   methods: {
-    handleTrack(...args){
-      trackButtonClick(...args)
-    },
     toggle() {
       this.isBurgerActive = !this.isBurgerActive
     },
     activateObserver() {
       this.observer = new IntersectionObserver(
         ([entry]) => {
-          console.log("isIntersecting : ", entry.isIntersecting)
+          console.log("isIntersecting: ", entry.isIntersecting)
           if (!entry.isIntersecting) {
             this.isContrastActive = true
           } else {
@@ -90,8 +90,8 @@ export default {
         .forEach(el => this.observer.observe(el))
     },
   },
-  created() {
-    this.activateObserver()
+  mounted() {
+      this.activateObserver()
   },
 }
 </script>

@@ -5,6 +5,7 @@
       "name": "Regały",
       "product_types": [
         {
+          "id": 0,
           "type": "śrubowe",
           "type_continued": "",
           "thumbnail_image": "/images/landscape/pexels-tiger-lily-4483610.jpeg",
@@ -43,6 +44,7 @@
           ]
         },
         {
+          "id": 1,
           "type": "zaczepowe",
           "type_continued": "",
           "thumbnail_image": "/images/landscape/sikai-gu-vzdFzNNgt1k-unsplash.jpeg",
@@ -81,6 +83,7 @@
           ]
         },
         {
+          "id": 2,
           "type": "wysokiego",
           "type_continued": "składowania",
           "thumbnail_image": "/images/landscape/chuttersnap-JWaXthlA9Cc-unsplash.jpeg",
@@ -119,6 +122,7 @@
           ]
         },
         {
+          "id": 3,
           "type": "śrubowe",
           "type_continued": "",
           "thumbnail_image": "/images/landscape/pexels-tiger-lily-4483610.jpeg",
@@ -157,6 +161,7 @@
           ]
         },
         {
+          "id": 4,
           "type": "zaczepowe",
           "type_continued": "",
           "thumbnail_image": "/images/landscape/sikai-gu-vzdFzNNgt1k-unsplash.jpeg",
@@ -195,6 +200,7 @@
           ]
         },
         {
+          "id": 5,
           "type": "wysokiego",
           "type_continued": "składowania",
           "thumbnail_image": "/images/landscape/chuttersnap-JWaXthlA9Cc-unsplash.jpeg",

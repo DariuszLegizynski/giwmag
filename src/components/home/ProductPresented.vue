@@ -16,8 +16,9 @@
       </div>
     </div>
     <h3 class="product-presented__title">
-      {{ title }}
+      {{ title }} {{product.type}}
     </h3>
+    <h3 v-if="product.type_continued" class="product-presented__title">{{product.type_continued}}</h3>
     <div class="product-presented__content">
       <ul class="product-presented__text-wrapper">
         <li>- zimnowalcowana<br/>blacha DC01</li>
@@ -46,13 +47,21 @@ export default {
       type: String,
       default: '',
     },
+    product: {
+      type: Object,
+      default: () => {},
+    },
     parallaxScrollSpeed: {
       type: Number,
       default: 0,
     },
   },
+  mounted(){
+console.log("product: ", this.product)
+  },
   created() {
     AOS.init()
+    
   },
 }
 </script>

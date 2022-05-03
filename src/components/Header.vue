@@ -76,7 +76,7 @@ export default {
     activateObserver() {
       this.observer = new IntersectionObserver(
         ([entry]) => {
-          console.log("isIntersecting: ", entry.isIntersecting)
+          console.log("isInterse cting: ", entry.isIntersecting)
           if (!entry.isIntersecting) {
             this.isContrastActive = true
           } else {

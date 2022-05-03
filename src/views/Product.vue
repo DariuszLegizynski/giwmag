@@ -11,33 +11,18 @@
   <section v-if="category.product_list">
     <div
       class="gallery"
-      v-for="(product, index) in category.product_list"
-      :key="product.id"
+      v-for="products in category.product_list"
+      :key="products.id"
     >
-      <p>{{ product.sub_category }}</p>
+      <p>{{ products.sub_category }}</p>
       <div class="gallery__big">
-        <img :src="product.image_1" :alt="product.sub_category" />
+        <img :src="selectedImage" alt="product image" />
       </div>
       <div class="gallery__small">
-        <img
-          :src="product.thumbnail_image_1"
-          :alt="product.sub_category"
-          @click="toggleImg(index)"
-        />
-        <img
-          :src="product.thumbnail_image_2"
-          :alt="product.sub_category"
-          @click="toggleImg(index)"
-        />
-        <img
-          :src="product.thumbnail_image_3"
-          :alt="product.sub_category"
-          @click="toggleImg(index)"
-        />
-        <img
-          :src="product.thumbnail_image_4"
-          :alt="product.sub_category"
-          @click="toggleImg(index)"
+        <img v-for="image in products.images" :key="image.id"
+          :src="image.thumbnail_image"
+          alt="image of product"
+          @click="toggleImg(image.image)"
         />
       </div>
     </div>
@@ -50,7 +35,8 @@ import localDataBase from '@/data.json'
 export default {
   data() {
     return {
-      selectedImage: 0
+      selectedImage: 0,
+      chosenImage: 0
     }
   },
   computed: {
@@ -62,13 +48,14 @@ export default {
       return localDataBase.products.find(i => i.id === this.categoryId)
     },
     image() {
-            return console.log(this.category)
-        },
+      console.log(this.category)
+      return console.log(this.category)
+    },
   },
   methods: {
-    toggleImg(index) {
-      console.log(index)
-      this.selectedImage = index
+    toggleImg(image) {
+      console.log(image)
+      this.selectedImage = image
       
     },
   }

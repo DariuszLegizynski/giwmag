@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import CallToAction from '@/components/CallToAction.vue'
+import CallToAction from '@/components/base/CallToAction.vue'
 
 export default {
   components: {

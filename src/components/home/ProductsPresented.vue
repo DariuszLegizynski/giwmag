@@ -49,6 +49,7 @@ export default {
 
 h1 {
   color: $color-primary;
+  font-size: $font-size-34;
 }
 
 .btn {

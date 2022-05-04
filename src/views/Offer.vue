@@ -1,5 +1,5 @@
 <template>
-  <div class="offer">
+  <article class="offer">
     <button @click="$router.push('/')" class="btn btn--back">
       &lt; Powrót
     </button>
@@ -7,15 +7,18 @@
     <div class="offer__container">
       <ProductList />
     </div>
-  </div>
+    <button @click="$router.push('/')" class="btn btn--back btn--last">
+      &lt; Powrót
+    </button>
+  </article>
 </template>
 
 <script>
 import ProductList from '@/components/offer/ProductList.vue'
 export default {
   components: {
-    ProductList
-  }
+    ProductList,
+  },
 }
 </script>
 
@@ -34,6 +37,10 @@ export default {
     margin: 0;
   }
 
+  & .btn--last {
+    padding-bottom: 1rem;
+  }
+
   & > h2 {
     color: $color-primary;
     display: flex;
@@ -45,8 +52,7 @@ export default {
   &__container {
     width: 100%;
     display: block;
-    padding: 1rem 0.75rem 4.75rem 0.75rem;
-    
+    padding: 1rem 0.75rem;
   }
 }
 </style>

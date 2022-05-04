@@ -1,7 +1,7 @@
 <template>
   <ul class="products">
-    <li v-for="product in products" :key="product.id">
-      <ProductsCategories :product="product" />
+    <li v-for="productType in products.product_types" :key="productType.id">
+      <ProductsCategories :productType="productType" />
     </li>
   </ul>
 </template>
@@ -16,8 +16,7 @@ export default {
   },
   computed: {
     products() {
-      console.log(localDataBase.products)
-      return localDataBase.products
+      return localDataBase.products[0]
     },
   },
 }

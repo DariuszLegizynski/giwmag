@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import Burger from '@/components/Burger.vue'
+import Burger from '@/components/base/Burger.vue'
 
 export default {
   data() {
@@ -76,7 +76,6 @@ export default {
     activateObserver() {
       this.observer = new IntersectionObserver(
         ([entry]) => {
-          console.log("isInterse cting: ", entry.isIntersecting)
           if (!entry.isIntersecting) {
             this.isContrastActive = true
           } else {
@@ -91,7 +90,9 @@ export default {
     },
   },
   mounted() {
+    setTimeout(() => {
       this.activateObserver()
+    }, 500)
   },
 }
 </script>

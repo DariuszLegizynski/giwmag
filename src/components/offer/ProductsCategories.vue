@@ -1,19 +1,23 @@
 <template>
   <section class="products-categories" @click="isExpanded = !isExpanded">
-    <div
-      class="products-categories__thumbnail"
-      :style="backgroundImageStyle"
-    />
+    <div class="products-categories__thumbnail" :style="backgroundImageStyle" />
     <div class="products-categories__description">
-      <p class="products-categories__text">
-        {{ product.name }} {{ product.type }}<br />{{ product.type_continued }}
-      </p>
-      <div>\|/</div>
+      <h3 class="products-categories__text">
+        {{ productType.name }} {{ productType.type }}<br />{{
+          productType.type_continued
+        }}
+      </h3>
+      <div v-if="!isExpanded">&darr;</div>
+      <div v-else>&uarr;</div>
     </div>
   </section>
   <section v-if="isExpanded">
-    <RouterLink :to="`/offer/product/${product.id}`" v-for="product in product.product_list" :key="product.id">
-      <ProductOverview :product="product"/>
+    <RouterLink
+      :to="`/offer/product/${productType.id}`"
+      v-for="product in productType.product_list"
+      :key="product.id"
+    >
+      <ProductOverview :product="product" />
     </RouterLink>
   </section>
 </template>
@@ -26,20 +30,20 @@ export default {
     ProductOverview,
   },
   props: {
-    product: {
+    productType: {
       type: Object,
       default: () => ({}),
     },
   },
   data() {
     return {
-      isExpanded: false
+      isExpanded: false,
     }
   },
   computed: {
     backgroundImageStyle() {
       return {
-        backgroundImage: `url(${this.product.thumbnail_image})`,
+        backgroundImage: `url(${this.productType.thumbnail_image})`,
       }
     },
   },
@@ -52,10 +56,11 @@ export default {
 .products-categories {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
-  column-gap: .4rem;
+  -moz-column-gap: 0.4rem;
+  column-gap: 0.4rem;
   width: 100%;
   height: 6rem;
-  background-color: $color-white;
+  background-color: whitesmoke;
 
   &__thumbnail {
     background-size: cover;
@@ -66,7 +71,7 @@ export default {
   &__description {
     display: grid;
     justify-items: center;
-    align-items: stretch;
+    align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr;
     background-color: $color-white;
@@ -75,7 +80,7 @@ export default {
   &__text {
     text-align: center;
     color: $color-black;
-    font-size: $font-size-16;
+    margin-top: 1rem;
     font-family: 'PublicSans-SemiBold';
   }
 }

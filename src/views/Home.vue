@@ -7,11 +7,11 @@
 </template>
 
 <script>
-import Hero from '@/components/Hero.vue'
-import ProductsPresented from '@/components/ProductsPresented.vue'
-import ProductPros from '@/components/ProductPros.vue'
-import References from '@/components/References.vue'
-import Footer from '@/components/Footer.vue'
+import Hero from '@/components/home/Hero.vue'
+import ProductsPresented from '@/components/home/ProductsPresented.vue'
+import ProductPros from '@/components/home/ProductPros.vue'
+import References from '@/components/home/References.vue'
+import Footer from '@/components/home/Footer.vue'
 
 export default {
   name: 'App',

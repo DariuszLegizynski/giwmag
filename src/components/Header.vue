@@ -3,30 +3,45 @@
     class="header fade-in-bg"
     :class="{
       header__scroll: isContrastActive,
-      header__active: isBurgerActive
+      header__active: isBurgerActive,
     }"
   >
-    <h1 @click="$router.push('/')" class="logo">Wi-<span>-Mag</span></h1>
+    <h2
+      @click="$router.push('/')"
+      v-track="{category: 'logo clicked', label: 'logo was clicked'}"
+      class="logo"
+    >
+      Wi-<span>-Mag</span>
+    </h2>
 
-    <Burger @click.prevent="toggle()" :isBurgerActive="isBurgerActive" />
+    <Burger @click.stop="toggle" :isBurgerActive="isBurgerActive" />
   </header>
   <nav
     class="sideBar fade-in-bg"
     :class="{
       sideBar__scroll: !isContrastActive,
       slideIn: isBurgerActive,
-      slideOut: !isBurgerActive
+      slideOut: !isBurgerActive,
     }"
   >
     <div class="btn sr-only">MENU</div>
-    <button @click=";[$router.push('/offer'), toggle()]" class="btn">
+    <button
+      @click="$router.push('/offer'); toggle()"
+      v-track="{category: 'Offer btn clicked', label: 'offer btn was clicked'}"
+      class="btn"
+    >
       OFERTA
     </button>
-    <button @click=";[$router.push('/about'), toggle()]" class="btn">
+    <button
+      @click="$router.push('/about'); toggle()"
+      v-track="{category: 'About btn clicked', label: 'about btn was clicked'}"
+      class="btn"
+    >
       O FIRMIE
     </button>
     <button
-      @click=";[$router.push('/home#footer'), toggle()]"
+      @click="$router.push('/home#footer'); toggle()"
+      v-track="{category: 'Contact btn clicked', label: 'contact btn was clicked'}"
       class="btn btn--highlight"
     >
       KONTAKT
@@ -35,52 +50,56 @@
 </template>
 
 <script>
-import Burger from '@/components/Burger.vue'
+import Burger from '@/components/base/Burger.vue'
 
 export default {
   data() {
     return {
       isBurgerActive: false,
-      isContrastActive: true,
-      observer: null
+      isContrastActive: false,
+      observer: null,
     }
   },
   components: {
-    Burger
+    Burger,
   },
   watch: {
-    isBurgerActive: {
-      toggle() {
-        this.isBurgerActive = !this.isBurgerActive
-      }
-    }
+    isBurgerActive(newVal, oldVal) {
+      console.log('newVal: ', newVal)
+      console.log('oldVal: ', oldVal)
+    },
   },
   methods: {
     toggle() {
       this.isBurgerActive = !this.isBurgerActive
-    }
+    },
+    activateObserver() {
+      this.observer = new IntersectionObserver(
+        ([entry]) => {
+          if (!entry.isIntersecting) {
+            this.isContrastActive = true
+          } else {
+            this.isContrastActive = false
+          }
+        },
+        { rootMargin: '-5% 0px 0px 0px' }
+      )
+      document
+        .querySelectorAll('.observer')
+        .forEach(el => this.observer.observe(el))
+    },
   },
   mounted() {
-    this.observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) {
-          this.isContrastActive = true
-        } else {
-          this.isContrastActive = false
-        }
-      },
-      { rootMargin: '-5% 0px 0px 0px' }
-    )
-
-    document
-      .querySelectorAll('.observer')
-      .forEach(el => this.observer.observe(el))
-  }
+    setTimeout(() => {
+      this.activateObserver()
+    }, 500)
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 @import '@/styles/scss/_general.scss';
+
 .header {
   position: sticky;
   top: 0;
@@ -90,6 +109,7 @@ export default {
   z-index: 10;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0.4rem;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
@@ -103,14 +123,17 @@ export default {
 
   &__scroll {
     background-color: $primary-opacity;
-    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 }
 .logo {
+  font-family: 'PublicSans-Regular';
+
   & > span {
     color: $color-primary;
-    font-size: $font-size-34;
-    line-height: $line-height-40;
+    font-size: $font-size-32;
+    line-height: $line-height-34;
+    font-family: 'PublicSans-Regular';
   }
 }
 

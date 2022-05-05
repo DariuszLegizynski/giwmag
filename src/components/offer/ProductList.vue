@@ -1,23 +1,26 @@
 <template>
   <ul class="products">
     <li v-for="productType in products.product_types" :key="productType.id">
-      <ProductsCategories :productType="productType" />
+      <ProductCategories :title="productsTitle" :productType="productType" />
     </li>
   </ul>
 </template>
 
 <script>
-import ProductsCategories from '@/components/offer/ProductsCategories.vue'
+import ProductCategories from '@/components/offer/ProductCategories.vue'
 import localDataBase from '@/data.json'
 
 export default {
   components: {
-    ProductsCategories,
+    ProductCategories,
   },
   computed: {
     products() {
       return localDataBase.products[0]
     },
+    productsTitle() {
+      return localDataBase.products[0].name
+    }
   },
 }
 </script>

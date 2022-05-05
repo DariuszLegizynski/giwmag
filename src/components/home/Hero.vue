@@ -11,7 +11,7 @@
       </span>
     </section>
     <section class="hero__call-to-action">
-      <CallToAction />
+      <CallToAction isOffer />
     </section>
   </article>
 </template>

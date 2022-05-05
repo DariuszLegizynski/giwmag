@@ -1,18 +1,27 @@
 <template>
   <div class="cta__btns">
-    <button class="btn btn--highlight">
-      <a href="#footer">
-        Zapytaj nas
-      </a>
+    <button class="btn btn--highlight" @click="$router.push('/home#footer')">
+      Zapytaj nas
     </button>
-    <button class="btn btn--default-reverse">
-      <a href="#products">Nasza oferta</a>
+    <button
+      v-if="isOffer"
+      class="btn btn--default-reverse"
+      @click="$router.push('/home#products')"
+    >
+      Nasza oferta
     </button>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    isOffer: {
+      type: Boolean,
+      default: false,
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>

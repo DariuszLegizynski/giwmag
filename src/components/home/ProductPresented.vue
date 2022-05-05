@@ -32,9 +32,15 @@
         <li>popiel<br />RAL7035</li>
       </ul>
     </div>
+    <!-- <RouterLink
+      v-for="product in productType.product_list"
+      :key="product.id"
+      :to="`/offer/product/${product.id}`"
+    ></RouterLink> -->
     <button class="btn btn--default-reverse">
       Zobacz
     </button>
+    
   </section>
 </template>
 

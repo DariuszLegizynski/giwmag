@@ -3,7 +3,7 @@
     <div class="products-categories__thumbnail" :style="backgroundImageStyle" />
     <div class="products-categories__description">
       <h3 class="products-categories__text">
-        {{ productType.name }} {{ productType.type }}<br />{{
+        {{ title }} {{ productType.type }}<br />{{
           productType.type_continued
         }}
       </h3>
@@ -34,6 +34,10 @@ export default {
       type: Object,
       default: () => ({}),
     },
+    title: {
+      type: String,
+      default: ""
+    }
   },
   data() {
     return {
@@ -83,7 +87,7 @@ export default {
   &__text {
     text-align: center;
     color: $color-black;
-    margin-top: 1rem;
+    margin-top: .4rem;
     font-family: 'PublicSans-SemiBold';
   }
 }

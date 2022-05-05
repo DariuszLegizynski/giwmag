@@ -12,6 +12,9 @@
         {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
         {"id":2, "thumbnail_image": "/images/001/03-bulk-beam-connection.webp", "image": "/images/001/03-bulk-beam-connection.webp"},
         {"id":3, "thumbnail_image": "/images/001/04-bulk-safety-pin.webp", "image": "/images/001/04-bulk-safety-pin.webp"}
+      ],
+      "description": [
+        "bardzo fajny","wytrzyma Twoją mamusię", "możesz upchać mamusie jedna nad drugą", "łatwy w montażu", "spełnia normy spalania co2", "obiera ziemniaki"
       ]
     },
     {
@@ -26,6 +29,9 @@
         {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
         {"id":3, "thumbnail_image": "/images/002/thumb/mp2_blue-orange_600x600ok.webp", "image": "/images/002/mp2_blue-orange_600x600ok.jpeg"},
         {"id":4, "thumbnail_image": "/images/002/thumb/apio6pqhr__94507.1582558796.jpg", "image": "/images/002/apio6pqhr__94507.1582558796 (1).jpg"}
+      ],
+      "description": [
+        "bardzo fajny","wytrzyma Twoją mamusię", "możesz upchać mamusie jedna nad drugą", "łatwy w montażu", "spełnia normy spalania co2", "obiera ziemniaki"
       ]
     },
     {
@@ -40,6 +46,9 @@
         {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
         {"id":2, "thumbnail_image": "/images/003/thumb/04-img_6419_rev1_600x600.webp","image": "/images/003/04-img_6419_rev1_600x600.jpeg"},
         {"id":3, "thumbnail_image": "/images/003/thumb/usa_boltedpalletracking2.jpeg","image": "/images/003/usa_boltedpalletracking2.jpeg"}
+      ],
+      "description": [
+        "bardzo fajny","wytrzyma Twoją mamusię", "możesz upchać mamusie jedna nad drugą", "łatwy w montażu", "spełnia normy spalania co2", "obiera ziemniaki"
       ]
     },
     {
@@ -54,6 +63,9 @@
         {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
         {"id":2, "thumbnail_image": "/images/001/03-bulk-beam-connection.webp", "image": "/images/001/03-bulk-beam-connection.webp"},
         {"id":3, "thumbnail_image": "/images/001/04-bulk-safety-pin.webp", "image": "/images/001/04-bulk-safety-pin.webp"}
+      ],
+      "description": [
+        "bardzo fajny","wytrzyma Twoją mamusię", "możesz upchać mamusie jedna nad drugą", "łatwy w montażu", "spełnia normy spalania co2", "obiera ziemniaki"
       ]
     },
     {
@@ -68,6 +80,9 @@
         {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
         {"id":3, "thumbnail_image": "/images/002/thumb/mp2_blue-orange_600x600ok.webp", "image": "/images/002/mp2_blue-orange_600x600ok.jpeg"},
         {"id":4, "thumbnail_image": "/images/002/thumb/apio6pqhr__94507.1582558796.jpg", "image": "/images/002/apio6pqhr__94507.1582558796 (1).jpg"}
+      ],
+      "description": [
+        "bardzo fajny","wytrzyma Twoją mamusię", "możesz upchać mamusie jedna nad drugą", "łatwy w montażu", "spełnia normy spalania co2", "obiera ziemniaki"
       ]
     },
     {
@@ -82,6 +97,9 @@
         {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
         {"id":2, "thumbnail_image": "/images/003/thumb/04-img_6419_rev1_600x600.webp","image": "/images/003/04-img_6419_rev1_600x600.jpeg"},
         {"id":3, "thumbnail_image": "/images/003/thumb/usa_boltedpalletracking2.jpeg","image": "/images/003/usa_boltedpalletracking2.jpeg"}
+      ],
+      "description": [
+        "bardzo fajny","wytrzyma Twoją mamusię", "możesz upchać mamusie jedna nad drugą", "łatwy w montażu", "spełnia normy spalania co2", "obiera ziemniaki"
       ]
     },
     {
@@ -96,6 +114,9 @@
         {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
         {"id":2, "thumbnail_image": "/images/001/03-bulk-beam-connection.webp", "image": "/images/001/03-bulk-beam-connection.webp"},
         {"id":3, "thumbnail_image": "/images/001/04-bulk-safety-pin.webp", "image": "/images/001/04-bulk-safety-pin.webp"}
+      ],
+      "description": [
+        "bardzo fajny","wytrzyma Twoją mamusię", "możesz upchać mamusie jedna nad drugą", "łatwy w montażu", "spełnia normy spalania co2", "obiera ziemniaki"
       ]
     },
     {
@@ -110,6 +131,9 @@
         {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
         {"id":3, "thumbnail_image": "/images/002/thumb/mp2_blue-orange_600x600ok.webp", "image": "/images/002/mp2_blue-orange_600x600ok.jpeg"},
         {"id":4, "thumbnail_image": "/images/002/thumb/apio6pqhr__94507.1582558796.jpg", "image": "/images/002/apio6pqhr__94507.1582558796 (1).jpg"}
+      ],
+      "description": [
+        "bardzo fajny","wytrzyma Twoją mamusię", "możesz upchać mamusie jedna nad drugą", "łatwy w montażu", "spełnia normy spalania co2", "obiera ziemniaki"
       ]
     },
     {
@@ -124,6 +148,9 @@
         {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
         {"id":2, "thumbnail_image": "/images/003/thumb/04-img_6419_rev1_600x600.webp","image": "/images/003/04-img_6419_rev1_600x600.jpeg"},
         {"id":3, "thumbnail_image": "/images/003/thumb/usa_boltedpalletracking2.jpeg","image": "/images/003/usa_boltedpalletracking2.jpeg"}
+      ],
+      "description": [
+        "bardzo fajny","wytrzyma Twoją mamusię", "możesz upchać mamusie jedna nad drugą", "łatwy w montażu", "spełnia normy spalania co2", "obiera ziemniaki"
       ]
     },
     {
@@ -138,6 +165,9 @@
         {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
         {"id":2, "thumbnail_image": "/images/001/03-bulk-beam-connection.webp", "image": "/images/001/03-bulk-beam-connection.webp"},
         {"id":3, "thumbnail_image": "/images/001/04-bulk-safety-pin.webp", "image": "/images/001/04-bulk-safety-pin.webp"}
+      ],
+      "description": [
+        "bardzo fajny","wytrzyma Twoją mamusię", "możesz upchać mamusie jedna nad drugą", "łatwy w montażu", "spełnia normy spalania co2", "obiera ziemniaki"
       ]
     },
     {
@@ -152,6 +182,9 @@
         {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
         {"id":3, "thumbnail_image": "/images/002/thumb/mp2_blue-orange_600x600ok.webp", "image": "/images/002/mp2_blue-orange_600x600ok.jpeg"},
         {"id":4, "thumbnail_image": "/images/002/thumb/apio6pqhr__94507.1582558796.jpg", "image": "/images/002/apio6pqhr__94507.1582558796 (1).jpg"}
+      ],
+      "description": [
+        "bardzo fajny","wytrzyma Twoją mamusię", "możesz upchać mamusie jedna nad drugą", "łatwy w montażu", "spełnia normy spalania co2", "obiera ziemniaki"
       ]
     },
     {
@@ -166,6 +199,9 @@
         {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp", "image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
         {"id":2, "thumbnail_image": "/images/003/thumb/04-img_6419_rev1_600x600.webp", "image": "/images/003/04-img_6419_rev1_600x600.jpeg"},
         {"id":3, "thumbnail_image": "/images/003/thumb/usa_boltedpalletracking2.jpeg", "image": "/images/003/usa_boltedpalletracking2.jpeg"}
+      ],
+      "description": [
+        "bardzo fajny","wytrzyma Twoją mamusię", "możesz upchać mamusie jedna nad drugą", "łatwy w montażu", "spełnia normy spalania co2", "obiera ziemniaki"
       ]
     },
     {
@@ -180,6 +216,9 @@
         {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
         {"id":2, "thumbnail_image": "/images/001/03-bulk-beam-connection.webp", "image": "/images/001/03-bulk-beam-connection.webp"},
         {"id":3, "thumbnail_image": "/images/001/04-bulk-safety-pin.webp", "image": "/images/001/04-bulk-safety-pin.webp"}
+      ],
+      "description": [
+        "bardzo fajny","wytrzyma Twoją mamusię", "możesz upchać mamusie jedna nad drugą", "łatwy w montażu", "spełnia normy spalania co2", "obiera ziemniaki"
       ]
     },
     {
@@ -194,6 +233,9 @@
         {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
         {"id":3, "thumbnail_image": "/images/002/thumb/mp2_blue-orange_600x600ok.webp", "image": "/images/002/mp2_blue-orange_600x600ok.jpeg"},
         {"id":4, "thumbnail_image": "/images/002/thumb/apio6pqhr__94507.1582558796.jpg", "image": "/images/002/apio6pqhr__94507.1582558796 (1).jpg"}
+      ],
+      "description": [
+        "bardzo fajny","wytrzyma Twoją mamusię", "możesz upchać mamusie jedna nad drugą", "łatwy w montażu", "spełnia normy spalania co2", "obiera ziemniaki"
       ]
     },
     {
@@ -208,6 +250,9 @@
         {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
         {"id":2, "thumbnail_image": "/images/003/thumb/04-img_6419_rev1_600x600.webp","image": "/images/003/04-img_6419_rev1_600x600.jpeg"},
         {"id":3, "thumbnail_image": "/images/003/thumb/usa_boltedpalletracking2.jpeg","image": "/images/003/usa_boltedpalletracking2.jpeg"}
+      ],
+      "description": [
+        "bardzo fajny","wytrzyma Twoją mamusię", "możesz upchać mamusie jedna nad drugą", "łatwy w montażu", "spełnia normy spalania co2", "obiera ziemniaki"
       ]
     },
     {
@@ -222,6 +267,9 @@
         {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
         {"id":2, "thumbnail_image": "/images/001/03-bulk-beam-connection.webp", "image": "/images/001/03-bulk-beam-connection.webp"},
         {"id":3, "thumbnail_image": "/images/001/04-bulk-safety-pin.webp", "image": "/images/001/04-bulk-safety-pin.webp"}
+      ],
+      "description": [
+        "bardzo fajny","wytrzyma Twoją mamusię", "możesz upchać mamusie jedna nad drugą", "łatwy w montażu", "spełnia normy spalania co2", "obiera ziemniaki"
       ]
     },
     {
@@ -236,6 +284,9 @@
         {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
         {"id":3, "thumbnail_image": "/images/002/thumb/mp2_blue-orange_600x600ok.webp", "image": "/images/002/mp2_blue-orange_600x600ok.jpeg"},
         {"id":4, "thumbnail_image": "/images/002/thumb/apio6pqhr__94507.1582558796.jpg", "image": "/images/002/apio6pqhr__94507.1582558796 (1).jpg"}
+      ],
+      "description": [
+        "bardzo fajny","wytrzyma Twoją mamusię", "możesz upchać mamusie jedna nad drugą", "łatwy w montażu", "spełnia normy spalania co2", "obiera ziemniaki"
       ]
     },
     {
@@ -250,6 +301,9 @@
         {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
         {"id":2, "thumbnail_image": "/images/003/thumb/04-img_6419_rev1_600x600.webp","image": "/images/003/04-img_6419_rev1_600x600.jpeg"},
         {"id":3, "thumbnail_image": "/images/003/thumb/usa_boltedpalletracking2.jpeg","image": "/images/003/usa_boltedpalletracking2.jpeg"}
+      ],
+      "description": [
+        "bardzo fajny","wytrzyma Twoją mamusię", "możesz upchać mamusie jedna nad drugą", "łatwy w montażu", "spełnia normy spalania co2", "obiera ziemniaki"
       ]
     }
   ]

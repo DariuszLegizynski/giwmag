@@ -1,64 +1,58 @@
 <template>
   <h2>
-    {{ category.name }}
+    {{ product.name }}
   </h2>
   <p>
-    {{ category.type }}
+    {{ product.type }}
   </p>
-  <p>
-    {{ category.type_continued }}
+  <p v-if="product.type_continued">
+    {{ product.type_continued }}
   </p>
-  <section v-if="category.product_list">
-    <div
-      class="gallery"
-      v-for="products in category.product_list"
-      :key="products.id"
-    >
-      <p>{{ products.sub_category }}</p>
-      <div class="gallery__big">
-        <img :src="selectedImage" alt="product image" />
-      </div>
-      <div class="gallery__small">
-        <img v-for="image in products.images" :key="image.id"
-          :src="image.thumbnail_image"
-          alt="image of product"
-          @click="toggleImg(image.image)"
-        />
-      </div>
+  <section v-if="images">
+    <div class="gallery__big">
+      <img :src="selectedImage" alt="product image" />
+    </div>
+    <div class="gallery__small">
+      <img
+        v-for="image in images"
+        :key="image.id"
+        :src="image.thumbnail_image"
+        alt="image of product"
+        @click="toggleImg(image.image)"
+      />
     </div>
   </section>
 </template>
 
 <script>
-import localDataBase from '@/data.json'
+import productsDataBase from '@/products.json'
 
 export default {
   data() {
     return {
       selectedImage: 0,
-      chosenImage: 0
+      chosenImage: 0,
     }
   },
   computed: {
-    categoryId() {
+    productId() {
       return parseInt(this.$route.params.id)
     },
-    category() {
-      console.log(localDataBase.products.find(i => i.id === this.categoryId))
-      return localDataBase.products.find(i => i.id === this.categoryId)
+    product() {
+      return productsDataBase.products.find(i => i.id === this.productId)
     },
-    image() {
-      console.log(this.category)
-      return console.log(this.category)
+    images() {
+      return this.product.images
     },
   },
   methods: {
     toggleImg(image) {
-      console.log(image)
       this.selectedImage = image
-      
     },
-  }
+  },
+  mounted() {
+    this.toggleImg(this.product.images[0].image)
+  },
 }
 </script>
 

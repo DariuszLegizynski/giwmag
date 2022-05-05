@@ -7,12 +7,12 @@
         {
           "id": 0,
           "type": "śrubowe",
-          "type_continued": "",
+          "type_continued": null,
           "thumbnail_image": "/images/landscape/pexels-tiger-lily-4483610.jpeg",
           "thumbnail_portrait":"/images/portrait/ruchindra-gunasekara-GK8x_XCcDZg-unsplash.jpeg",
           "product_list": [
             {
-              "id": 0,
+              "id": 1000,
               "name": "ciężki",
               "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
               "images": [
@@ -23,7 +23,7 @@
               ]
             },
             {
-              "id": 1,
+              "id": 1001,
               "name": "metalowy",
               "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
               "images":[
@@ -34,7 +34,7 @@
               ]
             },
             {
-              "id": 2,
+              "id": 1002,
               "name": "wiórowy",
               "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
               "images":[
@@ -49,12 +49,12 @@
         {
           "id": 1,
           "type": "zaczepowe",
-          "type_continued": "",
+          "type_continued": null,
           "thumbnail_image": "/images/landscape/sikai-gu-vzdFzNNgt1k-unsplash.jpeg",
           "thumbnail_portrait":"/images/portrait/jake-nebov-w9yUy-3Dhlw-unsplash.jpeg",
           "product_list": [
             {
-              "id": 0,
+              "id": 2000,
               "name": "ciężki",
               "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
               "images": [
@@ -65,7 +65,7 @@
               ]
             },
             {
-              "id": 1,
+              "id": 2001,
               "name": "metalowy",
               "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
               "images":[
@@ -76,7 +76,7 @@
               ]
             },
             {
-              "id": 2,
+              "id": 2002,
               "name": "wiórowy",
               "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
               "images":[
@@ -96,7 +96,7 @@
           "thumbnail_portrait":"/images/portrait/jake-nebov-NmwnjkukM80-unsplash.jpeg",
           "product_list": [
             {
-              "id": 0,
+              "id": 3000,
               "name": "ciężki",
               "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
               "images": [
@@ -107,7 +107,7 @@
               ]
             },
             {
-              "id": 1,
+              "id": 3001,
               "name": "metalowy",
               "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
               "images":[
@@ -118,7 +118,7 @@
               ]
             },
             {
-              "id": 2,
+              "id": 3002,
               "name": "wiórowy",
               "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
               "images":[
@@ -133,12 +133,12 @@
         {
           "id": 3,
           "type": "śrubowe",
-          "type_continued": "",
+          "type_continued": null,
           "thumbnail_image": "/images/landscape/pexels-tiger-lily-4483610.jpeg",
           "thumbnail_portrait":"/images/portrait/ruchindra-gunasekara-GK8x_XCcDZg-unsplash.jpeg",
           "product_list": [
             {
-              "id": 0,
+              "id": 4000,
               "name": "ciężki",
               "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
               "images": [
@@ -149,7 +149,7 @@
               ]
             },
             {
-              "id": 1,
+              "id": 4001,
               "name": "metalowy",
               "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
               "images":[
@@ -160,7 +160,7 @@
               ]
             },
             {
-              "id": 2,
+              "id": 4002,
               "name": "wiórowy",
               "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
               "images":[
@@ -175,12 +175,12 @@
         {
           "id": 4,
           "type": "zaczepowe",
-          "type_continued": "",
+          "type_continued": null,
           "thumbnail_image": "/images/landscape/sikai-gu-vzdFzNNgt1k-unsplash.jpeg",
           "thumbnail_portrait":"/images/portrait/jake-nebov-w9yUy-3Dhlw-unsplash.jpeg",
           "product_list": [
             {
-              "id": 0,
+              "id": 5000,
               "name": "ciężki",
               "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
               "images": [
@@ -191,7 +191,7 @@
               ]
             },
             {
-              "id": 1,
+              "id": 5001,
               "name": "metalowy",
               "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
               "images":[
@@ -202,7 +202,7 @@
               ]
             },
             {
-              "id": 2,
+              "id": 5002,
               "name": "wiórowy",
               "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
               "images":[
@@ -222,7 +222,7 @@
           "thumbnail_portrait":"/images/portrait/jake-nebov-NmwnjkukM80-unsplash.jpeg",
           "product_list": [
             {
-              "id": 0,
+              "id": 6000,
               "name": "ciężki",
               "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
               "images": [
@@ -233,7 +233,7 @@
               ]
             },
             {
-              "id": 1,
+              "id": 6001,
               "name": "metalowy",
               "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
               "images":[
@@ -244,7 +244,7 @@
               ]
             },
             {
-              "id": 2,
+              "id": 6002,
               "name": "wiórowy",
               "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
               "images":[

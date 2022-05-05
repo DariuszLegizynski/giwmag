@@ -13,9 +13,9 @@
   </section>
   <section v-if="isExpanded">
     <RouterLink
-      :to="`/offer/product/${productType.id}`"
       v-for="product in productType.product_list"
       :key="product.id"
+      :to="`/offer/product/${product.id}`"
     >
       <ProductOverview :product="product" />
     </RouterLink>
@@ -46,6 +46,9 @@ export default {
         backgroundImage: `url(${this.productType.thumbnail_image})`,
       }
     },
+  },
+  mounted() {
+    console.log('productType: ', this.productType)
   },
 }
 </script>

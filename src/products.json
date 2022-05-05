@@ -1,0 +1,256 @@
+{
+  "products": [
+    {
+      "id": 1000,
+      "category": "Regał",
+      "type": "śrubowy",
+      "type_continued": null,
+      "name": "ciężki",
+      "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
+      "images": [
+        {"id":0, "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg", "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg"},
+        {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
+        {"id":2, "thumbnail_image": "/images/001/03-bulk-beam-connection.webp", "image": "/images/001/03-bulk-beam-connection.webp"},
+        {"id":3, "thumbnail_image": "/images/001/04-bulk-safety-pin.webp", "image": "/images/001/04-bulk-safety-pin.webp"}
+      ]
+    },
+    {
+      "id": 1001,
+      "category": "Regał",
+      "type": "śrubowy",
+      "type_continued": null,
+      "name": "metalowy",
+      "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
+      "images":[
+        {"id":0, "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp", "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp"},
+        {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
+        {"id":3, "thumbnail_image": "/images/002/thumb/mp2_blue-orange_600x600ok.webp", "image": "/images/002/mp2_blue-orange_600x600ok.jpeg"},
+        {"id":4, "thumbnail_image": "/images/002/thumb/apio6pqhr__94507.1582558796.jpg", "image": "/images/002/apio6pqhr__94507.1582558796 (1).jpg"}
+      ]
+    },
+    {
+      "id": 1002,
+      "category": "Regał",
+      "type": "śrubowy",
+      "type_continued": null,
+      "name": "wiórowy",
+      "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
+      "images":[
+        {"id":0, "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp","image": "/images/003/01-img_6297_rev1_600x600.jpeg"},
+        {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
+        {"id":2, "thumbnail_image": "/images/003/thumb/04-img_6419_rev1_600x600.webp","image": "/images/003/04-img_6419_rev1_600x600.jpeg"},
+        {"id":3, "thumbnail_image": "/images/003/thumb/usa_boltedpalletracking2.jpeg","image": "/images/003/usa_boltedpalletracking2.jpeg"}
+      ]
+    },
+    {
+      "id": 2000,
+      "category": "Regał",
+      "type": "zaczepowy",
+      "type_continued": null,
+      "name": "ciężki",
+      "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
+      "images": [
+        {"id":0, "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg", "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg"},
+        {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
+        {"id":2, "thumbnail_image": "/images/001/03-bulk-beam-connection.webp", "image": "/images/001/03-bulk-beam-connection.webp"},
+        {"id":3, "thumbnail_image": "/images/001/04-bulk-safety-pin.webp", "image": "/images/001/04-bulk-safety-pin.webp"}
+      ]
+    },
+    {
+      "id": 2001,
+      "category": "Regał",
+      "type": "zaczepowy",
+      "type_continued": null,
+      "name": "metalowy",
+      "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
+      "images":[
+        {"id":0, "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp", "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp"},
+        {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
+        {"id":3, "thumbnail_image": "/images/002/thumb/mp2_blue-orange_600x600ok.webp", "image": "/images/002/mp2_blue-orange_600x600ok.jpeg"},
+        {"id":4, "thumbnail_image": "/images/002/thumb/apio6pqhr__94507.1582558796.jpg", "image": "/images/002/apio6pqhr__94507.1582558796 (1).jpg"}
+      ]
+    },
+    {
+      "id": 2002,
+      "category": "Regał",
+      "type": "zaczepowy",
+      "type_continued": null,
+      "name": "wiórowy",
+      "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
+      "images":[
+        {"id":0, "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp","image": "/images/003/01-img_6297_rev1_600x600.jpeg"},
+        {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
+        {"id":2, "thumbnail_image": "/images/003/thumb/04-img_6419_rev1_600x600.webp","image": "/images/003/04-img_6419_rev1_600x600.jpeg"},
+        {"id":3, "thumbnail_image": "/images/003/thumb/usa_boltedpalletracking2.jpeg","image": "/images/003/usa_boltedpalletracking2.jpeg"}
+      ]
+    },
+    {
+      "id": 3000,
+      "category": "Regał",
+      "type": "wysokiego",
+      "type_continued": "składowania",
+      "name": "ciężki",
+      "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
+      "images": [
+        {"id":0, "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg", "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg"},
+        {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
+        {"id":2, "thumbnail_image": "/images/001/03-bulk-beam-connection.webp", "image": "/images/001/03-bulk-beam-connection.webp"},
+        {"id":3, "thumbnail_image": "/images/001/04-bulk-safety-pin.webp", "image": "/images/001/04-bulk-safety-pin.webp"}
+      ]
+    },
+    {
+      "id": 3001,
+      "category": "Regał",
+      "type": "wysokiego",
+      "type_continued": "składowania",
+      "name": "metalowy",
+      "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
+      "images":[
+        {"id":0, "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp", "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp"},
+        {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
+        {"id":3, "thumbnail_image": "/images/002/thumb/mp2_blue-orange_600x600ok.webp", "image": "/images/002/mp2_blue-orange_600x600ok.jpeg"},
+        {"id":4, "thumbnail_image": "/images/002/thumb/apio6pqhr__94507.1582558796.jpg", "image": "/images/002/apio6pqhr__94507.1582558796 (1).jpg"}
+      ]
+    },
+    {
+      "id": 3002,
+      "category": "Regał",
+      "type": "wysokiego",
+      "type_continued": "składowania",
+      "name": "wiórowy",
+      "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
+      "images":[
+        {"id":0, "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp","image": "/images/003/01-img_6297_rev1_600x600.jpeg"},
+        {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
+        {"id":2, "thumbnail_image": "/images/003/thumb/04-img_6419_rev1_600x600.webp","image": "/images/003/04-img_6419_rev1_600x600.jpeg"},
+        {"id":3, "thumbnail_image": "/images/003/thumb/usa_boltedpalletracking2.jpeg","image": "/images/003/usa_boltedpalletracking2.jpeg"}
+      ]
+    },
+    {
+      "id": 4000,
+      "category": "Regał",
+      "type": "śrubowy",
+      "type_continued": null,
+      "name": "ciężki",
+      "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
+      "images": [
+        {"id":0, "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg", "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg"},
+        {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
+        {"id":2, "thumbnail_image": "/images/001/03-bulk-beam-connection.webp", "image": "/images/001/03-bulk-beam-connection.webp"},
+        {"id":3, "thumbnail_image": "/images/001/04-bulk-safety-pin.webp", "image": "/images/001/04-bulk-safety-pin.webp"}
+      ]
+    },
+    {
+      "id": 4001,
+      "category": "Regał",
+      "type": "śrubowy",
+      "type_continued": null,
+      "name": "metalowy",
+      "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
+      "images":[
+        {"id":0, "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp", "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp"},
+        {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
+        {"id":3, "thumbnail_image": "/images/002/thumb/mp2_blue-orange_600x600ok.webp", "image": "/images/002/mp2_blue-orange_600x600ok.jpeg"},
+        {"id":4, "thumbnail_image": "/images/002/thumb/apio6pqhr__94507.1582558796.jpg", "image": "/images/002/apio6pqhr__94507.1582558796 (1).jpg"}
+      ]
+    },
+    {
+      "id": 4002,
+      "category": "Regał",
+      "type": "śrubowy",
+      "type_continued": null,
+      "name": "wiórowy",
+      "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
+      "images":[
+        {"id":0, "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp", "image": "/images/003/01-img_6297_rev1_600x600.jpeg"},
+        {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp", "image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
+        {"id":2, "thumbnail_image": "/images/003/thumb/04-img_6419_rev1_600x600.webp", "image": "/images/003/04-img_6419_rev1_600x600.jpeg"},
+        {"id":3, "thumbnail_image": "/images/003/thumb/usa_boltedpalletracking2.jpeg", "image": "/images/003/usa_boltedpalletracking2.jpeg"}
+      ]
+    },
+    {
+      "id": 5000,
+      "category": "Regał",
+      "type": "zaczepowy",
+      "type_continued": null,
+      "name": "ciężki",
+      "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
+      "images": [
+        {"id":0, "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg", "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg"},
+        {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
+        {"id":2, "thumbnail_image": "/images/001/03-bulk-beam-connection.webp", "image": "/images/001/03-bulk-beam-connection.webp"},
+        {"id":3, "thumbnail_image": "/images/001/04-bulk-safety-pin.webp", "image": "/images/001/04-bulk-safety-pin.webp"}
+      ]
+    },
+    {
+      "id": 5001,
+      "category": "Regał",
+      "type": "zaczepowy",
+      "type_continued": null,
+      "name": "metalowy",
+      "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
+      "images":[
+        {"id":0, "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp", "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp"},
+        {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
+        {"id":3, "thumbnail_image": "/images/002/thumb/mp2_blue-orange_600x600ok.webp", "image": "/images/002/mp2_blue-orange_600x600ok.jpeg"},
+        {"id":4, "thumbnail_image": "/images/002/thumb/apio6pqhr__94507.1582558796.jpg", "image": "/images/002/apio6pqhr__94507.1582558796 (1).jpg"}
+      ]
+    },
+    {
+      "id": 5002,
+      "category": "Regał",
+      "type": "zaczepowy",
+      "type_continued": null,
+      "name": "wiórowy",
+      "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
+      "images":[
+        {"id":0, "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp","image": "/images/003/01-img_6297_rev1_600x600.jpeg"},
+        {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
+        {"id":2, "thumbnail_image": "/images/003/thumb/04-img_6419_rev1_600x600.webp","image": "/images/003/04-img_6419_rev1_600x600.jpeg"},
+        {"id":3, "thumbnail_image": "/images/003/thumb/usa_boltedpalletracking2.jpeg","image": "/images/003/usa_boltedpalletracking2.jpeg"}
+      ]
+    },
+    {
+      "id": 6000,
+      "category": "Regał",
+      "type": "wysokiego",
+      "type_continued": "składowania",
+      "name": "ciężki",
+      "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
+      "images": [
+        {"id":0, "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg", "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg"},
+        {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
+        {"id":2, "thumbnail_image": "/images/001/03-bulk-beam-connection.webp", "image": "/images/001/03-bulk-beam-connection.webp"},
+        {"id":3, "thumbnail_image": "/images/001/04-bulk-safety-pin.webp", "image": "/images/001/04-bulk-safety-pin.webp"}
+      ]
+    },
+    {
+      "id": 6001,
+      "category": "Regał",
+      "type": "wysokiego",
+      "type_continued": "składowania",
+      "name": "metalowy",
+      "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
+      "images":[
+        {"id":0, "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp", "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp"},
+        {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
+        {"id":3, "thumbnail_image": "/images/002/thumb/mp2_blue-orange_600x600ok.webp", "image": "/images/002/mp2_blue-orange_600x600ok.jpeg"},
+        {"id":4, "thumbnail_image": "/images/002/thumb/apio6pqhr__94507.1582558796.jpg", "image": "/images/002/apio6pqhr__94507.1582558796 (1).jpg"}
+      ]
+    },
+    {
+      "id": 6002,
+      "category": "Regał",
+      "type": "wysokiego",
+      "type_continued": "składowania",
+      "name": "wiórowy",
+      "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
+      "images":[
+        {"id":0, "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp","image": "/images/003/01-img_6297_rev1_600x600.jpeg"},
+        {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
+        {"id":2, "thumbnail_image": "/images/003/thumb/04-img_6419_rev1_600x600.webp","image": "/images/003/04-img_6419_rev1_600x600.jpeg"},
+        {"id":3, "thumbnail_image": "/images/003/thumb/usa_boltedpalletracking2.jpeg","image": "/images/003/usa_boltedpalletracking2.jpeg"}
+      ]
+    }
+  ]
+}

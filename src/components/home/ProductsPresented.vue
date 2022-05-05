@@ -2,9 +2,7 @@
   <article id="products" class="products-presented">
     <h1>Nasze produkty</h1>
     <section class="products-presented__items">
-      <ProductPresented title="Regały Śrubowe" :parallaxScrollSpeed="-0.1" />
-      <ProductPresented title="Regały Zaczepowe" :parallaxScrollSpeed="-0.1" />
-      <ProductPresented title="Regały Wysokiego Składowania" :parallaxScrollSpeed="-0.1" />
+      <ProductPresented v-for="product in products.product_types.slice(0, limit)" :key="product.id" :parallaxScrollSpeed="-0.1" :title="products.name" :product="product" />
     </section>
     <button class="btn btn--highlight" @click="$router.push('/offer')">
       Pełna Oferta
@@ -14,9 +12,22 @@
 
 <script>
 import ProductPresented from '@/components/home/ProductPresented.vue'
+import localDataBase from '@/data.json'
+
 export default {
   components: {
     ProductPresented,
+  },
+  data(){
+  return {
+    limit: 3
+  }
+},
+  computed: {
+    products() {
+      console.log(localDataBase.products[0])
+      return localDataBase.products[0]
+    },
   },
 }
 </script>
@@ -38,6 +49,7 @@ export default {
 
 h1 {
   color: $color-primary;
+  font-size: $font-size-34;
 }
 
 .btn {

@@ -5,9 +5,8 @@ import router from './router'
 import VueGtag from 'vue-gtag'
 import TrackDirective from '@/plugins/gtag'
 
-
-createApp(App)
-.directive('track', TrackDirective)
+const app = createApp(App)
+  app.directive('track', TrackDirective)
   .use(
     VueGtag,
     {

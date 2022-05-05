@@ -15,20 +15,32 @@
         </ScrollParallax>
       </div>
     </div>
-    <h3 class="product-presented__title">
-      {{ title }}
+    <h3 class="product-presented__title product-presented__title">
+      {{ title }} {{ product.type }}
+    </h3>
+    <h3
+      v-if="product.type_continued"
+      class="product-presented__title product-presented__title--lower"
+    >
+      {{ product.type_continued }}
     </h3>
     <div class="product-presented__content">
       <ul class="product-presented__text-wrapper">
-        <li>- zimnowalcowana<br/>blacha DC01</li>
-        <li>- malowanie<br/>proszkowe</li>
-        <li>- skręcane<br/>śrubami 6x12mm</li>
-        <li>- popiel<br/>RAL7035</li>
+        <li>zimnowalcowana<br />blacha DC01</li>
+        <li>malowanie<br />proszkowe</li>
+        <li>skręcane<br />śrubami 6x12mm</li>
+        <li>popiel<br />RAL7035</li>
       </ul>
     </div>
+    <!-- <RouterLink
+      v-for="product in productType.product_list"
+      :key="product.id"
+      :to="`/offer/product/${product.id}`"
+    ></RouterLink> -->
     <button class="btn btn--default-reverse">
       Zobacz
     </button>
+    
   </section>
 </template>
 
@@ -37,6 +49,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 import ScrollParallax from 'vue3-parallax/src/components/ScrollParallax.vue'
+
 export default {
   components: {
     ScrollParallax,
@@ -46,10 +59,17 @@ export default {
       type: String,
       default: '',
     },
+    product: {
+      type: Object,
+      default: () => {},
+    },
     parallaxScrollSpeed: {
       type: Number,
       default: 0,
     },
+  },
+  mounted() {
+    console.log('product: ', this.product)
   },
   created() {
     AOS.init()
@@ -82,9 +102,13 @@ export default {
 
   &__title {
     color: $color-black;
-    padding: 0.8rem 1rem;
     text-align: center;
     font-size: $font-size-24;
+    padding: 0.8rem 1rem;
+  }
+
+  &__title--lower {
+    padding: 0rem 1rem 0.8rem 1rem;
   }
 
   &__content {
@@ -96,11 +120,11 @@ export default {
     display: grid;
     grid-template-columns: 1fr auto;
     grid-auto-rows: 1.8rem;
-    column-gap: .4rem;
+    column-gap: 0.4rem;
     row-gap: 1rem;
 
     & > li {
-      font-size: $font-size-14;
+      font-size: $font-size-12;
       text-transform: uppercase;
     }
   }

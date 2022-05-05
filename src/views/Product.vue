@@ -1,114 +1,141 @@
 <template>
-  <h2>
-    {{ category.name }}
-  </h2>
-  <p>
-    {{ category.type }}
-  </p>
-  <p>
-    {{ category.type_continued }}
-  </p>
-  <section v-if="category.product_list">
-    <div
-      class="gallery"
-      v-for="(product, index) in category.product_list"
-      :key="product.id"
-    >
-      <p>{{ product.sub_category }}</p>
-      <div class="gallery__big">
-        <img :src="product.image_1" :alt="product.sub_category" />
+  <article class="product">
+    <section class="product__title">
+      <h1>{{ product.category }} {{ product.name }}</h1>
+      <p>
+        {{ product.type }}
+      </p>
+      <p v-if="product.type_continued">
+        {{ product.type_continued }}
+      </p>
+    </section>
+    <section v-if="images" class="product__gallery">
+      <div class="product__gallery--big">
+        <img :src="selectedImage" alt="product image" />
       </div>
-      <div class="gallery__small">
+      <div class="product__gallery--thumbnails">
         <img
-          :src="product.thumbnail_image_1"
-          :alt="product.sub_category"
-          @click="toggleImg(index)"
-        />
-        <img
-          :src="product.thumbnail_image_2"
-          :alt="product.sub_category"
-          @click="toggleImg(index)"
-        />
-        <img
-          :src="product.thumbnail_image_3"
-          :alt="product.sub_category"
-          @click="toggleImg(index)"
-        />
-        <img
-          :src="product.thumbnail_image_4"
-          :alt="product.sub_category"
-          @click="toggleImg(index)"
+          v-for="image in images"
+          :key="image.id"
+          :src="image.thumbnail_image"
+          alt="image of product"
+          @click="toggleImg(image.image)"
         />
       </div>
-    </div>
-  </section>
+    </section>
+    <section class="product__description">
+      <ul>
+        <li v-for="(text, index) in description" :key="index">- {{ text }}</li>
+      </ul>
+    </section>
+    <section class="product__call-to-action">
+      <CallToAction />
+    </section>
+  </article>
 </template>
 
 <script>
-import localDataBase from '@/data.json'
+import productsDataBase from '@/products.json'
+import CallToAction from '@/components/base/CallToAction.vue'
 
 export default {
+  components: {
+    CallToAction,
+  },
   data() {
     return {
-      selectedImage: 0
+      selectedImage: 0,
+      chosenImage: 0,
     }
   },
   computed: {
-    categoryId() {
+    productId() {
       return parseInt(this.$route.params.id)
     },
-    category() {
-      console.log(localDataBase.products.find(i => i.id === this.categoryId))
-      return localDataBase.products.find(i => i.id === this.categoryId)
+    product() {
+      return productsDataBase.products.find(i => i.id === this.productId)
     },
-    image() {
-            return console.log(this.category)
-        },
+    images() {
+      return this.product.images
+    },
+    description() {
+      console.log(this.product)
+      return this.product.description
+    },
   },
   methods: {
-    toggleImg(index) {
-      console.log(index)
-      this.selectedImage = index
-      
+    toggleImg(image) {
+      this.selectedImage = image
     },
-  }
+  },
+  mounted() {
+    this.toggleImg(this.product.images[0].image)
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 @import '@/styles/scss/_general.scss';
-
-.gallery {
-  display: grid;
-  grid-template-rows: 1.8rem auto 4rem;
-
-  &__big {
-    & > img {
-      object-fit: contain;
-      max-height: 50rem;
+.product {
+  &__title {
+    margin: 1rem 0.4rem;
+    & > * {
+      color: $color-primary;
+    }
+    & p {
+      font-size: $font-size-26;
+      line-height: $line-height-26;
     }
   }
-
-  &__small {
-    align-items: center;
+  &__gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
 
-    & > img {
-      margin: 0 4px 2px 4px;
-      max-height: 4rem;
-      object-fit: contain;
-      width: 100%;
-      height: auto;
-      background: $color-white;
-      border-bottom: 4px solid $color-secondary;
-
-      &:active,
-      &:focus,
-      &:hover {
-        border-bottom: 4px solid $color-primary;
+    &--big {
+      & > img {
+        object-fit: contain;
+        max-height: 50rem;
       }
     }
+
+    &--thumbnails {
+      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      column-gap: 4px;
+
+      & > img {
+        margin: 4px 0;
+        max-height: 4rem;
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+        background: $color-white;
+        border-bottom: 4px solid $color-secondary;
+
+        &:active,
+        &:focus,
+        &:hover {
+          border-bottom: 4px solid $color-primary;
+        }
+      }
+    }
+  }
+  &__description {
+    color: $color-primary;
+    margin: 1rem 0.4rem;
+
+    & > ul {
+      border: 2px solid $color-white;
+      padding: 0.4rem;
+    }
+
+    & li {
+      margin: 0.4rem 0;
+    }
+  }
+  &__call-to-action {
+    margin: 0 1rem;
   }
 }
 </style>

@@ -11,13 +11,13 @@
       </span>
     </section>
     <section class="hero__call-to-action">
-      <CallToAction />
+      <CallToAction isOffer />
     </section>
   </article>
 </template>
 
 <script>
-import CallToAction from '@/components/CallToAction.vue'
+import CallToAction from '@/components/base/CallToAction.vue'
 
 export default {
   components: {

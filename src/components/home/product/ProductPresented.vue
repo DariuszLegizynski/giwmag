@@ -16,13 +16,13 @@
       </div>
     </div>
     <h3 class="product-presented__title product-presented__title">
-      {{ title }} {{ product.type }}
+      {{ title }} {{ productTypes.type }}
     </h3>
     <h3
-      v-if="product.type_continued"
+      v-if="productTypes.type_continued"
       class="product-presented__title product-presented__title--lower"
     >
-      {{ product.type_continued }}
+      {{ productTypes.type_continued }}
     </h3>
     <div class="product-presented__content">
       <ul class="product-presented__text-wrapper">
@@ -32,15 +32,11 @@
         <li>popiel<br />RAL7035</li>
       </ul>
     </div>
-    <!-- <RouterLink
-      v-for="product in productType.product_list"
-      :key="product.id"
-      :to="`/offer/product/${product.id}`"
-    ></RouterLink> -->
-    <button class="btn btn--default-reverse">
-      Zobacz
-    </button>
-    
+    <RouterLink
+      :to="`/offer/productList/${productTypes.id}`"
+    >
+      <ButtonBase/>
+    </RouterLink>
   </section>
 </template>
 
@@ -50,16 +46,19 @@ import 'aos/dist/aos.css'
 
 import ScrollParallax from 'vue3-parallax/src/components/ScrollParallax.vue'
 
+import ButtonBase from '@/components/base/ButtonBase.vue'
+
 export default {
   components: {
     ScrollParallax,
+    ButtonBase
   },
   props: {
     title: {
       type: String,
       default: '',
     },
-    product: {
+    productTypes: {
       type: Object,
       default: () => {},
     },
@@ -67,9 +66,6 @@ export default {
       type: Number,
       default: 0,
     },
-  },
-  mounted() {
-    console.log('product: ', this.product)
   },
   created() {
     AOS.init()
@@ -129,12 +125,7 @@ export default {
     }
   }
 
-  & > .btn {
-    font-family: 'Montserrat-Medium';
-  }
+
 }
-.btn {
-  margin: 0;
-  border-radius: 0;
-}
+
 </style>

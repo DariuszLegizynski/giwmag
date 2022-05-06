@@ -1,5 +1,6 @@
 <template>
   <article class="product">
+    <ButtonBack />
     <section class="product__title">
       <h1>{{ product.category }} {{ product.name }}</h1>
       <p>
@@ -31,21 +32,23 @@
     <section class="product__call-to-action">
       <CallToAction />
     </section>
+    <ButtonBack />
   </article>
 </template>
 
 <script>
 import productsDataBase from '@/products.json'
 import CallToAction from '@/components/base/CallToAction.vue'
+import ButtonBack from '@/components/base/ButtonBack.vue'
 
 export default {
   components: {
     CallToAction,
+    ButtonBack
   },
   data() {
     return {
       selectedImage: 0,
-      chosenImage: 0,
     }
   },
   computed: {
@@ -59,7 +62,6 @@ export default {
       return this.product.images
     },
     description() {
-      console.log(this.product)
       return this.product.description
     },
   },

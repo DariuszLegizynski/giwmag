@@ -1,23 +1,22 @@
 <template>
   <article class="offer">
-    <button @click="$router.push('/')" class="btn btn--back">
-      &lt; Powrót
-    </button>
+    <ButtonBack />
     <h2>Nasza Oferta</h2>
     <div class="offer__container">
       <ProductList />
     </div>
-    <button @click="$router.push('/')" class="btn btn--back btn--last">
-      &lt; Powrót
-    </button>
+    <ButtonBack />
   </article>
 </template>
 
 <script>
 import ProductList from '@/components/offer/ProductList.vue'
+import ButtonBack from '@/components/base/ButtonBack.vue'
+
 export default {
   components: {
     ProductList,
+    ButtonBack
   },
 }
 </script>

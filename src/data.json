@@ -15,6 +15,7 @@
               "id": 1000,
               "name": "ciężki",
               "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
+              "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
               "images": [
                 {"id":0, "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg", "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg"},
                 {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
@@ -26,6 +27,7 @@
               "id": 1001,
               "name": "metalowy",
               "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
+              "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp",
               "images":[
                 {"id":0, "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp", "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp"},
                 {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
@@ -37,6 +39,7 @@
               "id": 1002,
               "name": "wiórowy",
               "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
+              "image": "/images/003/01-img_6297_rev1_600x600.jpeg",
               "images":[
                 {"id":0, "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp","image": "/images/003/01-img_6297_rev1_600x600.jpeg"},
                 {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
@@ -57,6 +60,7 @@
               "id": 2000,
               "name": "ciężki",
               "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
+              "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
               "images": [
                 {"id":0, "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg", "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg"},
                 {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
@@ -68,6 +72,7 @@
               "id": 2001,
               "name": "metalowy",
               "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
+              "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp",
               "images":[
                 {"id":0, "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp", "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp"},
                 {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
@@ -79,6 +84,7 @@
               "id": 2002,
               "name": "wiórowy",
               "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
+              "image": "/images/003/01-img_6297_rev1_600x600.jpeg",
               "images":[
                 {"id":0, "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp","image": "/images/003/01-img_6297_rev1_600x600.jpeg"},
                 {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
@@ -99,6 +105,7 @@
               "id": 3000,
               "name": "ciężki",
               "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
+              "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
               "images": [
                 {"id":0, "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg", "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg"},
                 {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
@@ -110,6 +117,7 @@
               "id": 3001,
               "name": "metalowy",
               "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
+              "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp",
               "images":[
                 {"id":0, "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp", "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp"},
                 {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
@@ -121,6 +129,7 @@
               "id": 3002,
               "name": "wiórowy",
               "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
+              "image": "/images/003/01-img_6297_rev1_600x600.jpeg",
               "images":[
                 {"id":0, "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp","image": "/images/003/01-img_6297_rev1_600x600.jpeg"},
                 {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
@@ -141,6 +150,7 @@
               "id": 4000,
               "name": "ciężki",
               "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
+              "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
               "images": [
                 {"id":0, "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg", "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg"},
                 {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
@@ -152,6 +162,7 @@
               "id": 4001,
               "name": "metalowy",
               "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
+              "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp",
               "images":[
                 {"id":0, "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp", "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp"},
                 {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
@@ -163,6 +174,7 @@
               "id": 4002,
               "name": "wiórowy",
               "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
+              "image": "/images/003/01-img_6297_rev1_600x600.jpeg",
               "images":[
                 {"id":0, "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp", "image": "/images/003/01-img_6297_rev1_600x600.jpeg"},
                 {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp", "image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
@@ -183,6 +195,7 @@
               "id": 5000,
               "name": "ciężki",
               "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
+              "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
               "images": [
                 {"id":0, "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg", "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg"},
                 {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
@@ -194,6 +207,7 @@
               "id": 5001,
               "name": "metalowy",
               "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
+              "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp",
               "images":[
                 {"id":0, "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp", "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp"},
                 {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
@@ -205,6 +219,7 @@
               "id": 5002,
               "name": "wiórowy",
               "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
+              "image": "/images/003/01-img_6297_rev1_600x600.jpeg",
               "images":[
                 {"id":0, "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp","image": "/images/003/01-img_6297_rev1_600x600.jpeg"},
                 {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
@@ -225,6 +240,7 @@
               "id": 6000,
               "name": "ciężki",
               "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
+              "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
               "images": [
                 {"id":0, "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg", "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg"},
                 {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
@@ -236,6 +252,7 @@
               "id": 6001,
               "name": "metalowy",
               "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
+              "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp",
               "images":[
                 {"id":0, "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp", "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp"},
                 {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
@@ -247,6 +264,7 @@
               "id": 6002,
               "name": "wiórowy",
               "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
+              "image": "/images/003/01-img_6297_rev1_600x600.jpeg",
               "images":[
                 {"id":0, "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp","image": "/images/003/01-img_6297_rev1_600x600.jpeg"},
                 {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},

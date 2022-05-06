@@ -28,12 +28,19 @@ button {
   margin: 0.6rem;
   width: 100%;
 
+  &--default {
+    color: $color-primary-light;
+    background-color: $color-white;
+  }
+  &--default-reverse {
+    color: $color-white;
+    background-color: $color-primary-light;
+  }
   &--back {
     font-size: $font-size-16;
     line-height: $line-height-16;
     background-color: inherit;
   }
-
   &--highlight {
     color: $color-white;
     background-color: $color-highlight;
@@ -42,16 +49,6 @@ button {
     color: $color-highlight;
     background-color: $color-white;
     border: 2px solid $color-highlight;
-  }
-
-  &--default {
-    color: $color-primary-light;
-    background-color: $color-white;
-  }
-
-  &--default-reverse {
-    color: $color-white;
-    background-color: $color-primary-light;
   }
 }
 

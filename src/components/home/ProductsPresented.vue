@@ -2,7 +2,7 @@
   <article id="products" class="products-presented">
     <h1>Nasze produkty</h1>
     <section class="products-presented__items">
-      <ProductPresented v-for="product in products.product_types.slice(0, limit)" :key="product.id" :parallaxScrollSpeed="-0.1" :title="products.name" :product="product" />
+      <ProductPresented v-for="productTypes in myProducts.product_types.slice(0, limit)" :key="productTypes.id" :parallaxScrollSpeed="-0.1" :title="myProducts.name" :productTypes="productTypes" />
     </section>
     <button class="btn btn--highlight" @click="$router.push('/offer')">
       Pełna Oferta
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import ProductPresented from '@/components/home/ProductPresented.vue'
+import ProductPresented from '@/components/home/product/ProductPresented.vue'
 import localDataBase from '@/data.json'
 
 export default {
@@ -24,8 +24,7 @@ export default {
   }
 },
   computed: {
-    products() {
-      console.log(localDataBase.products[0])
+    myProducts() {
       return localDataBase.products[0]
     },
   },

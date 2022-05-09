@@ -35,6 +35,26 @@
 }
 
 @font-face {
+  font-family: 'PublicSans-Thin';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: local('PublicSans-Thin'),
+    url('/fonts/PublicSans/PublicSans-Thin.woff2') format('woff2'),
+    url('/fonts/PublicSans/PublicSans-Thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PublicSans-Light';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: local('PublicSans-Light'),
+    url('/fonts/PublicSans/PublicSans-Light.woff2') format('woff2'),
+    url('/fonts/PublicSans/PublicSans-Light.woff') format('woff');
+}
+
+@font-face {
   font-family: 'PublicSans-Regular';
   font-style: normal;
   font-weight: normal;

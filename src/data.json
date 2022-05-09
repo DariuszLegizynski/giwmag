@@ -8,6 +8,7 @@
           "id": 0,
           "type": "śrubowe",
           "type_continued": null,
+          "description": "Nasze wypasione regłay śrubowe skręcamy śrubkami najlepszej jakości, zeby zapewnić najwyzszą jakość naszych produktów. Tylko nasze produkty śrubowe mają najwyzszą jakość i są super ekstra mega cool.",
           "thumbnail_image": "/images/landscape/pexels-tiger-lily-4483610.jpeg",
           "thumbnail_portrait":"/images/portrait/ruchindra-gunasekara-GK8x_XCcDZg-unsplash.jpeg",
           "product_list": [
@@ -16,6 +17,7 @@
               "name": "ciężki",
               "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
               "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
+              "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus asperiores fugit accusamus odio.",
               "images": [
                 {"id":0, "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg", "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg"},
                 {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
@@ -28,6 +30,7 @@
               "name": "metalowy",
               "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
               "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp",
+              "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus asperiores fugit accusamus odio.",
               "images":[
                 {"id":0, "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp", "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp"},
                 {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
@@ -40,6 +43,7 @@
               "name": "wiórowy",
               "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
               "image": "/images/003/01-img_6297_rev1_600x600.jpeg",
+              "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus asperiores fugit accusamus odio.",
               "images":[
                 {"id":0, "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp","image": "/images/003/01-img_6297_rev1_600x600.jpeg"},
                 {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
@@ -53,6 +57,7 @@
           "id": 1,
           "type": "zaczepowe",
           "type_continued": null,
+          "description": "Naszymi regałami zaczepisz się o wszystko. Trzymają się lepiej niz rzepy psiej (...). Z naszymi produktami to właśnie Ty zaczepisz menela pod sklepem.",
           "thumbnail_image": "/images/landscape/sikai-gu-vzdFzNNgt1k-unsplash.jpeg",
           "thumbnail_portrait":"/images/portrait/jake-nebov-w9yUy-3Dhlw-unsplash.jpeg",
           "product_list": [
@@ -61,6 +66,7 @@
               "name": "ciężki",
               "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
               "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
+              "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus asperiores fugit accusamus odio.",
               "images": [
                 {"id":0, "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg", "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg"},
                 {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
@@ -73,6 +79,7 @@
               "name": "metalowy",
               "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
               "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp",
+              "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus asperiores fugit accusamus odio.",
               "images":[
                 {"id":0, "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp", "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp"},
                 {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
@@ -85,6 +92,7 @@
               "name": "wiórowy",
               "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
               "image": "/images/003/01-img_6297_rev1_600x600.jpeg",
+              "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus asperiores fugit accusamus odio.",
               "images":[
                 {"id":0, "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp","image": "/images/003/01-img_6297_rev1_600x600.jpeg"},
                 {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
@@ -98,6 +106,7 @@
           "id": 2,
           "type": "wysokiego",
           "type_continued": "składowania",
+          "description": "Mamusia wprowadziła się do domu? Z naszymi produktami i dla niej znajdzie się miejsce. Regały są bardzo wytrzymałe. Umozliwiają składowanie mamuś jedna nad drugą (akurat jedna z jednego związku). W razie potrzeby mozna łatwo dokupić nastpny regał i spełnić zapotrzebowanie na szerszy asortyment.",
           "thumbnail_image": "/images/landscape/chuttersnap-JWaXthlA9Cc-unsplash.jpeg",
           "thumbnail_portrait":"/images/portrait/jake-nebov-NmwnjkukM80-unsplash.jpeg",
           "product_list": [
@@ -106,6 +115,7 @@
               "name": "ciężki",
               "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
               "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
+              "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus asperiores fugit accusamus odio.",
               "images": [
                 {"id":0, "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg", "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg"},
                 {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
@@ -118,6 +128,7 @@
               "name": "metalowy",
               "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
               "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp",
+              "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus asperiores fugit accusamus odio.",
               "images":[
                 {"id":0, "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp", "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp"},
                 {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
@@ -130,6 +141,7 @@
               "name": "wiórowy",
               "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
               "image": "/images/003/01-img_6297_rev1_600x600.jpeg",
+              "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus asperiores fugit accusamus odio.",
               "images":[
                 {"id":0, "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp","image": "/images/003/01-img_6297_rev1_600x600.jpeg"},
                 {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
@@ -143,6 +155,7 @@
           "id": 3,
           "type": "śrubowe",
           "type_continued": null,
+          "description": "Nasze wypasione regłay śrubowe skręcamy śrubkami najlepszej jakości, zeby zapewnić najwyzszą jakość naszych produktów. Tylko nasze produkty śrubowe mają najwyzszą jakość i są super ekstra mega cool.",
           "thumbnail_image": "/images/landscape/pexels-tiger-lily-4483610.jpeg",
           "thumbnail_portrait":"/images/portrait/ruchindra-gunasekara-GK8x_XCcDZg-unsplash.jpeg",
           "product_list": [
@@ -151,6 +164,7 @@
               "name": "ciężki",
               "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
               "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
+              "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus asperiores fugit accusamus odio.",
               "images": [
                 {"id":0, "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg", "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg"},
                 {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
@@ -163,6 +177,7 @@
               "name": "metalowy",
               "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
               "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp",
+              "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus asperiores fugit accusamus odio.",
               "images":[
                 {"id":0, "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp", "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp"},
                 {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
@@ -175,6 +190,7 @@
               "name": "wiórowy",
               "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
               "image": "/images/003/01-img_6297_rev1_600x600.jpeg",
+              "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus asperiores fugit accusamus odio.",
               "images":[
                 {"id":0, "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp", "image": "/images/003/01-img_6297_rev1_600x600.jpeg"},
                 {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp", "image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
@@ -190,12 +206,14 @@
           "type_continued": null,
           "thumbnail_image": "/images/landscape/sikai-gu-vzdFzNNgt1k-unsplash.jpeg",
           "thumbnail_portrait":"/images/portrait/jake-nebov-w9yUy-3Dhlw-unsplash.jpeg",
+          "description": "Naszymi regałami zaczepisz się o wszystko. Trzymają się lepiej niz rzepy psiej (...). Z naszymi produktami to właśnie Ty zaczepisz menela pod sklepem.",
           "product_list": [
             {
               "id": 5000,
               "name": "ciężki",
               "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
               "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
+              "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus asperiores fugit accusamus odio.",
               "images": [
                 {"id":0, "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg", "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg"},
                 {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
@@ -208,6 +226,7 @@
               "name": "metalowy",
               "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
               "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp",
+              "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus asperiores fugit accusamus odio.",
               "images":[
                 {"id":0, "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp", "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp"},
                 {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
@@ -220,6 +239,7 @@
               "name": "wiórowy",
               "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
               "image": "/images/003/01-img_6297_rev1_600x600.jpeg",
+              "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus asperiores fugit accusamus odio.",
               "images":[
                 {"id":0, "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp","image": "/images/003/01-img_6297_rev1_600x600.jpeg"},
                 {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},
@@ -233,6 +253,7 @@
           "id": 5,
           "type": "wysokiego",
           "type_continued": "składowania",
+          "description": "Mamusia wprowadziła się do domu? Z naszymi produktami i dla niej znajdzie się miejsce. Regały są bardzo wytrzymałe. Umozliwiają składowanie mamuś jedna nad drugą (akurat jedna z jednego związku). W razie potrzeby mozna łatwo dokupić nastpny regał i spełnić zapotrzebowanie na szerszy asortyment.",
           "thumbnail_image": "/images/landscape/chuttersnap-JWaXthlA9Cc-unsplash.jpeg",
           "thumbnail_portrait":"/images/portrait/jake-nebov-NmwnjkukM80-unsplash.jpeg",
           "product_list": [
@@ -241,6 +262,7 @@
               "name": "ciężki",
               "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
               "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg",
+              "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus asperiores fugit accusamus odio.",
               "images": [
                 {"id":0, "thumbnail_image": "/images/001/bulk-rack-unit-no-decking_1.jpeg", "image": "/images/001/bulk-rack-unit-no-decking_1.jpeg"},
                 {"id":1, "thumbnail_image": "/images/001/02-bulk-frame-diagonal.webp", "image": "/images/001/02-bulk-frame-diagonal.webp"},
@@ -253,6 +275,7 @@
               "name": "metalowy",
               "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp",
               "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp",
+              "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus asperiores fugit accusamus odio.",
               "images":[
                 {"id":0, "thumbnail_image": "/images/002/thumb/mp2_shelving_unit_particle_board_gray_600px.webp", "image": "/images/002/mp2_shelving_unit_particle_board_gray_600px.webp"},
                 {"id":1, "thumbnail_image": "/images/002/thumb/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg", "image": "/images/002/mp2_full-unit-blue-and-orange-2_600x600ok.jpeg"},
@@ -265,6 +288,7 @@
               "name": "wiórowy",
               "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp",
               "image": "/images/003/01-img_6297_rev1_600x600.jpeg",
+              "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non possimus asperiores fugit accusamus odio.",
               "images":[
                 {"id":0, "thumbnail_image": "/images/003/thumb/01-img_6297_rev1_600x600.webp","image": "/images/003/01-img_6297_rev1_600x600.jpeg"},
                 {"id":1, "thumbnail_image": "/images/003/thumb/03-img_6347_rev1_600x600.webp","image": "/images/003/03-img_6347_rev1_600x600.jpeg"},

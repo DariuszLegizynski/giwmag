@@ -8,6 +8,7 @@
         alt="logo of ikea"
         data-aos="fade-up"
         data-aos-easing="ease-in-sine"
+        data-aos-once="true"
       />
       <img
         class="references__logo"
@@ -15,6 +16,7 @@
         alt="logo Leroy Merlin"
         data-aos="fade-up"
         data-aos-easing="ease-in-sine"
+        data-aos-once="true"
       />
       <img
         class="references__logo logo--mrowka"
@@ -22,6 +24,7 @@
         alt="logo PSB Mrowka"
         data-aos="fade-up"
         data-aos-easing="ease-in-sine"
+        data-aos-once="true"
       />
       <img
         class="references__logo"
@@ -29,6 +32,7 @@
         alt="logo Castorama"
         data-aos="fade-up"
         data-aos-easing="ease-in-sine"
+        data-aos-once="true"
       />
       <img
         class="references__logo"
@@ -36,6 +40,7 @@
         alt="logo Bricoman"
         data-aos="fade-up"
         data-aos-easing="ease-in-sine"
+        data-aos-once="true"
       />
     </section>
   </article>

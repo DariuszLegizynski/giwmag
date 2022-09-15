@@ -6,6 +6,7 @@
         class="product-pros__item"
         data-aos="fade-right"
         data-aos-easing="ease-in-sine"
+        data-aos-once="true"
       >
         <IconBase
           viewBox="0 0 512 512"
@@ -23,6 +24,7 @@
         class="product-pros__item"
         data-aos="fade-right"
         data-aos-easing="ease-in-sine"
+        data-aos-once="true"
       >
         <IconBase
           viewBox="0 0 64 64"
@@ -38,6 +40,7 @@
         class="product-pros__item"
         data-aos="fade-right"
         data-aos-easing="ease-in-sine"
+        data-aos-once="true"
       >
         <IconBase
           viewBox="0 0 469.567 469.567"
@@ -56,6 +59,7 @@
         class="product-pros__item"
         data-aos="fade-right"
         data-aos-easing="ease-in-sine"
+        data-aos-once="true"
       >
         <IconBase
           viewBox="0 0 50 50"
@@ -74,6 +78,7 @@
         class="product-pros__item"
         data-aos="fade-right"
         data-aos-easing="ease-in-sine"
+        data-aos-once="true"
       >
         <IconBase
           viewBox="0 0 512.853 512.853"

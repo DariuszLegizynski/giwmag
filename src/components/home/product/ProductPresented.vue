@@ -1,5 +1,5 @@
 <template>
-  <section class="product-presented" data-aos="fade-up">
+  <section class="product-presented" data-aos="fade-up" data-aos-once="true">
     <div class="product-presented__container">
       <div class="product-presented__img-wrapper">
         <ScrollParallax

@@ -11,7 +11,7 @@
       v-track="{category: 'logo clicked', label: 'logo was clicked'}"
       class="logo"
     >
-      Wi-<span>-Mag</span>
+      <img src="/logo/gamiw_logo_gradient.png" alt="Wi-Mag logo" />
     </h2>
 
     <Burger @click.stop="toggle" :isBurgerActive="isBurgerActive" />
@@ -129,11 +129,9 @@ export default {
 .logo {
   font-family: 'PublicSans-Regular';
 
-  & > span {
-    color: $color-primary;
-    font-size: $font-size-32;
-    line-height: $line-height-34;
-    font-family: 'PublicSans-Regular';
+  & > img {
+    width: 3rem;
+    height: auto;
   }
 }
 

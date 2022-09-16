@@ -19,30 +19,29 @@ export default {
 @import '@/styles/scss/_general.scss';
 
 .burger {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  // background-color: $primary-opacity;
 }
 
 .burger__stick {
-  width: 3rem;
+  width: 1.8rem;
   height: 0.2rem;
   background-color: $color-white;
-  border-radius: 10px;
   transition: all 0.5s ease-in-out;
 
   &::before,
   &::after {
     content: '';
     position: absolute;
-    width: 2rem;
+    width: 1.8rem;
     height: 0.2rem;
     background-color: $color-white;
-    border-radius: 10px;
     transition: all 0.5s ease-in-out;
   }
 

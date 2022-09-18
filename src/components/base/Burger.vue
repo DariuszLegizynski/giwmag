@@ -32,7 +32,7 @@ export default {
 .burger__stick {
   width: 1.8rem;
   height: 0.2rem;
-  background-color: $color-white;
+  background-color: $color-primary;
   transition: all 0.5s ease-in-out;
 
   &::before,
@@ -41,7 +41,7 @@ export default {
     position: absolute;
     width: 1.8rem;
     height: 0.2rem;
-    background-color: $color-white;
+    background-color: $color-primary;
     transition: all 0.5s ease-in-out;
   }
 

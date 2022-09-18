@@ -1,17 +1,21 @@
 <template>
   <div class="burger fade-in-bg">
-    <div class="burger__stick" :class="{ active: isBurgerActive }" />
+    <div class="burger__stick" :class="{ active, contrast }" />
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    isBurgerActive: {
+    active: {
       type: Boolean,
-      required: true
-    }
-  }
+      required: true,
+    },
+    contrast: {
+      type: Boolean,
+      required: true,
+    },
+  },
 }
 </script>
 
@@ -51,6 +55,22 @@ export default {
 
   &::after {
     transform: translate(0px, 12px);
+  }
+}
+.contrast {
+  // width: 1.8rem;
+  // height: 0.2rem;
+  background-color: $color-white;
+  // transition: all 0.5s ease-in-out;
+
+  &::before,
+  &::after {
+    // content: '';
+    // position: absolute;
+    // width: 1.8rem;
+    // height: 0.2rem;
+    background-color: $color-white;
+    // transition: all 0.5s ease-in-out;
   }
 }
 

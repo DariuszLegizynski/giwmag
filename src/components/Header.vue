@@ -14,7 +14,7 @@
       <img src="/logo/gamiw_logo_white.png" alt="Wi-Mag logo" />
     </div>
 
-    <Burger @click.stop="toggle" :isBurgerActive="isBurgerActive" />
+    <Burger @click.stop="toggle" :active="isBurgerActive" :contrast="isContrastActive" />
   </header>
   <nav
     class="sideBar fade-in-bg"
@@ -126,12 +126,10 @@ export default {
   }
 }
 .logo {
-  font-family: 'PublicSans-Regular';
-
   & > img {
     width: 3rem;
     height: auto;
-    background-color: blue;
+    background-color: $color-primary;
     padding: 0.4rem;
   }
 }

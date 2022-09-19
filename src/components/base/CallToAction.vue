@@ -5,7 +5,7 @@
     </button>
     <button
       v-if="isOffer"
-      class="btn btn--default-reverse"
+      class="btn btn--default"
       @click="$router.push('/home#products')"
     >
       Nasza oferta

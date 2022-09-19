@@ -29,10 +29,14 @@ button {
   width: 100%;
 
   &--default {
-    color: $color-primary-light;
+    color: $color-primary;
     background-color: $color-white;
   }
   &--default-reverse {
+    color: $color-white;
+    background-color: $color-primary;
+  }
+  &--default-reverse--light {
     color: $color-white;
     background-color: $color-primary-light;
   }

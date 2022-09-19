@@ -76,7 +76,7 @@ export default {
 <style lang="scss" scoped>
 @import '@/styles/scss/_general.scss';
 .product-presented {
-  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 2px 1px hsla(240, 20%, 3%, 0.2);
   background-color: $color-white;
 
   &__container {

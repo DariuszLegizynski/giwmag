@@ -36,7 +36,7 @@ export default {
 
 .products-presented {
   padding: 4rem 1rem;
-  background-color: $color-secondary;
+  background-color: $color-white;
 
   &__items {
     margin: 1.6rem 0 2rem 0;

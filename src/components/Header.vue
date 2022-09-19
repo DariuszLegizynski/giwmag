@@ -105,7 +105,8 @@ export default {
   top: 0;
   width: 100vw;
   height: auto;
-  background-color: $color-white;
+  // background-color: $color-white;
+  background-color: transparent;
   z-index: 10;
   display: flex;
   justify-content: space-between;

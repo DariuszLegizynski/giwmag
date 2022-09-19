@@ -36,7 +36,7 @@ export default {
 .burger__stick {
   width: 1.8rem;
   height: 0.2rem;
-  background-color: $color-primary;
+  background-color: $color-white;
   transition: all 0.5s ease-in-out;
 
   &::before,
@@ -45,7 +45,7 @@ export default {
     position: absolute;
     width: 1.8rem;
     height: 0.2rem;
-    background-color: $color-primary;
+    background-color: $color-white;
     transition: all 0.5s ease-in-out;
   }
 
@@ -58,19 +58,11 @@ export default {
   }
 }
 .contrast {
-  // width: 1.8rem;
-  // height: 0.2rem;
   background-color: $color-white;
-  // transition: all 0.5s ease-in-out;
 
   &::before,
   &::after {
-    // content: '';
-    // position: absolute;
-    // width: 1.8rem;
-    // height: 0.2rem;
     background-color: $color-white;
-    // transition: all 0.5s ease-in-out;
   }
 }
 

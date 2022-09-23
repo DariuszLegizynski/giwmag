@@ -28,22 +28,9 @@ button {
   margin: 0.6rem;
   width: 100%;
 
-  &--default {
-    color: $color-primary;
-    background-color: $color-white;
-  }
-  &--default-reverse {
+  &--reverse {
     color: $color-white;
     background-color: $color-primary;
-  }
-  &--default-reverse--light {
-    color: $color-white;
-    background-color: $color-primary-light;
-  }
-  &--back {
-    font-size: $font-size-16;
-    line-height: $line-height-16;
-    background-color: inherit;
   }
   &--highlight {
     color: $color-white;
@@ -53,6 +40,23 @@ button {
     color: $color-highlight;
     background-color: $color-white;
     border: 2px solid $color-highlight;
+  }
+  &--back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $font-size-16;
+    line-height: $line-height-16;
+    background-color: inherit;
+  }
+  &--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 0;
+    margin: 0;
+    font-size: $font-size-20;
+    line-height: $line-height-20;
   }
 }
 

@@ -35,7 +35,18 @@
     <RouterLink
       :to="`/offer/productList/${productTypes.id}`"
     >
-      <ButtonBase/>
+      <button
+      class="btn btn--link"
+    >
+      Zobacz
+      <IconBase
+        viewBox="0 0 24 24"
+        :width="24"
+        :height="24"
+        iconColor="hsl(240, 90%, 27%)">
+          <IconArrowRight />
+      </IconBase>
+    </button>
     </RouterLink>
   </section>
 </template>
@@ -45,13 +56,12 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 import ScrollParallax from 'vue3-parallax/src/components/ScrollParallax.vue'
-
-import ButtonBase from '@/components/base/ButtonBase.vue'
+import IconBase from '@/components/base/IconBase.vue'
+import IconArrowRight from '@/components/icons/IconArrowRight.vue'
 
 export default {
   components: {
-    ScrollParallax,
-    ButtonBase
+    ScrollParallax, IconBase, IconArrowRight
   },
   props: {
     title: {

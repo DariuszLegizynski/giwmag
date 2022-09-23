@@ -1,5 +1,5 @@
 <template>
-  <button class="btn btn--default-reverse">
+  <button class="btn btn--reverse">
     {{ text }}
   </button>
 </template>

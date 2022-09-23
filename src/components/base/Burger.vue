@@ -30,7 +30,6 @@ export default {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  // background-color: $primary-opacity;
 }
 
 .burger__stick {

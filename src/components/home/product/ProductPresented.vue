@@ -1,5 +1,5 @@
 <template>
-  <section class="product-presented" data-aos="fade-up">
+  <section class="product-presented" data-aos="fade-up" data-aos-once="true">
     <div class="product-presented__container">
       <div class="product-presented__img-wrapper">
         <ScrollParallax
@@ -35,7 +35,18 @@
     <RouterLink
       :to="`/offer/productList/${productTypes.id}`"
     >
-      <ButtonBase/>
+      <button
+      class="btn btn--link"
+    >
+      Zobacz
+      <IconBase
+        viewBox="0 0 24 24"
+        :width="24"
+        :height="24"
+        iconColor="hsl(240, 90%, 27%)">
+          <IconArrowRight />
+      </IconBase>
+    </button>
     </RouterLink>
   </section>
 </template>
@@ -45,13 +56,12 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 import ScrollParallax from 'vue3-parallax/src/components/ScrollParallax.vue'
-
-import ButtonBase from '@/components/base/ButtonBase.vue'
+import IconBase from '@/components/base/IconBase.vue'
+import IconArrowRight from '@/components/icons/IconArrowRight.vue'
 
 export default {
   components: {
-    ScrollParallax,
-    ButtonBase
+    ScrollParallax, IconBase, IconArrowRight
   },
   props: {
     title: {
@@ -76,7 +86,7 @@ export default {
 <style lang="scss" scoped>
 @import '@/styles/scss/_general.scss';
 .product-presented {
-  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 2px 1px hsla(240, 20%, 3%, 0.2);
   background-color: $color-white;
 
   &__container {

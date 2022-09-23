@@ -26,7 +26,7 @@ export default {
 
 .offer {
   padding-top: 1rem;
-  background-color: $color-secondary;
+  background-color: $color-white;
 
   & .btn {
     padding: 0.4rem;

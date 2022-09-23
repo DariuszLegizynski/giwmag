@@ -20,26 +20,17 @@ button {
 .btn {
   color: $color-primary;
   background-color: $color-white;
-  font-family: 'Montserrat-Regular';
+  font-family: 'Montserrat-Medium';
   font-size: $font-size-24;
   line-height: $line-height-24;
   padding: 0.9rem;
-  border-radius: 4px;
+  // border-radius: 4px;
   margin: 0.6rem;
   width: 100%;
 
-  &--default {
-    color: $color-primary-light;
-    background-color: $color-white;
-  }
-  &--default-reverse {
+  &--reverse {
     color: $color-white;
-    background-color: $color-primary-light;
-  }
-  &--back {
-    font-size: $font-size-16;
-    line-height: $line-height-16;
-    background-color: inherit;
+    background-color: $color-primary;
   }
   &--highlight {
     color: $color-white;
@@ -49,6 +40,23 @@ button {
     color: $color-highlight;
     background-color: $color-white;
     border: 2px solid $color-highlight;
+  }
+  &--back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $font-size-16;
+    line-height: $line-height-16;
+    background-color: inherit;
+  }
+  &--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 0;
+    margin: 0;
+    font-size: $font-size-20;
+    line-height: $line-height-20;
   }
 }
 

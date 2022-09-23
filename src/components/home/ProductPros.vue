@@ -6,12 +6,13 @@
         class="product-pros__item"
         data-aos="fade-right"
         data-aos-easing="ease-in-sine"
+        data-aos-once="true"
       >
         <IconBase
           viewBox="0 0 512 512"
           :width="64"
           :height="64"
-          iconColor="hsl(240, 90%, 27%)"
+          iconColor="hsl(0, 0%, 96%)"
         >
           <IconQuality />
         </IconBase>
@@ -23,12 +24,13 @@
         class="product-pros__item"
         data-aos="fade-right"
         data-aos-easing="ease-in-sine"
+        data-aos-once="true"
       >
         <IconBase
           viewBox="0 0 64 64"
           :width="64"
           :height="64"
-          iconColor="hsl(240, 90%, 27%)"
+          iconColor="hsl(0, 0%, 96%)"
         >
           <IconNorm />
         </IconBase>
@@ -38,12 +40,13 @@
         class="product-pros__item"
         data-aos="fade-right"
         data-aos-easing="ease-in-sine"
+        data-aos-once="true"
       >
         <IconBase
           viewBox="0 0 469.567 469.567"
           :width="64"
           :height="64"
-          iconColor="hsl(240, 90%, 27%)"
+          iconColor="hsl(0, 0%, 96%)"
         >
           <IconStrong />
         </IconBase>
@@ -56,12 +59,13 @@
         class="product-pros__item"
         data-aos="fade-right"
         data-aos-easing="ease-in-sine"
+        data-aos-once="true"
       >
         <IconBase
           viewBox="0 0 50 50"
           :width="64"
           :height="64"
-          iconColor="hsl(240, 90%, 27%)"
+          iconColor="hsl(0, 0%, 96%)"
         >
           <IconGear />
         </IconBase>
@@ -74,12 +78,13 @@
         class="product-pros__item"
         data-aos="fade-right"
         data-aos-easing="ease-in-sine"
+        data-aos-once="true"
       >
         <IconBase
           viewBox="0 0 512.853 512.853"
           :width="64"
           :height="64"
-          iconColor="hsl(240, 90%, 27%)"
+          iconColor="hsl(0, 0%, 96%)"
         >
           <IconTruck />
         </IconBase>
@@ -117,10 +122,10 @@ export default {
   flex-direction: column;
   align-items: center;
   padding: 4rem 0;
-  background-color: $color-white;
+  background-color: $color-primary;
 
   & > h2 {
-    color: $color-primary;
+    color: $color-white;
     margin-bottom: 1.2rem;
     text-align: center;
   }
@@ -139,7 +144,7 @@ export default {
     margin: 0 1.6rem;
 
     & > span {
-      color: $color-black;
+      color: $color-white;
     }
   }
 }

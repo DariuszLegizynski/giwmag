@@ -16,6 +16,6 @@ export default {
 
 <style>
 #app {
-  background-color: #c2d1ff;
+  background-color: hsl(0, 0%, 96%);
 }
 </style>

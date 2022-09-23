@@ -6,15 +6,15 @@
       header__active: isBurgerActive,
     }"
   >
-    <h2
+    <div
       @click="$router.push('/')"
       v-track="{category: 'logo clicked', label: 'logo was clicked'}"
       class="logo"
     >
-      Wi-<span>-Mag</span>
-    </h2>
+      <img src="/logo/gamiw_logo_white.png" alt="Wi-Mag logo" />
+    </div>
 
-    <Burger @click.stop="toggle" :isBurgerActive="isBurgerActive" />
+    <Burger @click.stop="toggle" :active="isBurgerActive" :contrast="isContrastActive" />
   </header>
   <nav
     class="sideBar fade-in-bg"
@@ -105,12 +105,12 @@ export default {
   top: 0;
   width: 100vw;
   height: auto;
+  // background-color: $color-white;
   background-color: transparent;
   z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.4rem;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 
@@ -127,13 +127,11 @@ export default {
   }
 }
 .logo {
-  font-family: 'PublicSans-Regular';
-
-  & > span {
-    color: $color-primary;
-    font-size: $font-size-32;
-    line-height: $line-height-34;
-    font-family: 'PublicSans-Regular';
+  & > img {
+    width: 3rem;
+    height: auto;
+    background-color: $color-primary;
+    padding: 0.4rem;
   }
 }
 

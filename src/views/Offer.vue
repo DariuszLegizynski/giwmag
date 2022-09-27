@@ -1,9 +1,9 @@
 <template>
   <article class="offer">
     <ButtonBack />
-    <h2>Nasza Oferta</h2>
+    <h2>Regały</h2>
     <div class="offer__container">
-      <ProductList />
+      <ProductList :products="getProducts" />
     </div>
     <ButtonBack />
   </article>
@@ -12,12 +12,18 @@
 <script>
 import ProductList from '@/components/offer/ProductList.vue'
 import ButtonBack from '@/components/base/ButtonBack.vue'
+import dataBase from '@/data/data.json'
 
 export default {
   components: {
     ProductList,
-    ButtonBack
+    ButtonBack,
   },
+  computed: {
+    getProducts() {
+      return dataBase
+    }
+  }
 }
 </script>
 

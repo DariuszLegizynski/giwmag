@@ -51,9 +51,6 @@ export default {
       }
     },
   },
-  mounted() {
-    console.log('productType: ', this.productType)
-  },
 }
 </script>
 

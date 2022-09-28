@@ -24,29 +24,23 @@
     >
       {{ productTypes.type_continued }}
     </h3>
-    <div class="product-presented__content">
-      <ul class="product-presented__text-wrapper">
-        <li>zimnowalcowana<br />blacha DC01</li>
-        <li>malowanie<br />proszkowe</li>
-        <li>skręcane<br />śrubami 6x12mm</li>
-        <li>popiel<br />RAL7035</li>
-      </ul>
-    </div>
-    <RouterLink
-      :to="`/offer/productList/${productTypes.id}`"
-    >
-      <button
-      class="btn btn--link"
-    >
-      Zobacz
-      <IconBase
-        viewBox="0 0 24 24"
-        :width="24"
-        :height="24"
-        iconColor="hsl(240, 90%, 27%)">
+    <p class="product-presented__content">
+      Najlepsza, zimnowalcowana blacha DC01. Zastosowane specjalne malowanie
+      proszkowe. Skręcane ręcznie dobieranymi śrubami 6x12mm. Pokryta doskonałej
+      jakości popielem RAL7035.
+    </p>
+    <RouterLink :to="`/offer/productList/${productTypes.id}`">
+      <button class="btn btn--link">
+        Zobacz
+        <IconBase
+          viewBox="0 0 24 24"
+          :width="24"
+          :height="24"
+          iconColor="hsl(240, 90%, 27%)"
+        >
           <IconArrowRight />
-      </IconBase>
-    </button>
+        </IconBase>
+      </button>
     </RouterLink>
   </section>
 </template>
@@ -61,7 +55,9 @@ import IconArrowRight from '@/components/icons/IconArrowRight.vue'
 
 export default {
   components: {
-    ScrollParallax, IconBase, IconArrowRight
+    ScrollParallax,
+    IconBase,
+    IconArrowRight,
   },
   props: {
     title: {
@@ -108,9 +104,9 @@ export default {
 
   &__title {
     color: $color-black;
-    text-align: center;
+    text-align: left;
     font-size: $font-size-24;
-    padding: 0.8rem 1rem;
+    padding: 0.8rem .6rem;
   }
 
   &__title--lower {
@@ -118,8 +114,11 @@ export default {
   }
 
   &__content {
-    padding: 0.6rem 1.2rem 1.2rem 1.2rem;
+    padding: 0.6rem ;
     color: $color-black;
+    font-family: 'Montserrat-Light';
+    font-size: $font-size-16;
+    line-height: $line-height-32;
   }
 
   &__text-wrapper {
@@ -134,8 +133,5 @@ export default {
       text-transform: uppercase;
     }
   }
-
-
 }
-
 </style>

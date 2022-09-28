@@ -32,7 +32,6 @@
 </template>
 
 <script>
-// import localDataBase from '@/data.json'
 import ButtonBase from '@/components/base/ButtonBase.vue'
 import ButtonBack from '@/components/base/ButtonBack.vue'
 

@@ -12,7 +12,7 @@
 
 <script>
 import ProductPresented from '@/components/home/product/ProductPresented.vue'
-import localDataBase from '@/data.json'
+import localDataBase from '@/data/data.json'
 
 export default {
   components: {

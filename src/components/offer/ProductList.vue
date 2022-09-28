@@ -8,7 +8,7 @@
 
 <script>
 import ProductCategories from '@/components/offer/ProductCategories.vue'
-import localDataBase from '@/data.json'
+import localDataBase from '@/data/data.json'
 
 export default {
   components: {

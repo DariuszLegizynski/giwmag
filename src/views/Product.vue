@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import productsDataBase from '@/products.json'
+import productsDataBase from '@/data/products.json'
 import CallToAction from '@/components/base/CallToAction.vue'
 import ButtonBack from '@/components/base/ButtonBack.vue'
 

@@ -21,6 +21,7 @@ export default {
   },
   computed: {
     getProducts() {
+      console.log("dataBase: ", dataBase)
       return dataBase
     }
   }

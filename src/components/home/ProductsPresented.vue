@@ -18,10 +18,10 @@ export default {
   components: {
     ProductPresented,
   },
-  data(){
-  return {
-    limit: 3
-  }
+  data() {
+    return {
+      limit: 3
+    }
 },
   computed: {
     myProducts() {

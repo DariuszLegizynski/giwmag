@@ -32,6 +32,7 @@
 </template>
 
 <script>
+import productDataBase from '@/data/data.json'
 import ButtonBase from '@/components/base/ButtonBase.vue'
 import ButtonBack from '@/components/base/ButtonBack.vue'
 
@@ -40,26 +41,23 @@ export default {
     ButtonBase,
     ButtonBack,
   },
-  props: {
-    products: {
-      type: Object,
-      default: () => {}
-    }
-  },
   data() {
     return {
       selectedImage: 0,
     }
   },
   computed: {
+    getProductDB() {
+      return productDataBase
+    },
     productTypeId() {
       return parseInt(this.$route.params.id)
     },
     title() {
-      return this.products.products[0].name
+      return this.getProductDB.products[0].name
     },
     productType() {
-      return this.products.products[0].product_types.find(
+      return this.getProductDB.products[0].product_types.find(
         i => i.id === this.productTypeId
       )
     },

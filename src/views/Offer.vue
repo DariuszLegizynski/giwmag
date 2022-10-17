@@ -2,6 +2,7 @@
   <article class="offer">
     <ButtonBack />
     <h2>Regały</h2>
+    <p>Nasze Regały to wytrzymałe i banalnie proste do złozonia konstrukcje. Lata doświadczeń pozwoliły nam dopaowsać je do potrzeb naszych klientów.</p>
     <div class="offer__container">
       <ProductList :products="getProducts" />
     </div>
@@ -47,12 +48,16 @@ export default {
     padding-bottom: 1rem;
   }
 
-  & > h2 {
+  & > h2, p {
     color: $color-primary;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0.8rem 0;
+    justify-content: left;
+    padding: 0.8rem;
+  }
+
+  & > p {
+    font-size: $font-size-16;
   }
 
   &__container {

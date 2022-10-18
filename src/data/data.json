@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 0,
-      "name": "Regały",
+      "name": "Regał",
       "product_types": [
         {
           "id": 0,
@@ -104,7 +104,7 @@
         },
         {
           "id": 2,
-          "type": "zaczepowe",
+          "type": "zaczepowy",
           "type_continued": null,
           "description": "Naszymi regałami zaczepisz się o wszystko. Trzymają się lepiej niz rzepy psiej (...). Z naszymi produktami to właśnie Ty zaczepisz menela pod sklepem.",
           "thumbnail_image": "/images/landscape/sikai-gu-vzdFzNNgt1k-unsplash.jpeg",

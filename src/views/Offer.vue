@@ -1,7 +1,6 @@
 <template>
   <article class="offer">
     <div class="offer__title">
-      <ButtonBack />
       <h2>Regały</h2>
       <p>
         Nasze Regały to wytrzymałe i banalnie proste do złozonia konstrukcje.
@@ -12,6 +11,7 @@
       <h2>Dopasowane do Twoich potrzeb</h2>
       <div class="offer__img" />
     </div>
+    <div class="offer__banner"><p>Produkty</p></div>
     <div class="offer__container">
       <ProductList :products="getProducts" />
     </div>
@@ -46,7 +46,7 @@ export default {
 
   &__title {
     height: auto;
-    padding: 1rem 0;
+    padding: 2.6rem .8rem;
 
     & > h2,
     p {
@@ -56,13 +56,20 @@ export default {
       justify-content: left;
     }
 
-    & > h2 {
-      padding: 0 .8rem;
-    }
-
     & > p {
       font-size: $font-size-16;
-      padding: 1.6rem 0.8rem;
+      padding-top: 1.6rem;
+    }
+  }
+
+  &__banner {
+    background-color: $color-primary;
+    padding: 1.2rem;
+
+    & > p {
+      font-size: $font-size-18;
+      line-height: $line-height-18;
+      font-family: 'Montserrat-Medium';
     }
   }
 
@@ -78,7 +85,7 @@ export default {
       bottom:0;
       color: white;
       background-color: $black-opacity;
-      z-index:100;
+      z-index:1;
     }
   }
 

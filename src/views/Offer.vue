@@ -1,8 +1,17 @@
 <template>
   <article class="offer">
-    <ButtonBack />
-    <h2>Regały</h2>
-    <p>Nasze Regały to wytrzymałe i banalnie proste do złozonia konstrukcje. Lata doświadczeń pozwoliły nam dopaowsać je do potrzeb naszych klientów.</p>
+    <div class="offer__title">
+      <ButtonBack />
+      <h2>Regały</h2>
+      <p>
+        Nasze Regały to wytrzymałe i banalnie proste do złozonia konstrukcje.
+        Lata doświadczeń pozwoliły nam dopaowsać je do potrzeb naszych klientów.
+      </p>
+    </div>
+    <div class="offer__img-container">
+      <h2>Dopasowane do Twoich potrzeb</h2>
+      <div class="offer__img" />
+    </div>
     <div class="offer__container">
       <ProductList :products="getProducts" />
     </div>
@@ -22,10 +31,10 @@ export default {
   },
   computed: {
     getProducts() {
-      console.log("dataBase: ", dataBase)
+      console.log('dataBase: ', dataBase)
       return dataBase
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -33,31 +42,56 @@ export default {
 @import '@/styles/scss/_general.scss';
 
 .offer {
-  padding-top: 1rem;
   background-color: $color-white;
 
-  & .btn {
-    padding: 0.4rem;
+  &__title {
+    height: auto;
+    padding: 1rem 0;
+
+    & > h2,
+    p {
+      color: $color-primary;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+    }
+
+    & > h2 {
+      padding: 0 .8rem;
+    }
+
+    & > p {
+      font-size: $font-size-16;
+      padding: 1.6rem 0.8rem;
+    }
   }
 
-  & .btn--back {
-    margin: 0;
+  &__img-container {
+    height: calc(95vh - 1rem - 1rem);
+    position: relative;
+
+    & > h2 {
+      position: absolute;
+      padding: 1.2rem;
+      font-size: $font-size-36;
+      line-height: $line-height-48;
+      bottom:0;
+      color: white;
+      background-color: $black-opacity;
+      z-index:100;
+    }
   }
 
-  & .btn--last {
-    padding-bottom: 1rem;
-  }
-
-  & > h2, p {
-    color: $color-primary;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    padding: 0.8rem;
-  }
-
-  & > p {
-    font-size: $font-size-16;
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('/images/offer/isis-franca-hsPFuudRg5I-unsplash.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &__container {

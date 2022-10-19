@@ -8,7 +8,6 @@
       <div class="product__thumbnail">
         <img :src="productType.thumbnail_image" alt="picture of the product" />
       </div>
-      <!-- <div class="product__thumbnail" :style="backgroundImageStyle" /> -->
     </section>
   </RouterLink>
 </template>
@@ -70,6 +69,7 @@ export default {
 
   &__thumbnail {
     padding-left: 2rem;
+    position:relative;
   }
 }
 </style>

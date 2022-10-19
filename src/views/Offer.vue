@@ -13,7 +13,7 @@
     </div>
     <div class="offer__banner"><p>Produkty</p></div>
     <div class="offer__container">
-      <ProductList :products="getProducts" />
+      <ProductList />
     </div>
     <ButtonBack />
   </article>
@@ -22,18 +22,11 @@
 <script>
 import ProductList from '@/components/offer/ProductList.vue'
 import ButtonBack from '@/components/base/ButtonBack.vue'
-import dataBase from '@/data/data.json'
 
 export default {
   components: {
     ProductList,
     ButtonBack,
-  },
-  computed: {
-    getProducts() {
-      console.log('dataBase: ', dataBase)
-      return dataBase
-    },
   },
 }
 </script>
@@ -104,7 +97,7 @@ export default {
   &__container {
     width: 100%;
     display: block;
-    padding: 1rem 0.75rem;
+    padding: 1rem 0;
   }
 }
 </style>

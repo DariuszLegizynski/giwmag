@@ -51,7 +51,7 @@ export default {
 
     & > h3 {
       text-align: left;
-      color: $color-primary;
+      color: $color-black;
       margin: 0.4rem 0;
       font-size: $font-size-24;
       line-height: $line-height-24;
@@ -61,7 +61,7 @@ export default {
     & > span {
       margin: 0.4rem 3rem 0.4rem 0;
       text-align: left;
-      color: $color-primary;
+      color: $color-black;
       font-size: $font-size-16;
       line-height: $line-height-30;
     }

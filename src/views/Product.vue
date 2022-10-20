@@ -95,17 +95,18 @@ export default {
     }
 
     &--thumbnails {
-      align-items: center;
       display: grid;
-      grid-template-columns: repeat(4, auto);
-      column-gap: 4px;
+          justify-content: space-evenly;
+          align-items: center;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 8px;
 
       & > img {
         margin: 4px 0;
         max-height: 4rem;
         object-fit: contain;
         width: 100%;
-        height: auto;
+        height: 100%;
         background: $color-white;
         border-bottom: 4px solid $color-secondary;
 

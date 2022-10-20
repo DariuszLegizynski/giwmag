@@ -1,14 +1,7 @@
 <template>
   <article class="product">
-    <ButtonBack />
     <section class="product__title">
-      <h1>{{ product.category }} {{ product.name }}</h1>
-      <p>
-        {{ product.type }}
-      </p>
-      <p v-if="product.type_continued">
-        {{ product.type_continued }}
-      </p>
+      <h2>{{ product.category }} {{ product.type }}</h2>
     </section>
     <section v-if="images" class="product__gallery">
       <div class="product__gallery--big">
@@ -80,13 +73,11 @@ export default {
 @import '@/styles/scss/_general.scss';
 .product {
   &__title {
-    margin: 1rem 0.4rem;
+    margin: 3rem 0.4rem;
+    text-align: center;
+
     & > * {
       color: $color-primary;
-    }
-    & p {
-      font-size: $font-size-26;
-      line-height: $line-height-26;
     }
   }
   &__gallery {

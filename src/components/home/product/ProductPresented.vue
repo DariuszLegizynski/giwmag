@@ -29,7 +29,7 @@
       proszkowe. Skręcane ręcznie dobieranymi śrubami 6x12mm. Pokryta doskonałej
       jakości popielem RAL7035.
     </p>
-    <RouterLink :to="`/offer/productList/${productTypes.id}`">
+    <RouterLink :to="`/offer/product/${productTypes.id}`">
       <button class="btn btn--link">
         Zobacz
         <IconBase

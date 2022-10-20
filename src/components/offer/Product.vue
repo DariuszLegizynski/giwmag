@@ -2,7 +2,7 @@
   <RouterLink :to="`/offer/product/${productType.id}`">
     <section class="product">
       <div class="product__description">
-        <h3>{{ productType.type }}<br />{{ productType.type_continued }}</h3>
+        <h3>{{ productType.type }}</h3>
         <span>{{ productType.description }}</span>
       </div>
       <div class="product__thumbnail">

@@ -1,7 +1,8 @@
 <template>
   <article class="product">
     <section class="product__title">
-      <h2>{{ product.category }} {{ product.type }}</h2>
+      <h2>{{ product.category }}</h2>
+      <h2>{{ product.type }}</h2>
     </section>
     <section v-if="images" class="product__gallery">
       <div class="product__gallery--big">
@@ -78,6 +79,8 @@ export default {
 
     & > * {
       color: $color-primary;
+      padding: .4rem 0;
+      text-transform: capitalize;
     }
   }
   &__gallery {

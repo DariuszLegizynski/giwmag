@@ -14,7 +14,7 @@
       <img src="/logo/gamiw_logo_white.png" alt="Wi-Mag logo" />
     </div>
 
-    <Burger @click.stop="toggle" :active="isBurgerActive" :contrast="isContrastActive" />
+    <Burger @click.stop="toggle" :active="isBurgerActive" />
   </header>
   <nav
     class="sideBar fade-in-bg"
@@ -56,7 +56,7 @@ export default {
   data() {
     return {
       isBurgerActive: false,
-      isContrastActive: false,
+      isContrastActive: true,
       observer: null,
     }
   },
@@ -82,7 +82,7 @@ export default {
             this.isContrastActive = false
           }
         },
-        { rootMargin: '-5% 0px 0px 0px' }
+        { rootMargin: '0px 0px -90% 0px' }
       )
       document
         .querySelectorAll('.observer')

@@ -43,7 +43,11 @@
 </template>
 
 <script>
-export default {}
+import headerObserverMixin from '@/mixins/headerObserver.js'
+
+export default {
+  mixins: [headerObserverMixin],
+}
 </script>
 
 <style lang="scss" scoped>

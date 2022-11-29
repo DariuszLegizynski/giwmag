@@ -77,7 +77,7 @@ export default {
       this.isBurgerActive = !this.isBurgerActive
     },
     activateObserver() {
-      this.observer = new IntersectionObserver(
+      window.$headerObserver = new IntersectionObserver(
         ([entry]) => {
           if (!entry.isIntersecting) {
             this.isContrastActive = true
@@ -87,25 +87,16 @@ export default {
         },
         { rootMargin: '0px 0px -90% 0px' }
       )
-      document
-        .querySelectorAll('.observer')
-        .forEach(el => this.observer.observe(el))
     },
   },
-  mounted() {
-    setTimeout(() => {
-      this.activateObserver()
-    }, 500)
+  created() {
+    this.activateObserver()
   },
-  // created() {
-  //   this.activateObserver()
-  // },
-  // unmounted() {
-  //   console.log("unmounted triggers")
-  //   if (this.observer instanceof IntersectionObserver) {
-  //     this.observer.disconnect()
-  //   }
-  // },
+  unmounted() {
+    if (window.$headerObserver instanceof IntersectionObserver) {
+      window.$headerObserver.disconnect()
+    }
+  },
 }
 </script>
 

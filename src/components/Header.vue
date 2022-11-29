@@ -8,7 +8,7 @@
   >
     <div
       @click="$router.push('/')"
-      v-track="{category: 'logo clicked', label: 'logo was clicked'}"
+      v-track="{ category: 'logo clicked', label: 'logo was clicked' }"
       class="logo"
     >
       <img src="/logo/gamiw_logo_white.png" alt="Wi-Mag logo" />
@@ -27,21 +27,30 @@
     <div class="btn sr-only">MENU</div>
     <button
       @click="$router.push('/offer'); toggle()"
-      v-track="{category: 'Offer btn clicked', label: 'offer btn was clicked'}"
+      v-track="{
+        category: 'Offer btn clicked',
+        label: 'offer btn was clicked',
+      }"
       class="btn"
     >
       OFERTA
     </button>
     <button
       @click="$router.push('/about'); toggle()"
-      v-track="{category: 'About btn clicked', label: 'about btn was clicked'}"
+      v-track="{
+        category: 'About btn clicked',
+        label: 'about btn was clicked',
+      }"
       class="btn"
     >
       O FIRMIE
     </button>
     <button
       @click="$router.push('/home#footer'); toggle()"
-      v-track="{category: 'Contact btn clicked', label: 'contact btn was clicked'}"
+      v-track="{
+        category: 'Contact btn clicked',
+        label: 'contact btn was clicked',
+      }"
       class="btn btn--highlight"
     >
       KONTAKT
@@ -62,12 +71,6 @@ export default {
   },
   components: {
     Burger,
-  },
-  watch: {
-    isBurgerActive(newVal, oldVal) {
-      console.log('newVal: ', newVal)
-      console.log('oldVal: ', oldVal)
-    },
   },
   methods: {
     toggle() {
@@ -94,6 +97,15 @@ export default {
       this.activateObserver()
     }, 500)
   },
+  // created() {
+  //   this.activateObserver()
+  // },
+  // unmounted() {
+  //   console.log("unmounted triggers")
+  //   if (this.observer instanceof IntersectionObserver) {
+  //     this.observer.disconnect()
+  //   }
+  // },
 }
 </script>
 

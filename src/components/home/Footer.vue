@@ -1,5 +1,5 @@
 <template>
-  <article class="footer" id="footer">
+  <article class="footer observer" id="footer">
     <section class="footer__section">
       <h1>Skontaktuj się z nami:</h1>
       <div class="footer__section__top">
@@ -20,7 +20,7 @@
         <div class="footer__form__item">
           <input type="text" placeholder="Imię (wymagane)" required />
         </div>
-        <div class="footer__form__item observer">
+        <div class="footer__form__item">
           <input type="text" placeholder="Nazwisko" />
         </div>
         <div class="footer__form__item" ref="test">
@@ -43,7 +43,11 @@
 </template>
 
 <script>
-export default {}
+import headerObserverMixin from '@/mixins/headerObserver.js'
+
+export default {
+  mixins: [headerObserverMixin],
+}
 </script>
 
 <style lang="scss" scoped>

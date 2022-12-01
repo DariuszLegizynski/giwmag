@@ -1,6 +1,6 @@
 <template>
   <div class="burger fade-in-bg">
-    <div class="burger__stick" :class="{ active, contrast }" />
+    <div class="burger__stick" :class="{ active }" />
   </div>
 </template>
 
@@ -8,10 +8,6 @@
 export default {
   props: {
     active: {
-      type: Boolean,
-      required: true,
-    },
-    contrast: {
       type: Boolean,
       required: true,
     },
@@ -54,14 +50,6 @@ export default {
 
   &::after {
     transform: translate(0px, 12px);
-  }
-}
-.contrast {
-  background-color: $color-white;
-
-  &::before,
-  &::after {
-    background-color: $color-white;
   }
 }
 

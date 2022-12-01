@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import localDataBase from '@/data.json'
+import productDataBase from '@/data/data.json'
 import ButtonBase from '@/components/base/ButtonBase.vue'
 import ButtonBack from '@/components/base/ButtonBack.vue'
 
@@ -47,19 +47,21 @@ export default {
     }
   },
   computed: {
+    getProductDB() {
+      return productDataBase
+    },
     productTypeId() {
       return parseInt(this.$route.params.id)
     },
     title() {
-      return localDataBase.products[0].name
+      return this.getProductDB.products[0].name
     },
     productType() {
-      return localDataBase.products[0].product_types.find(
+      return this.getProductDB.products[0].product_types.find(
         i => i.id === this.productTypeId
       )
     },
     productList() {
-      console.log(this.productType.product_list)
       return this.productType.product_list
     },
   },

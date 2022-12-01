@@ -1,6 +1,6 @@
 <template>
   <article id="products" class="products-presented">
-    <h1>Nasze produkty</h1>
+    <h1 class="">Nasze produkty</h1>
     <section class="products-presented__items">
       <ProductPresented v-for="productTypes in myProducts.product_types.slice(0, limit)" :key="productTypes.id" :parallaxScrollSpeed="-0.1" :title="myProducts.name" :productTypes="productTypes" />
     </section>
@@ -12,16 +12,16 @@
 
 <script>
 import ProductPresented from '@/components/home/product/ProductPresented.vue'
-import localDataBase from '@/data.json'
+import localDataBase from '@/data/data.json'
 
 export default {
   components: {
     ProductPresented,
   },
-  data(){
-  return {
-    limit: 3
-  }
+  data() {
+    return {
+      limit: 3
+    }
 },
   computed: {
     myProducts() {
@@ -36,7 +36,7 @@ export default {
 
 .products-presented {
   padding: 4rem 1rem;
-  background-color: $color-secondary;
+  background-color: $color-white;
 
   &__items {
     margin: 1.6rem 0 2rem 0;

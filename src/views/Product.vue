@@ -1,14 +1,8 @@
 <template>
   <article class="product">
-    <ButtonBack />
     <section class="product__title">
-      <h1>{{ product.category }} {{ product.name }}</h1>
-      <p>
-        {{ product.type }}
-      </p>
-      <p v-if="product.type_continued">
-        {{ product.type_continued }}
-      </p>
+      <h2>{{ product.category }}</h2>
+      <h2>{{ product.type }}</h2>
     </section>
     <section v-if="images" class="product__gallery">
       <div class="product__gallery--big">
@@ -37,7 +31,7 @@
 </template>
 
 <script>
-import productsDataBase from '@/products.json'
+import productsDataBase from '@/data/products.json'
 import CallToAction from '@/components/base/CallToAction.vue'
 import ButtonBack from '@/components/base/ButtonBack.vue'
 
@@ -80,13 +74,13 @@ export default {
 @import '@/styles/scss/_general.scss';
 .product {
   &__title {
-    margin: 1rem 0.4rem;
+    margin: 3rem 0.4rem;
+    text-align: center;
+
     & > * {
       color: $color-primary;
-    }
-    & p {
-      font-size: $font-size-26;
-      line-height: $line-height-26;
+      padding: .4rem 0;
+      text-transform: capitalize;
     }
   }
   &__gallery {
@@ -101,17 +95,18 @@ export default {
     }
 
     &--thumbnails {
-      align-items: center;
       display: grid;
-      grid-template-columns: repeat(4, auto);
-      column-gap: 4px;
+          justify-content: space-evenly;
+          align-items: center;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 8px;
 
       & > img {
         margin: 4px 0;
         max-height: 4rem;
         object-fit: contain;
         width: 100%;
-        height: auto;
+        height: 100%;
         background: $color-white;
         border-bottom: 4px solid $color-secondary;
 

@@ -4,11 +4,14 @@ $color-primary-dark: hsl(225, 90%, 19%);
 $color-secondary: hsl(225, 100%, 88%);
 $color-tertiary: hsl(225, 100%, 76%);
 
+// $color-highlight: #B48A33;
+$color-highlight: hsl(240, 90%, 27%);
 // $color-highlight: hsl(263, 100%, 79%);
-$color-highlight: hsl(331, 71%, 56%);
+// $color-highlight: hsl(331, 71%, 56%);
 
 $color-white: hsl(0, 0%, 96%);
 $color-grey-light: hsl(0, 0%, 94%);
+$color-grey: hsla(0, 0%, 0%, 0.15);
 $color-black: hsl(240, 20%, 3%);
 
 $color-border: hsla(0, 0%, 4%, 0.1);
@@ -52,7 +55,8 @@ $font-size-72: 3.6rem;
 
 $letter-spacing-0: 0rem;
 
-$line-height-16: 0.7rem;
+$line-height-12: 0.6rem;
+$line-height-14: 0.7rem;
 $line-height-16: 0.8rem;
 $line-height-18: 0.9rem;
 $line-height-20: 1rem;

@@ -6,15 +6,15 @@
       header__active: isBurgerActive,
     }"
   >
-    <h2
+    <div
       @click="$router.push('/')"
-      v-track="{category: 'logo clicked', label: 'logo was clicked'}"
+      v-track="{ category: 'logo clicked', label: 'logo was clicked' }"
       class="logo"
     >
-      Wi-<span>-Mag</span>
-    </h2>
+      <img src="/logo/gamiw_logo_white.png" alt="Wi-Mag logo" />
+    </div>
 
-    <Burger @click.stop="toggle" :isBurgerActive="isBurgerActive" />
+    <Burger @click.stop="toggle" :active="isBurgerActive" />
   </header>
   <nav
     class="sideBar fade-in-bg"
@@ -27,21 +27,30 @@
     <div class="btn sr-only">MENU</div>
     <button
       @click="$router.push('/offer'); toggle()"
-      v-track="{category: 'Offer btn clicked', label: 'offer btn was clicked'}"
+      v-track="{
+        category: 'Offer btn clicked',
+        label: 'offer btn was clicked',
+      }"
       class="btn"
     >
       OFERTA
     </button>
     <button
       @click="$router.push('/about'); toggle()"
-      v-track="{category: 'About btn clicked', label: 'about btn was clicked'}"
+      v-track="{
+        category: 'About btn clicked',
+        label: 'about btn was clicked',
+      }"
       class="btn"
     >
       O FIRMIE
     </button>
     <button
       @click="$router.push('/home#footer'); toggle()"
-      v-track="{category: 'Contact btn clicked', label: 'contact btn was clicked'}"
+      v-track="{
+        category: 'Contact btn clicked',
+        label: 'contact btn was clicked',
+      }"
       class="btn btn--highlight"
     >
       KONTAKT
@@ -56,25 +65,19 @@ export default {
   data() {
     return {
       isBurgerActive: false,
-      isContrastActive: false,
+      isContrastActive: true,
       observer: null,
     }
   },
   components: {
     Burger,
   },
-  watch: {
-    isBurgerActive(newVal, oldVal) {
-      console.log('newVal: ', newVal)
-      console.log('oldVal: ', oldVal)
-    },
-  },
   methods: {
     toggle() {
       this.isBurgerActive = !this.isBurgerActive
     },
     activateObserver() {
-      this.observer = new IntersectionObserver(
+      window.$headerObserver = new IntersectionObserver(
         ([entry]) => {
           if (!entry.isIntersecting) {
             this.isContrastActive = true
@@ -82,17 +85,17 @@ export default {
             this.isContrastActive = false
           }
         },
-        { rootMargin: '-5% 0px 0px 0px' }
+        { rootMargin: '0px 0px -90% 0px' }
       )
-      document
-        .querySelectorAll('.observer')
-        .forEach(el => this.observer.observe(el))
     },
   },
-  mounted() {
-    setTimeout(() => {
-      this.activateObserver()
-    }, 500)
+  created() {
+    this.activateObserver()
+  },
+  unmounted() {
+    if (window.$headerObserver instanceof IntersectionObserver) {
+      window.$headerObserver.disconnect()
+    }
   },
 }
 </script>
@@ -105,12 +108,12 @@ export default {
   top: 0;
   width: 100vw;
   height: auto;
+  // background-color: $color-white;
   background-color: transparent;
   z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.4rem;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 
@@ -127,13 +130,11 @@ export default {
   }
 }
 .logo {
-  font-family: 'PublicSans-Regular';
-
-  & > span {
-    color: $color-primary;
-    font-size: $font-size-32;
-    line-height: $line-height-34;
-    font-family: 'PublicSans-Regular';
+  & > img {
+    width: 3rem;
+    height: auto;
+    background-color: $color-primary;
+    padding: 0.4rem;
   }
 }
 

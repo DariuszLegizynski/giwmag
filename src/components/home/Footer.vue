@@ -1,5 +1,5 @@
 <template>
-  <article class="footer observer" id="footer">
+  <article class="footer observer">
     <section class="footer__section">
       <h1>Skontaktuj się z nami:</h1>
       <div class="footer__section__top">
@@ -21,7 +21,7 @@
           <input type="text" placeholder="Imię (wymagane)" required />
         </div>
         <div class="footer__form__item">
-          <input type="text" placeholder="Nazwisko" />
+          <input type="text" placeholder="Nazwisko" id="footer" />
         </div>
         <div class="footer__form__item" ref="test">
           <input type="email" placeholder="E-mail (wymagane)" required />

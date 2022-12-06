@@ -1,6 +1,6 @@
 <template>
   <article id="products" class="products-presented">
-    <h1 class="">Nasze produkty</h1>
+    <h1>Nasze produkty</h1>
     <section class="products-presented__items">
       <ProductPresented v-for="productTypes in myProducts.product_types.slice(0, limit)" :key="productTypes.id" :parallaxScrollSpeed="-0.1" :title="myProducts.name" :productTypes="productTypes" />
     </section>

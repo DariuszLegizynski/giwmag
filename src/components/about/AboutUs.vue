@@ -1,11 +1,10 @@
 <template>
   <article class="about-us">
     <h2>
-      Kim jesteśmy? Co robimy? Skąd taki pomysł?
+      Firma
     </h2>
     <p>
-      Opis naszej wizji, naszych wartości, moze misji? Odpowiedzi na pytania
-      zawarte w nagłówku.
+      Opis naszej wizji, naszych wartości, moze misji? Kim jesteśmy? Co robimy? Skąd taki pomysł?
     </p>
     <img
       src="/images/about/pexels-cottonbro-studio-6803523.jpeg"
@@ -35,6 +34,7 @@ export default {}
 
 .about-us {
   padding: 1.2rem;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
 
   h2,
   p,
@@ -42,6 +42,10 @@ export default {}
   img {
     color: black;
     padding: 0.5rem 0;
+  }
+
+  h2 {
+    font-size: $font-size-28;
   }
 }
 </style>

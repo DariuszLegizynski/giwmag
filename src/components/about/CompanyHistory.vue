@@ -2,7 +2,8 @@
   <article class="company">
     <h2>Historia Firmy</h2>
     <p>
-      Historia firmy, to przede wszystkim historia naszej rodziny. Opowieść przekazywana z dziada pradziada z całkowitą dbałością o szczegóły. I takie
+      Historia firmy, to przede wszystkim historia naszej rodziny. Opowieść
+      przekazywana z dziada pradziada z całkowitą dbałością o szczegóły. I takie
       tam.
     </p>
     <img
@@ -33,6 +34,7 @@ export default {}
 
 .company {
   padding: 1.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 
   h2,
   p,
@@ -42,6 +44,9 @@ export default {}
   }
   img {
     padding: 0.5rem 0;
+  }
+  h2 {
+    font-size: $font-size-28;
   }
 }
 </style>

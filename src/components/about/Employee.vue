@@ -19,8 +19,7 @@
 export default {
   props: {
       imageSrc: {
-      type: Object,
-      default: () => ({}),
+      type: String,
     },
     title: {
       type: String,

@@ -1,29 +1,24 @@
 <template>
   <article class="team">
-    <header>
+    <header @click.stop="toggleDescription">
       <h2>Nasz zespół</h2>
       <IconBase
-        viewBox="0 0 32 32"
-        :width="32"
-        :height="32"
+        viewBox="0 0 48 48"
+        :width="48"
+        :height="48"
         iconColor="hsl(240, 90%, 27%)">
-          <IconPlus />
-      </IconBase>
-      <IconBase
-        viewBox="0 0 32 32"
-        :width="32"
-        :height="32"
-        iconColor="hsl(240, 90%, 27%)">
-          <IconMinus />
+          <IconMinus v-if="showDescription" />
+          <IconPlus v-else />
       </IconBase>
     </header>
-
+    <article class="employees" :class="{ showDescription }">
     <Employee
       imageSrc="/images/about/people/luisa-peter-7Xp9wDCxivc-unsplash.jpeg"
     />
     <Employee
       imageSrc="/images/about/people/pieter-van-noorden-cjSUZMA2iW8-unsplash.jpeg"
     />
+    </article>
   </article>
 </template>
 
@@ -40,6 +35,16 @@ export default {
     IconPlus,
     IconMinus
   },
+  data() {
+    return {
+      showDescription: false,
+    }
+  },
+  methods: {
+    toggleDescription() {
+      this.showDescription = !this.showDescription
+    }
+  }
 }
 </script>
 
@@ -59,6 +64,14 @@ export default {
   header {
     display: flex;
     
+  }
+
+  .employees {
+    height: 0;
+    overflow: hidden;
+  }
+  .employees.showDescription {
+    height: auto;
   }
 }
 </style>

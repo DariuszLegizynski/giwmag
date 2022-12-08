@@ -5,9 +5,9 @@
         Firma
       </h2>
       <IconBase
-        viewBox="0 0 48 48"
-        :width="48"
-        :height="48"
+        viewBox="0 0 24 24"
+        :width="24"
+        :height="24"
         iconColor="hsl(240, 90%, 27%)"
       >
         <IconMinus v-if="showDescription" />
@@ -80,6 +80,11 @@ export default {
 
   h2 {
     font-size: $font-size-28;
+  }
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .description {
     height: 0;

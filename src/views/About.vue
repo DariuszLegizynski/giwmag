@@ -1,13 +1,20 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <AboutUs />
+  <Team />
+  <CompanyHistory />
 </template>
 
-<style lang="scss" scoped>
-@import '@/styles/scss/_general.scss';
+<script>
+import AboutUs from '@/components/about/AboutUs'
+import Team from '@/components/about/Team'
+import CompanyHistory from '@/components/about/CompanyHistory'
 
-.about > h1 {
-  color: black;
+export default {
+  name: 'App',
+  components: {
+    AboutUs,
+    Team,
+    CompanyHistory,
+  }
 }
-</style>
+</script>

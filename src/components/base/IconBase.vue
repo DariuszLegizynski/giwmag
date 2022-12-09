@@ -21,7 +21,7 @@ export default {
     iconName: { type: String, default: '' },
     width: { type: [Number, String], default: 18 },
     height: { type: [Number, String], default: 18 },
-    iconColor: { type: String, default: 'currentColor' }
-  }
+    iconColor: { type: String, default: 'currentColor' },
+  },
 }
 </script>

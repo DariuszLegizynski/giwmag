@@ -37,7 +37,7 @@ export default {
   },
   data() {
     return {
-      showDescription: false,
+      showDescription: true,
     }
   },
   methods: {

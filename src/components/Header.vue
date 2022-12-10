@@ -108,7 +108,6 @@ export default {
   top: 0;
   width: 100vw;
   height: auto;
-  // background-color: $color-white;
   background-color: transparent;
   z-index: 10;
   display: flex;
@@ -144,6 +143,7 @@ export default {
   position: fixed;
   z-index: 9;
   top: 0;
+  right: 0;
   padding: 2rem 0 100% 0;
   -webkit-backdrop-filter: blur(9px);
   backdrop-filter: blur(9px);

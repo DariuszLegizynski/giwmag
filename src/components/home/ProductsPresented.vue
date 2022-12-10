@@ -39,7 +39,7 @@ export default {
   background-color: $color-white;
 
   &__items {
-    margin: 1.6rem 0 2rem 0;
+    margin: 1.6rem 0rem 2rem 0rem;
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 2rem;
@@ -54,5 +54,23 @@ h1 {
 .btn {
   margin: 0;
   border-radius: 0;
+}
+
+@media (min-width: 480px) {
+  .products-presented {
+    &__items {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1rem;
+    }
+  } 
+}
+
+@media (min-width: 768px) {
+  .products-presented {
+    &__items {
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 1rem;
+    }
+  } 
 }
 </style>

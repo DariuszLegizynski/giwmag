@@ -49,7 +49,12 @@ export default {
   }
 
   &__text {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
     padding: 0.8rem 1.6rem;
+    
     text-align: center;
     position: absolute;
 

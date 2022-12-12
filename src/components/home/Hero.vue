@@ -11,20 +11,21 @@
       </span>
     </section>
     <section class="hero__call-to-action">
-      <CallToAction isOffer />
+      <div class="cta__btns">
+        <button class="btn btn--highlight" @click="$router.push('/home#footer')">
+          Zapytaj nas
+        </button>
+        <button
+          isOffer
+          class="btn"
+          @click="$router.push('/home#products')"
+        >
+          Nasza oferta
+        </button>
+      </div>
     </section>
   </article>
 </template>
-
-<script>
-import CallToAction from '@/components/base/CallToAction.vue'
-
-export default {
-  components: {
-    CallToAction
-  },
-}
-</script>
 
 <style lang="scss" scoped>
 @import '@/styles/scss/_general.scss';
@@ -81,6 +82,11 @@ export default {
     justify-content: flex-end;
     padding-bottom: 4.4rem;
   }
+  .cta__btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 }
 @media only screen and (min-width: 420px) {
   .hero {

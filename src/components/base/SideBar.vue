@@ -47,10 +47,6 @@ export default {
       type: Boolean,
       default: false,
     },
-    isContrastActive: {
-      type: Boolean,
-      default: true,
-    }
   }
 }
 </script>

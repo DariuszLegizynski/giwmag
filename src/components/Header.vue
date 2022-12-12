@@ -13,7 +13,39 @@
     >
       <img src="/logo/gamiw_logo_white.png" alt="Wi-Mag logo" />
     </div>
-
+  <nav>
+    <div class="btn sr-only">MENU</div>
+    <button
+      @click="$router.push('/offer'); toggle()"
+      v-track="{
+        category: 'Offer btn clicked',
+        label: 'offer btn was clicked',
+      }"
+      class="btn"
+    >
+      OFERTA
+    </button>
+    <button
+      @click="$router.push('/about'); toggle()"
+      v-track="{
+        category: 'About btn clicked',
+        label: 'about btn was clicked',
+      }"
+      class="btn"
+    >
+      O FIRMIE
+    </button>
+    <button
+      @click="$router.push('/home#footer'); toggle()"
+      v-track="{
+        category: 'Contact btn clicked',
+        label: 'contact btn was clicked',
+      }"
+      class="btn btn--highlight"
+    >
+      KONTAKT
+    </button>
+  </nav>
     <Burger @click.stop="toggle" :active="isBurgerActive" />
   </header>
   <SideBar @toggle="toggle" :isBurgerActive="isBurgerActive" />
@@ -97,6 +129,35 @@ export default {
     height: auto;
     background-color: $color-primary;
     padding: 0.4rem;
+  }
+}
+nav {
+  display: none;
+  visibility: hidden;
+
+  .btn {
+    background-color: transparent;
+    color: $color-white;
+    margin: 0.6rem 0;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  nav {
+    display: flex;
+    visibility: visible;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin-right: 0.4rem;
+
+    .btn {
+      margin: 0;
+      padding: 0 .4rem;
+      width: auto;
+      font-size: $font-size-18;
+      line-height: $line-height-18;
+    }
   }
 }
 </style>

@@ -136,7 +136,7 @@ export default {
   &__items {
     display: grid;
     grid-auto-rows: 1fr;
-    row-gap: 0.6rem;
+    row-gap: 1rem;
   }
 
   &__item {
@@ -158,9 +158,13 @@ export default {
       grid-template-columns: 1fr 1fr;
       column-gap: 1rem;
     }
-    &__item {
-      column-gap: .8rem;
-    }
   }
+}
+@media (min-width: 768px) {
+  .product-pros {
+    &__items {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  } 
 }
 </style>

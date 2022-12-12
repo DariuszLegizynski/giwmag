@@ -16,50 +16,12 @@
 
     <Burger @click.stop="toggle" :active="isBurgerActive" />
   </header>
-  <nav
-    class="sideBar fade-in-bg"
-    :class="{
-      sideBar__scroll: !isContrastActive,
-      slideIn: isBurgerActive,
-      slideOut: !isBurgerActive,
-    }"
-  >
-    <div class="btn sr-only">MENU</div>
-    <button
-      @click="$router.push('/offer'); toggle()"
-      v-track="{
-        category: 'Offer btn clicked',
-        label: 'offer btn was clicked',
-      }"
-      class="btn"
-    >
-      OFERTA
-    </button>
-    <button
-      @click="$router.push('/about'); toggle()"
-      v-track="{
-        category: 'About btn clicked',
-        label: 'about btn was clicked',
-      }"
-      class="btn"
-    >
-      O FIRMIE
-    </button>
-    <button
-      @click="$router.push('/home#footer'); toggle()"
-      v-track="{
-        category: 'Contact btn clicked',
-        label: 'contact btn was clicked',
-      }"
-      class="btn btn--highlight"
-    >
-      KONTAKT
-    </button>
-  </nav>
+  <SideBar :isBurgerActive="isBurgerActive" />
 </template>
 
 <script>
 import Burger from '@/components/base/Burger.vue'
+import SideBar from '@/components/base/SideBar'
 
 export default {
   data() {
@@ -71,6 +33,7 @@ export default {
   },
   components: {
     Burger,
+    SideBar
   },
   methods: {
     toggle() {
@@ -85,7 +48,7 @@ export default {
             this.isContrastActive = false
           }
         },
-        { rootMargin: '0px 0px -90% 0px' }
+        { rootMargin: '0px 0px -95% 0px' }
       )
     },
   },
@@ -136,36 +99,4 @@ export default {
     padding: 0.4rem;
   }
 }
-
-.sideBar {
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  z-index: 9;
-  top: 0;
-  right: 0;
-  padding: 2rem 0 100% 0;
-  -webkit-backdrop-filter: blur(9px);
-  backdrop-filter: blur(9px);
-  transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  background-color: $primary-opacity;
-
-  &__scroll {
-    background-color: $black-opacity;
-  }
-}
-.btn {
-  background-color: transparent;
-  color: $color-white;
-  margin: 0.6rem 0;
-}
-
-// @media only screen and (max-width: 640px) {
-//   nav {
-// transform: translateX(100%);
-// -webkit-transform: translateX(100%);
-//     transition: transform 0.5s ease-in-out;
-//   }
-// }
 </style>

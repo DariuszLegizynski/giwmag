@@ -58,6 +58,7 @@ span {
 }
 .sr-only {
   visibility: hidden;
+  position: absolute;
 }
 * {
   -webkit-font-smoothing: antialiased;

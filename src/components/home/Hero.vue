@@ -82,4 +82,18 @@ export default {
     padding-bottom: 4.4rem;
   }
 }
+@media only screen and (min-width: 420px) {
+  .hero {
+    &__text {
+      margin-top: 1rem;
+    }
+  }
+}
+@media only screen and (min-width: 480px) {
+  .hero {
+    &__text {
+      margin-top: 1.6rem;
+    }
+  }
+}
 </style>

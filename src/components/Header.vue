@@ -13,10 +13,10 @@
     >
       <img src="/logo/gamiw_logo_white.png" alt="Wi-Mag logo" />
     </div>
-    
+
     <Burger @click.stop="toggle" :active="isBurgerActive" />
   </header>
-  <SideBar :isBurgerActive="isBurgerActive" />
+  <SideBar @toggle="toggle" :isBurgerActive="isBurgerActive" />
 </template>
 
 <script>

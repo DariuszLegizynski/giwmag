@@ -47,7 +47,12 @@ export default {
       type: Boolean,
       default: false,
     },
-  }
+  },
+  methods: {
+    toggle() {
+      this.$emit("toggle")
+    },
+  },
 }
 </script>
 

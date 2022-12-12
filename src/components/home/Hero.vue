@@ -50,26 +50,16 @@
   }
 
   &__text {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-auto-columns: 1fr;
+    row-gap: 2rem;
 
     width: 100%;
+    margin-top: 1.2rem;
     padding: 0.8rem 1.6rem;
 
     text-align: center;
     position: absolute;
-
-    & > h3 {
-      margin: 1.6rem 0;
-    }
-
-    & > h1 {
-      margin: 1rem 0 1.6rem 0;
-    }
-
-    & > p {
-      margin-bottom: 1rem;
-    }
   }
 
   &__call-to-action {
@@ -91,14 +81,33 @@
 @media only screen and (min-width: 420px) {
   .hero {
     &__text {
-      margin-top: 1rem;
+      margin-top: 2.4rem;
     }
   }
 }
 @media only screen and (min-width: 480px) {
   .hero {
     &__text {
-      margin-top: 1.6rem;
+      row-gap: 2.4rem;
+
+      & > h3 {
+        font-size: $font-size-24;
+      }
+
+      & > h1 {
+        font-size: $font-size-48;
+      }
+
+      & > span {
+        font-size: $font-size-20;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 640px) {
+  .hero {
+    &__text {
+      margin-top: 3.6rem;
     }
   }
 }

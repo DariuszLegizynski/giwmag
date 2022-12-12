@@ -54,7 +54,7 @@ export default {
 
     width: 100%;
     padding: 0.8rem 1.6rem;
-    
+
     text-align: center;
     position: absolute;
 
@@ -81,8 +81,5 @@ export default {
     justify-content: flex-end;
     padding-bottom: 4.4rem;
   }
-}
-
-@media only screen and (min-width: 360px) {
 }
 </style>

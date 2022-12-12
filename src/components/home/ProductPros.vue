@@ -145,7 +145,6 @@ export default {
     column-gap: 0.8rem;
     justify-items: start;
     align-items: center;
-    // margin: 0 1.6rem;
 
     & > span {
       color: $color-white;

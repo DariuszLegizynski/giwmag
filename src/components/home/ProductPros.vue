@@ -111,7 +111,7 @@ export default {
     IconNorm,
     IconStrong,
     IconGear,
-    IconTruck
+    IconTruck,
   },
   mixins: [headerObserverMixin],
 }
@@ -124,30 +124,43 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
   background-color: $color-primary;
 
   & > h2 {
     color: $color-white;
-    margin-bottom: 1.2rem;
+    margin: 0 1rem 1.2rem 1rem;
     text-align: center;
   }
 
   &__items {
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    grid-auto-rows: 1fr;
     row-gap: 0.6rem;
   }
 
   &__item {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: auto 2fr;
+    column-gap: 0.8rem;
     justify-items: start;
     align-items: center;
-    margin: 0 1.6rem;
+    // margin: 0 1.6rem;
 
     & > span {
       color: $color-white;
+    }
+  }
+}
+@media only screen and (min-width: 480px) {
+  .product-pros {
+    &__items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1rem;
+    }
+    &__item {
+      column-gap: .8rem;
     }
   }
 }

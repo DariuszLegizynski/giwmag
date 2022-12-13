@@ -99,15 +99,19 @@ export default {
 @import '@/styles/scss/_general.scss';
 
 .header {
-  position: sticky;
-  top: 0;
-  width: 100vw;
-  height: auto;
-  background-color: transparent;
-  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  position: fixed;
+  top: 0;
+
+  width: 100vw;
+  height: auto;
+
+    z-index: 10;
+
+  background-color: transparent;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 

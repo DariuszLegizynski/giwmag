@@ -1,25 +1,24 @@
 <template>
   <article class="hero" id="hero">
     <section class="hero__img" />
-    <section class="hero__text">
-      <h3>Pełen zakres usług,<br />produkt pod same drzwi.</h3>
-      <h1><i>Fachowcy</i> od regałów.</h1>
-      <span>
-        Maksymalnie wykorzystujemy przestrzeń,<br />
-        optymalizujemy koszta,<br />
-        zapewniamy najwyszą jakość.
-      </span>
-    </section>
-    <section class="hero__call-to-action">
-      <div class="cta__btns">
-        <button class="btn btn--highlight" @click="$router.push('/home#footer')">
+    <section class="hero__body">
+      <div class="hero__text">
+        <h3>Pełen zakres usług,<br />produkt pod same drzwi.</h3>
+        <h1><i>Fachowcy</i> od regałów.</h1>
+        <span>
+          Maksymalnie wykorzystujemy przestrzeń,<br />
+          optymalizujemy koszta,<br />
+          zapewniamy najwyszą jakość.
+        </span>
+      </div>
+      <div class="hero__call-to-action">
+        <button
+          class="btn btn--highlight"
+          @click="$router.push('/home#footer')"
+        >
           Zapytaj nas
         </button>
-        <button
-          isOffer
-          class="btn"
-          @click="$router.push('/home#products')"
-        >
+        <button isOffer class="btn" @click="$router.push('/home#products')">
           Nasza oferta
         </button>
       </div>
@@ -31,13 +30,13 @@
 @import '@/styles/scss/_general.scss';
 
 .hero {
-  height: 85.6vh;
+  display: grid;
+  grid-template-rows: 100vh;
 
   &__img {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+
     background-image: linear-gradient(
         to right bottom,
         hsla(240, 18%, 3%, 0.8),
@@ -49,47 +48,47 @@
     background-size: cover;
   }
 
+  &__body {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+
+    margin-top: 2.4rem;
+  }
+
   &__text {
     display: grid;
-    grid-auto-columns: 1fr;
-    row-gap: 2rem;
+    grid-auto-rows: auto;
+    row-gap: 1rem;
 
-    width: 100%;
-    margin-top: 1.2rem;
-    padding: 0.8rem 1.6rem;
+    margin-top: 2.4rem;
+    padding: 0 1.6rem;
 
     text-align: center;
-    position: absolute;
   }
 
   &__call-to-action {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    justify-content: flex-end;
-    padding-bottom: 4.4rem;
+    justify-content: center;
+
+    width: 12rem;
   }
-  .cta__btns {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-}
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 400px) {
   .hero {
-    &__text {
-      margin-top: 2.4rem;
+    &__body {
+      margin-top: 3.2rem;
     }
   }
 }
 @media only screen and (min-width: 480px) {
   .hero {
     &__text {
-      row-gap: 2.4rem;
-
       & > h3 {
         font-size: $font-size-24;
       }
@@ -107,7 +106,33 @@
 @media only screen and (min-width: 640px) {
   .hero {
     &__text {
-      margin-top: 3.6rem;
+      & > h3 {
+        font-size: $font-size-28;
+        line-height: $line-height-36;
+      }
+
+      & > h1 {
+        font-size: $font-size-56;
+        line-height: $line-height-56;
+      }
+
+      & > span {
+        font-size: $font-size-24;
+        line-height: $line-height-28;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+
+    &__img {
+      grid-column: 1;
+    }
+
+    &__body {
+      grid-column: 2;
     }
   }
 }

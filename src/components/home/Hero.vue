@@ -1,10 +1,11 @@
 <template>
   <article class="hero" id="hero">
     <section class="hero__img" />
+    <section class="hero__img-landscape" />
     <section class="hero__body">
       <div class="hero__text">
         <h3>Pełen zakres usług,<br />produkt pod same drzwi.</h3>
-        <h1><i>Fachowcy</i> od regałów.</h1>
+        <h1><i>Fachowcy</i> <br />od regałów.</h1>
         <span>
           Maksymalnie wykorzystujemy przestrzeń,<br />
           optymalizujemy koszta,<br />
@@ -48,6 +49,11 @@
     background-size: cover;
   }
 
+  &__img-landscape {
+    display: none;
+    visibility: none;
+  }
+
   &__body {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
@@ -56,7 +62,7 @@
     grid-template-rows: auto auto;
     justify-items: center;
 
-    margin-top: 2.4rem;
+    margin-top: 5.4rem;
   }
 
   &__text {
@@ -64,7 +70,6 @@
     grid-auto-rows: auto;
     row-gap: 1rem;
 
-    margin-top: 2.4rem;
     padding: 0 1.6rem;
 
     text-align: center;
@@ -79,26 +84,23 @@
     width: 12rem;
   }
 }
-@media only screen and (min-width: 400px) {
-  .hero {
-    &__body {
-      margin-top: 3.2rem;
-    }
-  }
-}
+
 @media only screen and (min-width: 480px) {
   .hero {
     &__text {
       & > h3 {
         font-size: $font-size-24;
+        line-height: $line-height-32;
       }
 
       & > h1 {
         font-size: $font-size-48;
+        line-height: $line-height-56;
       }
 
       & > span {
         font-size: $font-size-20;
+        line-height: $line-height-24;
       }
     }
   }
@@ -113,26 +115,82 @@
 
       & > h1 {
         font-size: $font-size-56;
-        line-height: $line-height-56;
+        line-height: $line-height-72;
       }
 
       & > span {
         font-size: $font-size-24;
-        line-height: $line-height-28;
+        line-height: $line-height-32;
       }
     }
   }
 }
 @media only screen and (min-width: 768px) {
   .hero {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 
     &__img {
-      grid-column: 1;
+      display: none;
+      visibility: none;
     }
 
-    &__body {
-      grid-column: 2;
+    &__img-landscape {
+      display: block;
+
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+
+      background-image: linear-gradient(
+          to right bottom,
+          hsla(240, 18%, 3%, 0.8),
+          hsla(240, 18%, 3%, 0.7)
+        ),
+        url('/images/landscape/chuttersnap-BNBA1h-NgdY-unsplash.jpeg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &__text {
+      padding: 2rem 1.6rem 0;
+
+      & > h3 {
+        font-size: $font-size-38;
+        line-height: $line-height-44;
+      }
+
+      & > h1 {
+        font-size: $font-size-72;
+        line-height: $line-height-84;
+      }
+
+      & > span {
+        font-size: $font-size-32;
+        line-height: $line-height-44;
+      }
+    }
+
+    &__call-to-action {
+      display: grid;
+      grid-template-columns: repeat(2, 16rem);
+      column-gap: 2rem;
+      justify-items: center;
+      align-items: start;
+      padding: 4rem;
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hero {
+    &__text {
+      padding-top: 4rem;
+    }
+
+    button {
+      padding: 1rem 1.6rem;
+
+      font-size: $font-size-32;
+      line-height: $line-height-40;
     }
   }
 }

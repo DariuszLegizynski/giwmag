@@ -61,10 +61,10 @@ export default {
 @import '@/styles/scss/_general.scss';
 
 .references {
-  margin: 4rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 4rem 1rem;
 
   & > h1 {
     margin-bottom: 2rem;
@@ -90,19 +90,32 @@ export default {
   width: 4rem;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 480px) {
   .references {
     &__companies {
-      display: grid;
       grid-template-columns: 1fr 1fr;
-      align-items: center;
-      justify-items: center;
       column-gap: 4rem;
-      row-gap: 4rem;
     }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .references {
+    &__companies {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 4rem;
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .references {
+    padding: 4rem 0 8rem;
 
-    &__logo:last-child {
-      grid-column-start: span 2;
+    & > h1 {
+      padding: 4rem 0;
+    }
+    &__companies {
+      grid-template-columns: repeat(6, 1fr);
+      column-gap: 4rem;
     }
   }
 }

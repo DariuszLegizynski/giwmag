@@ -133,5 +133,9 @@ export default {
       text-transform: uppercase;
     }
   }
+
+  & .btn {
+    margin: 1rem auto;
+  }
 }
 </style>

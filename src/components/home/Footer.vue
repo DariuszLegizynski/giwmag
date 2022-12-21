@@ -38,7 +38,6 @@
       v-track="{category: 'Send btn clicked', label: 'send btn was clicked'}"
       >Wyślij</button>
     </section>
-    
   </article>
 </template>
 
@@ -52,7 +51,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/styles/scss/_general.scss';
-
 
 .footer {
   padding-top: 2rem;
@@ -112,11 +110,6 @@ export default {
       min-height: 4rem;
       border: 1px solid $color-white;
     }
-
-    & .btn {
-      border-radius: 0px;
-      margin: 0;
-    }
   }
 
   &__form {
@@ -130,6 +123,31 @@ export default {
       margin-bottom: 0.4rem;
       max-width: 100%;
     }
+  }
+}
+@media only screen and (min-width: 375px) {
+  .footer {
+    padding-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 2rem 2rem 1rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .footer {
+    padding: 4rem 4rem 1rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .footer {
+    padding: 4rem 8rem 1rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .footer {
+    padding: 4rem 32rem 1rem;
   }
 }
 </style>

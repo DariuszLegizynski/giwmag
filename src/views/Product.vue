@@ -24,7 +24,9 @@
       </ul>
     </section>
     <section class="product__call-to-action">
-      <CallToAction />
+      <button class="btn btn--highlight" @click="$router.push('/home#footer')">
+        Zapytaj nas
+      </button>
     </section>
     <ButtonBack />
   </article>
@@ -32,13 +34,11 @@
 
 <script>
 import productsDataBase from '@/data/products.json'
-import CallToAction from '@/components/base/CallToAction.vue'
 import ButtonBack from '@/components/base/ButtonBack.vue'
 
 export default {
   components: {
-    CallToAction,
-    ButtonBack
+    ButtonBack,
   },
   data() {
     return {
@@ -79,7 +79,7 @@ export default {
 
     & > * {
       color: $color-primary;
-      padding: .4rem 0;
+      padding: 0.4rem 0;
       text-transform: capitalize;
     }
   }
@@ -96,8 +96,8 @@ export default {
 
     &--thumbnails {
       display: grid;
-          justify-content: space-evenly;
-          align-items: center;
+      justify-content: space-evenly;
+      align-items: center;
       grid-template-columns: repeat(4, 1fr);
       column-gap: 8px;
 
@@ -132,6 +132,9 @@ export default {
     }
   }
   &__call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 1rem;
   }
 }

@@ -13,53 +13,47 @@
     >
       <img src="/logo/gamiw_logo_white.png" alt="Wi-Mag logo" />
     </div>
-
+    <nav>
+      <div class="btn sr-only">MENU</div>
+      <button
+        @click="$router.push('/offer'); toggle()"
+        v-track="{
+          category: 'Offer btn clicked',
+          label: 'offer btn was clicked',
+        }"
+        class="btn btn--transparent"
+      >
+        OFERTA
+      </button>
+      <button
+        @click="$router.push('/about'); toggle()"
+        v-track="{
+          category: 'About btn clicked',
+          label: 'about btn was clicked',
+        }"
+        class="btn btn--transparent"
+      >
+        O FIRMIE
+      </button>
+      <button
+        @click="$router.push('/home#footer'); toggle()"
+        v-track="{
+          category: 'Contact btn clicked',
+          label: 'contact btn was clicked',
+        }"
+        class="btn btn--transparent"
+      >
+        KONTAKT
+      </button>
+    </nav>
     <Burger @click.stop="toggle" :active="isBurgerActive" />
   </header>
-  <nav
-    class="sideBar fade-in-bg"
-    :class="{
-      sideBar__scroll: !isContrastActive,
-      slideIn: isBurgerActive,
-      slideOut: !isBurgerActive,
-    }"
-  >
-    <div class="btn sr-only">MENU</div>
-    <button
-      @click="$router.push('/offer'); toggle()"
-      v-track="{
-        category: 'Offer btn clicked',
-        label: 'offer btn was clicked',
-      }"
-      class="btn"
-    >
-      OFERTA
-    </button>
-    <button
-      @click="$router.push('/about'); toggle()"
-      v-track="{
-        category: 'About btn clicked',
-        label: 'about btn was clicked',
-      }"
-      class="btn"
-    >
-      O FIRMIE
-    </button>
-    <button
-      @click="$router.push('/home#footer'); toggle()"
-      v-track="{
-        category: 'Contact btn clicked',
-        label: 'contact btn was clicked',
-      }"
-      class="btn btn--highlight"
-    >
-      KONTAKT
-    </button>
-  </nav>
+  <SideBar @toggle="toggle" :isBurgerActive="isBurgerActive" />
 </template>
 
 <script>
 import Burger from '@/components/base/Burger.vue'
+import SideBar from '@/components/base/SideBar'
 
 export default {
   data() {
@@ -71,6 +65,7 @@ export default {
   },
   components: {
     Burger,
+    SideBar
   },
   methods: {
     toggle() {
@@ -85,7 +80,7 @@ export default {
             this.isContrastActive = false
           }
         },
-        { rootMargin: '0px 0px -90% 0px' }
+        { rootMargin: '0px 0px -95% 0px' }
       )
     },
   },
@@ -104,16 +99,19 @@ export default {
 @import '@/styles/scss/_general.scss';
 
 .header {
-  position: sticky;
-  top: 0;
-  width: 100vw;
-  height: auto;
-  // background-color: $color-white;
-  background-color: transparent;
-  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  position: fixed;
+  top: 0;
+
+  width: 100vw;
+  height: auto;
+
+  z-index: 10;
+
+  background-color: transparent;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 
@@ -137,35 +135,40 @@ export default {
     padding: 0.4rem;
   }
 }
+nav {
+  display: none;
+  visibility: hidden;
+}
 
-.sideBar {
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  z-index: 9;
-  top: 0;
-  padding: 2rem 0 100% 0;
-  -webkit-backdrop-filter: blur(9px);
-  backdrop-filter: blur(9px);
-  transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  background-color: $primary-opacity;
+@media only screen and (min-width: 640px) {
+  nav {
+    display: flex;
+    visibility: visible;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin-right: 0.4rem;
 
-  &__scroll {
-    background-color: $black-opacity;
+    .btn {
+      margin: 0;
+      padding: 0 .4rem;
+      width: auto;
+      font-size: $font-size-18;
+      line-height: $line-height-18;
+    }
   }
 }
-.btn {
-  background-color: transparent;
-  color: $color-white;
-  margin: 0.6rem 0;
+@media only screen and (min-width: 1024px) {
+  header {
+    nav {
+      width: 40%;
+    }
+    .btn {
+      font-size: $font-size-24;
+      line-height: $line-height-30;
+    }
+  }
 }
 
-// @media only screen and (max-width: 640px) {
-//   nav {
-// transform: translateX(100%);
-// -webkit-transform: translateX(100%);
-//     transition: transform 0.5s ease-in-out;
-//   }
-// }
+  
 </style>

@@ -24,8 +24,10 @@ button {
   font-size: $font-size-24;
   line-height: $line-height-24;
   padding: 0.9rem;
-  margin: 0.6rem;
-  width: 100%;
+  margin: 0.6rem auto;
+  min-width: 12rem;
+  max-width: 16rem;
+  border-radius: 0;
 
   &--reverse {
     color: $color-white;
@@ -56,6 +58,10 @@ button {
     margin: 0;
     font-size: $font-size-20;
     line-height: $line-height-20;
+  }
+  &--transparent {
+    background-color: transparent;
+    color: $color-white;
   }
 }
 

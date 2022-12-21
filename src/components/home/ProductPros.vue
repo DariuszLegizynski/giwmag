@@ -167,4 +167,32 @@ export default {
     }
   } 
 }
+@media (min-width: 1024px) {
+  .product-pros {
+    padding: 4rem 2rem;
+
+    & > h2 {
+      padding-bottom: 4rem;
+    }
+
+    &__items {
+      column-gap: 4rem;
+      row-gap: 2rem;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .product-pros {
+    padding: 8rem 2rem;
+
+    & > h2 {
+      padding-bottom: 4rem;
+    }
+
+    &__items {
+      column-gap: 4rem;
+      row-gap: 2rem;
+    }
+  }
+}
 </style>

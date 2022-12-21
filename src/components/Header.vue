@@ -13,39 +13,39 @@
     >
       <img src="/logo/gamiw_logo_white.png" alt="Wi-Mag logo" />
     </div>
-  <nav>
-    <div class="btn sr-only">MENU</div>
-    <button
-      @click="$router.push('/offer'); toggle()"
-      v-track="{
-        category: 'Offer btn clicked',
-        label: 'offer btn was clicked',
-      }"
-      class="btn"
-    >
-      OFERTA
-    </button>
-    <button
-      @click="$router.push('/about'); toggle()"
-      v-track="{
-        category: 'About btn clicked',
-        label: 'about btn was clicked',
-      }"
-      class="btn"
-    >
-      O FIRMIE
-    </button>
-    <button
-      @click="$router.push('/home#footer'); toggle()"
-      v-track="{
-        category: 'Contact btn clicked',
-        label: 'contact btn was clicked',
-      }"
-      class="btn btn--highlight"
-    >
-      KONTAKT
-    </button>
-  </nav>
+    <nav>
+      <div class="btn sr-only">MENU</div>
+      <button
+        @click="$router.push('/offer'); toggle()"
+        v-track="{
+          category: 'Offer btn clicked',
+          label: 'offer btn was clicked',
+        }"
+        class="btn btn--transparent"
+      >
+        OFERTA
+      </button>
+      <button
+        @click="$router.push('/about'); toggle()"
+        v-track="{
+          category: 'About btn clicked',
+          label: 'about btn was clicked',
+        }"
+        class="btn btn--transparent"
+      >
+        O FIRMIE
+      </button>
+      <button
+        @click="$router.push('/home#footer'); toggle()"
+        v-track="{
+          category: 'Contact btn clicked',
+          label: 'contact btn was clicked',
+        }"
+        class="btn btn--transparent"
+      >
+        KONTAKT
+      </button>
+    </nav>
     <Burger @click.stop="toggle" :active="isBurgerActive" />
   </header>
   <SideBar @toggle="toggle" :isBurgerActive="isBurgerActive" />
@@ -109,7 +109,7 @@ export default {
   width: 100vw;
   height: auto;
 
-    z-index: 10;
+  z-index: 10;
 
   background-color: transparent;
   -webkit-backdrop-filter: blur(3px);
@@ -138,12 +138,6 @@ export default {
 nav {
   display: none;
   visibility: hidden;
-
-  .btn {
-    background-color: transparent;
-    color: $color-white;
-    margin: 0.6rem 0;
-  }
 }
 
 @media only screen and (min-width: 640px) {
@@ -152,7 +146,7 @@ nav {
     visibility: visible;
     justify-content: space-around;
     align-items: center;
-    width: 60%;
+    width: 50%;
     margin-right: 0.4rem;
 
     .btn {
@@ -164,4 +158,17 @@ nav {
     }
   }
 }
+@media only screen and (min-width: 1024px) {
+  header {
+    nav {
+      width: 40%;
+    }
+    .btn {
+      font-size: $font-size-24;
+      line-height: $line-height-30;
+    }
+  }
+}
+
+  
 </style>

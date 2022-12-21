@@ -96,9 +96,26 @@ export default {
       grid-template-columns: 1fr 1fr;
       column-gap: 4rem;
     }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .references {
+    &__companies {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 4rem;
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .references {
+    padding: 4rem 0 8rem;
 
-    &__logo:last-child {
-      grid-column-start: span 2;
+    & > h1 {
+      padding: 4rem 0;
+    }
+    &__companies {
+      grid-template-columns: repeat(6, 1fr);
+      column-gap: 4rem;
     }
   }
 }

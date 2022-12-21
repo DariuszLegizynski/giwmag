@@ -182,9 +182,31 @@
 }
 @media only screen and (min-width: 1024px) {
   .hero {
+    background-color: $color-primary;
+
     &__text {
       padding-top: 4rem;
     }
+
+    &__img-landscape {
+      // grid-column: auto;
+      // grid-row: auto;
+
+      background-image: linear-gradient(
+          to right bottom,
+          hsla(240, 18%, 3%, 0.8),
+          hsla(240, 18%, 3%, 0.7)
+        ),
+        url('/images/landscape/chuttersnap-BNBA1h-NgdY-unsplash.jpeg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    // &__body {
+    //   grid-column: auto;
+    //   grid-row: auto;
+    // }
 
     button {
       padding: 1rem 1.6rem;

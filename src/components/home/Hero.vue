@@ -86,6 +86,10 @@
 
     width: 100%;
 
+    button {
+      min-width: 12rem;
+    }
+
     .btn--black {
       display: none;
     }

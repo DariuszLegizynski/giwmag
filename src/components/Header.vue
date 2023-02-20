@@ -65,7 +65,7 @@ export default {
   },
   components: {
     Burger,
-    SideBar
+    SideBar,
   },
   methods: {
     toggle() {
@@ -105,6 +105,7 @@ export default {
 
   position: fixed;
   top: 0;
+  padding-right: 1rem;
 
   width: 100vw;
   height: auto;
@@ -126,49 +127,49 @@ export default {
     background-color: $primary-opacity;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
-}
-.logo {
-  & > img {
-    width: 3rem;
-    height: auto;
-    background-color: $color-primary;
-    padding: 0.4rem;
+  .logo {
+    & > img {
+      width: 3rem;
+      height: auto;
+      background-color: $color-primary;
+      padding: 0.4rem;
+    }
   }
-}
-nav {
-  display: none;
-  visibility: hidden;
+  nav {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 @media only screen and (min-width: 640px) {
-  nav {
-    display: flex;
-    visibility: visible;
-    justify-content: space-around;
-    align-items: center;
-    width: 50%;
-    margin-right: 0.4rem;
+  .header {
+    nav {
+      display: flex;
+      visibility: visible;
+      justify-content: space-around;
+      align-items: center;
+      width: 57%;
 
-    .btn {
-      margin: 0;
-      padding: 0 .4rem;
-      width: auto;
-      font-size: $font-size-18;
-      line-height: $line-height-18;
+      .btn {
+        margin: 0;
+        padding: 0 0.4rem;
+        width: auto;
+        font-size: $font-size-18;
+        line-height: $line-height-18;
+      }
     }
   }
 }
 @media only screen and (min-width: 1024px) {
-  header {
+  .header {
     nav {
-      width: 40%;
-    }
-    .btn {
-      font-size: $font-size-24;
-      line-height: $line-height-30;
+      width: 80%;
+
+      .btn {
+        font-size: $font-size-24;
+        line-height: $line-height-30;
+      }
     }
   }
 }
-
-  
 </style>

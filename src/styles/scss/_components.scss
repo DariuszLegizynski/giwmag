@@ -25,10 +25,13 @@ button {
   line-height: $line-height-24;
   padding: 0.9rem;
   margin: 0.6rem auto;
-  min-width: 12rem;
   max-width: 16rem;
   border-radius: 0;
 
+  &--black {
+    color: $color-white;
+    background-color: $color-black;
+  }
   &--reverse {
     color: $color-white;
     background-color: $color-primary;

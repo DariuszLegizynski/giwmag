@@ -1,7 +1,7 @@
 <template>
   <article class="hero" id="hero">
     <section class="hero__img" />
-    <section class="hero__img-landscape" />
+    <!-- <section class="hero__img-landscape" /> -->
     <section class="hero__body">
       <div class="hero__text">
         <h3>Pełen zakres usług,<br />produkt pod same drzwi.</h3>
@@ -19,6 +19,9 @@
         >
           Zapytaj nas
         </button>
+        <button class="btn btn--black" @click="$router.push('/home#footer')">
+          Zapytaj nas
+        </button>
         <button isOffer class="btn" @click="$router.push('/home#products')">
           Nasza oferta
         </button>
@@ -33,6 +36,17 @@
 .hero {
   display: grid;
   grid-template-rows: 100vh;
+
+  &__body {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+
+    margin-top: 5.4rem;
+  }
 
   &__img {
     grid-column: 1 / -1;
@@ -54,17 +68,6 @@
     visibility: none;
   }
 
-  &__body {
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-
-    display: grid;
-    grid-template-rows: auto auto;
-    justify-items: center;
-
-    margin-top: 5.4rem;
-  }
-
   &__text {
     display: grid;
     grid-auto-rows: auto;
@@ -82,6 +85,10 @@
     justify-content: center;
 
     width: 12rem;
+
+    .btn--black {
+      display: none;
+    }
   }
 }
 
@@ -129,26 +136,8 @@
   .hero {
     grid-template-columns: 1fr;
 
-    &__img {
-      display: none;
-      visibility: none;
-    }
-
-    &__img-landscape {
-      display: block;
-
-      grid-column: 1 / -1;
-      grid-row: 1 / -1;
-
-      background-image: linear-gradient(
-          to right bottom,
-          hsla(240, 18%, 3%, 0.8),
-          hsla(240, 18%, 3%, 0.7)
-        ),
-        url('/images/landscape/chuttersnap-BNBA1h-NgdY-unsplash.jpeg');
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
+    &__body {
+      margin-top: 4rem;
     }
 
     &__text {
@@ -176,43 +165,91 @@
       column-gap: 2rem;
       justify-items: center;
       align-items: start;
-      padding: 4rem;
+      margin-top: 1.6rem;
     }
   }
 }
 @media only screen and (min-width: 1024px) {
   .hero {
     background-color: $color-primary;
+    grid-template-columns: 1fr 1fr;
+
+    &__body {
+      grid-column: 2 / 3;
+      grid-row: 1 / -1;
+
+      margin-top: 0.8rem;
+    }
+
+    &__img {
+      grid-column: 1 / 2;
+      grid-row: 1 / -1;
+
+      background-image: none,
+        url('/images/portrait/ruchindra-gunasekara-GK8x_XCcDZg-unsplash.jpeg');
+    }
 
     &__text {
-      padding-top: 4rem;
+      padding: 4rem 1.6rem 0;
+
+      & > h3 {
+        padding-top: 2rem;
+        font-size: $font-size-34;
+        line-height: $line-height-36;
+      }
+
+      & > h1 {
+        padding-top: 2rem;
+        font-size: $font-size-56;
+        line-height: $line-height-60;
+      }
+
+      & > span {
+        padding-top: 2rem;
+        font-size: $font-size-20;
+        line-height: $line-height-24;
+      }
     }
 
-    &__img-landscape {
-      // grid-column: auto;
-      // grid-row: auto;
+    // &__img-landscape {
+    //   display: block;
 
-      background-image: linear-gradient(
-          to right bottom,
-          hsla(240, 18%, 3%, 0.8),
-          hsla(240, 18%, 3%, 0.7)
-        ),
-        url('/images/landscape/chuttersnap-BNBA1h-NgdY-unsplash.jpeg');
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+    //   grid-column: 1 / -1;
+    //   grid-row: 1 / -1;
 
-    // &__body {
-    //   grid-column: auto;
-    //   grid-row: auto;
+    //   background-image: linear-gradient(
+    //       to right bottom,
+    //       hsla(240, 18%, 3%, 0.8),
+    //       hsla(240, 18%, 3%, 0.7)
+    //     ),
+    //     url('/images/landscape/chuttersnap-BNBA1h-NgdY-unsplash.jpeg');
+    //   background-position: center center;
+    //   background-repeat: no-repeat;
+    //   background-size: cover;
     // }
 
     button {
-      padding: 1rem 1.6rem;
+      margin-top: 2rem;
+      padding: 1.2rem 1.6rem;
 
-      font-size: $font-size-32;
-      line-height: $line-height-40;
+      font-size: $font-size-36;
+      line-height: $line-height-44;
+    }
+
+    &__call-to-action {
+      grid-template-columns: repeat(2, 16rem);
+      column-gap: 2rem;
+      justify-items: center;
+      align-items: start;
+      padding: 1rem;
+
+      .btn--highlight {
+        display: none;
+      }
+
+      .btn-black {
+        display: inline-block;
+      }
     }
   }
 }

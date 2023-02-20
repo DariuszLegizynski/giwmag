@@ -105,6 +105,7 @@ export default {
 
   position: fixed;
   top: 0;
+  padding-right: 1rem;
 
   width: 100vw;
   height: auto;

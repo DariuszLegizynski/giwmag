@@ -84,7 +84,7 @@
     align-items: center;
     justify-content: center;
 
-    width: 12rem;
+    width: 100%;
 
     .btn--black {
       display: none;
@@ -130,6 +130,17 @@
         line-height: $line-height-32;
       }
     }
+
+    &__call-to-action {
+
+      button {
+        width: 100%;
+        padding: 1.2rem 0;
+
+        font-size: $font-size-30;
+        line-height: $line-height-32;
+      }
+    }
   }
 }
 @media only screen and (min-width: 768px) {
@@ -161,11 +172,16 @@
 
     &__call-to-action {
       display: grid;
-      grid-template-columns: repeat(2, 16rem);
+      grid-template-columns: repeat(2, 1fr);
       column-gap: 2rem;
       justify-items: center;
       align-items: start;
       margin-top: 1.6rem;
+
+      button {
+        font-size: $font-size-36;
+        line-height: $line-height-36;
+      }
     }
   }
 }
@@ -211,43 +227,19 @@
       }
     }
 
-    // &__img-landscape {
-    //   display: block;
-
-    //   grid-column: 1 / -1;
-    //   grid-row: 1 / -1;
-
-    //   background-image: linear-gradient(
-    //       to right bottom,
-    //       hsla(240, 18%, 3%, 0.8),
-    //       hsla(240, 18%, 3%, 0.7)
-    //     ),
-    //     url('/images/landscape/chuttersnap-BNBA1h-NgdY-unsplash.jpeg');
-    //   background-position: center center;
-    //   background-repeat: no-repeat;
-    //   background-size: cover;
-    // }
-
-    button {
-      margin-top: 2rem;
-      padding: 1.2rem 1.6rem;
-
-      font-size: $font-size-36;
-      line-height: $line-height-44;
-    }
-
     &__call-to-action {
-      grid-template-columns: repeat(2, 16rem);
-      column-gap: 2rem;
-      justify-items: center;
-      align-items: start;
-      padding: 1rem;
+      column-gap: 1.2rem;
+      padding: 0 .4rem;
+
+      button {
+        margin-top: 2rem;
+      }
 
       .btn--highlight {
         display: none;
       }
 
-      .btn-black {
+      .btn--black {
         display: inline-block;
       }
     }

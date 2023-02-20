@@ -124,6 +124,12 @@ export default {
       max-width: 100%;
     }
   }
+
+  &__section {
+    .btn--highlight {
+      padding: 0.8rem 6rem;
+    }
+  }
 }
 @media only screen and (min-width: 375px) {
   .footer {
